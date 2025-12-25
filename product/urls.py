@@ -6,7 +6,6 @@ from django.urls import path, include
 from product.views import compare, shopleftsidebar, singleproduct
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
     path('single-product', singleproduct, name = 'single-product'),
     path('compare/', compare, name = 'compare'),
     path('shop-left-sidebar/', shopleftsidebar, name = 'shop-left-sidebar'),
