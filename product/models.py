@@ -21,17 +21,20 @@ class Product(AbstractModel):
     title = models.CharField(max_length=200)
     price = models.CharField(max_length=100)
     tags = models.ManyToManyField(ProductTag, related_name='products')
-    category = models.ForeignKey(ProductCategory, related_name = 'products', on_delete= models.CASCADE)
+    category = models.ForeignKey(ProductCategory, related_name='products', on_delete=models.CASCADE, null=True, blank=True)
     description = models.TextField(null=True, blank=True)
     cover_image = models.ImageField(upload_to='product_images/', null=True, blank=True)
 
+    def __str__(self):
+        return self.title
 
     def __call__(self):
-        return f"{self.category.title}/{self.title}"
+        return f"{self.title}"
+    
     
 class ProductImage(AbstractModel):
     image = models.ImageField(upload_to='product_images/')
-    product = models.ForeignKey(Product, related_name='images', on_delete=models.CASCADE)
+    product = models.ForeignKey(Product, related_name='images', on_delete=models.CASCADE, null=True, blank=True)
 
     def __str__(self):
         return self.product.title
