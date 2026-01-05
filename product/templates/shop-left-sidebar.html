@@ -145,6 +145,7 @@
                                 <div class="tab-content">
                                     <div class="tab-pane fade show active" id="shop-grid">
                                         <div class="row mb-n-30px">
+                                           
                                             {% for product in products %}
                                             <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6 mb-30px" data-aos="fade-up"
                                                 data-aos-delay="200">
@@ -152,7 +153,7 @@
                                                 <div class="product">
                                                     <div class="thumb">
                                                         <a href="{% url 'single-product' %}" class="image">
-                                                            <img src="{{ product.cover_image.url }}" alt=" " />
+                                                            <img src="{{ product.cover_image.url }}" alt="no image" />
                                                         </a>
                                                         <span class="badges">
                                                             <span class="new">New</span>
@@ -178,14 +179,14 @@
                                                         <h5 class="title"><a href="{% url 'single-product' %}">{{ product.title }}</a>
                                                         </h5>
                                                         <span class="price">
-                                                            <span class="new">{{ product.price }}</span>
+                                                            <span class="new">${{ product.price }}</span>
                                                         </span>
                                                     </div>
                                                     <button title="Add To Cart" class=" add-to-cart">Add
                                                         To Cart</button>
                                                 </div>
                                             </div>
-                                            {% endfor %}
+                                           {% endfor %}
 
                                         </div>
                                     </div>

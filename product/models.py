@@ -1,5 +1,8 @@
 from django.db import models
 from core.models import AbstractModel
+from django.contrib.auth import get_user_model
+User = get_user_model()
+
 # Create your models here.
 
 class ProductTag(AbstractModel):
@@ -8,6 +11,7 @@ class ProductTag(AbstractModel):
     def __str__(self):
         return self.title
     
+
 class ProductCategory(AbstractModel):
     title = models.CharField(max_length=200)
     
@@ -17,24 +21,36 @@ class ProductCategory(AbstractModel):
     def __str__(self):
         return self.title
     
+    
 class Product(AbstractModel):
+    category = models.ForeignKey(ProductCategory, related_name='products', on_delete=models.CASCADE, null=True, blank=True)
+    tags = models.ManyToManyField(ProductTag, related_name='products')
+    
     title = models.CharField(max_length=200)
     price = models.CharField(max_length=100)
-    tags = models.ManyToManyField(ProductTag, related_name='products')
-    category = models.ForeignKey(ProductCategory, related_name='products', on_delete=models.CASCADE, null=True, blank=True)
     description = models.TextField(null=True, blank=True)
-    cover_image = models.ImageField(upload_to='product_images/', null=True, blank=True)
+    cover_image = models.ImageField(upload_to='product_cover_images/', null=True, blank=True)
 
     def __str__(self):
-        return self.title
+        return f'{self.category.title} / {self.title}'
+    
+    class  Meta:
+        ordering = ("-created_at",)
 
-    def __call__(self):
-        return f"{self.title}"
-    
-    
+
 class ProductImage(AbstractModel):
     image = models.ImageField(upload_to='product_images/')
     product = models.ForeignKey(Product, related_name='images', on_delete=models.CASCADE, null=True, blank=True)
+
+    def __str__(self):
+        return self.product.title
+    
+
+class ProductReview(AbstractModel):
+    product = models.ForeignKey(Product, related_name='reviews', on_delete=models.CASCADE)
+    user = models.ForeignKey(User, related_name='reviews', on_delete=models.CASCADE)
+
+    message = models.TextField()
 
     def __str__(self):
         return self.product.title

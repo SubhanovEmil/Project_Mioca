@@ -8,6 +8,7 @@ def compare(request):
 
 def shopleftsidebar(request):
     products = Product.objects.all()
+
     context = {
         'products' : products
     }
