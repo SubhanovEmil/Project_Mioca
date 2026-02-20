@@ -1,4 +1,4 @@
-{% load static %}
+{% load static tags %}
 <!DOCTYPE html>
 <html lang="zxx">
 
@@ -10,7 +10,7 @@
     <meta name="description" content="Mioca - Handmade Goods eCommerce HTML Template" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <link rel="shortcut icon" href = "{% static 'images/favicon/favicon.ico' %}" type="image/png">
+    <link rel="shortcut icon" href = "{% static 'images/logo/favicon.png' %}" type="image/png">
 
     <link rel="stylesheet" href="{% static 'css/vendor/vendor.min.css' %}" />
     <link rel="stylesheet" href="{% static 'css/plugins/plugins.min.css' %}" />
@@ -33,7 +33,7 @@
                             <ul>
                                 <li class="dropdown"><a href="{% url 'home' %}">Home </a></li>
                                 <li><a href="{% url 'about' %}">About</a></li>
-                                <li class="dropdown position-static"><a href="{% url 'about' %}">Pages <i class="fa fa-angle-down"></i></a>
+                                <li class="dropdown position-static"><a href="{% url 'about' %}">Pages</a>
                                     <ul class="mega-menu d-block">
                                         <li class="d-flex">
                                             <ul class="d-block">
@@ -51,9 +51,8 @@
                                             <ul class="d-block">
                                                 <li class="title"><a href="#">Related Shop Pages</a></li>
                                                 <li><a href="{% url 'my-account' %}">Account Page</a></li>
-                                                <li><a href="{% url 'login' %}">Login & Register Page</a></li>
+                                                <li><a href="{% url 'register' %}">Register Page</a></li>
                                                 <li><a href="{% url 'empty-cart' %}">Empty Cart Page</a></li>
-                                                <li><a href="thank-you-page.html">Thank You Page</a></li>
                                             </ul>
                                             <ul class="d-flex align-items-center p-0 border-0">
                                                 <li>
@@ -78,25 +77,30 @@
                         <div class="header-actions">
                             <!-- Single Wedge Start -->
                             <a href="#" class="header-action-btn" data-bs-toggle="modal" data-bs-target="#searchActive">
-                                <i class="pe-7s-search"></i>
+                                <img src="{% static 'images/icons/search.png' %}" alt="NO IMAGE">
                             </a>
                             <!-- Single Wedge End -->
                             <div class="header-bottom-set dropdown">
-                                <button class="dropdown-toggle header-action-btn" data-bs-toggle="dropdown"><i
-                                        class="pe-7s-users"></i></button>
+                                <button class="dropdown-toggle header-action-btn" data-bs-toggle="dropdown">
+                                    <img src="{% static 'images/icons/user.png' %}" alt="">
+                                </button>
                                 <ul class="dropdown-menu dropdown-menu-right">
                                     <li><a class="dropdown-item" href="{% url 'my-account' %}">My account</a></li>
                                     <li><a class="dropdown-item" href="{% url 'checkout' %}">Checkout</a></li>
-                                    <li><a class="dropdown-item" href="{% url 'login' %}">Sign in</a></li>
+                                    {% if request.user.is_authenticated %}
+                                    <li><a class="dropdown-item" href="{% url 'logout' %}">Log out</a></li>
+                                    {% else %}
+                                    <li><a class="dropdown-item" href="{% url 'login' %}">Log in</a></li>
+                                    {% endif %}
                                 </ul>
                             </div>
                             <!-- Single Wedge Start -->
                             <a href="#offcanvas-wishlist" class="header-action-btn offcanvas-toggle">
-                                <i class="pe-7s-like"></i>
+                                <img src="{% static 'images/icons/wishlist-star.png' %}" alt="">
                             </a>
                             <!-- Single Wedge End -->
                             <a href="#offcanvas-cart" class="header-action-btn header-action-btn-cart offcanvas-toggle pr-0">
-                                <i class="pe-7s-shopbag"></i>
+                                <img src="{% static 'images/icons/shopping-cart.png' %}" alt="">
                                 <span class="header-action-num">01</span>
                                 <!-- <span class="cart-amount">€30.00</span> -->
                             </a>
@@ -123,28 +127,28 @@
             <div class="body customScroll">
                 <ul class="minicart-product-list">
                     <li>
-                        <a href="{% url 'single-product' %}" class="image"><img src="{% static 'images/product-image/1.jpg' %}"
+                        <a href="{% url 'single-product' product.pk|default:0 %}" class="image"><img src="{% static 'images/product-image/1.jpg' %}"
                                 alt="Cart product Image"></a>
                         <div class="content">
-                            <a href="{% url 'single-product' %}" class="title">Hand-Made Garlic Mortar</a>
+                            <a href="{% url 'single-product' product.pk|default:0 %}" class="title">Hand-Made Garlic Mortar</a>
                             <span class="quantity-price">1 x <span class="amount">$21.86</span></span>
                             <a href="#" class="remove">×</a>
                         </div>
                     </li>
                     <li>
-                        <a href="{% url 'single-product' %}" class="image"><img src="{% static 'images/product-image/2.jpg' %}"
+                        <a href="{% url 'single-product' product.pk|default:0 %}" class="image"><img src="{% static 'images/product-image/2.jpg' %}"
                                 alt="Cart product Image"></a>
                         <div class="content">
-                            <a href="{% url 'single-product' %}" class="title">Handmade Ceramic Pottery</a>
+                            <a href="{% url 'single-product' product.pk|default:0 %}" class="title">Handmade Ceramic Pottery</a>
                             <span class="quantity-price">1 x <span class="amount">$13.28</span></span>
                             <a href="#" class="remove">×</a>
                         </div>
                     </li>
                     <li>
-                        <a href="{% url 'single-product' %}" class="image"><img src="{% static 'images/product-image/3.jpg' %}"
+                        <a href="{% url 'single-product' product.pk|default:0 %}" class="image"><img src="{% static 'images/product-image/3.jpg' %}"
                                 alt="Cart product Image"></a>
                         <div class="content">
-                            <a href="{% url 'single-product' %}" class="title">Hand Painted Bowls</a>
+                            <a href="{% url 'single-product' product.pk|default:0 %}" class="title">Hand Painted Bowls</a>
                             <span class="quantity-price">1 x <span class="amount">$17.34</span></span>
                             <a href="#" class="remove">×</a>
                         </div>
@@ -171,28 +175,28 @@
             <div class="body customScroll">
                 <ul class="minicart-product-list">
                     <li>
-                        <a href="{% url 'single-product' %}" class="image"><img src="{% static 'images/product-image/1.jpg' %}"
+                        <a href="{% url 'single-product' product.pk|default:0%}" class="image"><img src="{% static 'images/product-image/1.jpg' %}"
                                 alt="Cart product Image"></a>
                         <div class="content">
-                            <a href="{% url 'single-product' %}" class="title">Hand-Made Garlic Mortar</a>
+                            <a href="{% url 'single-product' product.pk|default:0%}" class="title">Hand-Made Garlic Mortar</a>
                             <span class="quantity-price">1 x <span class="amount">$18.86</span></span>
                             <a href="#" class="remove">×</a>
                         </div>
                     </li>
                     <li>
-                        <a href="{% url 'single-product' %}" class="image"><img src="{% static 'images/product-image/2.jpg' %}"
+                        <a href="{% url 'single-product' product.pk|default:0%}" class="image"><img src="{% static 'images/product-image/2.jpg' %}"
                                 alt="Cart product Image"></a>
                         <div class="content">
-                            <a href="{% url 'single-product' %}" class="title">Handmade Ceramic Pottery</a>
+                            <a href="{% url 'single-product' product.pk|default:0%}" class="title">Handmade Ceramic Pottery</a>
                             <span class="quantity-price">1 x <span class="amount">$43.28</span></span>
                             <a href="#" class="remove">×</a>
                         </div>
                     </li>
                     <li>
-                        <a href="{% url 'single-product' %}" class="image"><img src="{% static 'images/product-image/3.jpg' %}"
+                        <a href="{% url 'single-product' product.pk|default:0%}" class="image"><img src="{% static 'images/product-image/3.jpg' %}"
                                 alt="Cart product Image"></a>
                         <div class="content">
-                            <a href="{% url 'single-product' %}" class="title">Hand Painted Bowls</a>
+                            <a href="{% url 'single-product' product.pk|default:0%}" class="title">Hand Painted Bowls</a>
                             <span class="quantity-price">1 x <span class="amount">$37.34</span></span>
                             <a href="#" class="remove">×</a>
                         </div>
@@ -249,7 +253,7 @@
                                 <a href="#"><span class="menu-text">Related Shop Page</span></a>
                                 <ul class="sub-menu">
                                     <li><a href="{% url 'my-account' %}">Account Page</a></li>
-                                    <li><a href="{% url 'login' %}">Login & Register Page</a></li>
+                                    <li><a href="{% url 'register' %}">Register Page</a></li>
                                     <li><a href="{% url 'empty-cart' %}">Empty Cart Page</a></li>
                                     <li><a href="thank-you-page.html">Thank You Page</a></li>
                                 </ul>
@@ -276,7 +280,7 @@
                             <li>
                                 <a href="#"><span class="menu-text">product Details Page</span></a>
                                 <ul class="sub-menu">
-                                    <li><a href="{% url 'single-product' %}">Product Single</a></li>
+                                    <li><a href="{% url 'single-product' product.pk|default:0%}">Product Single</a></li>
                                     <li><a href="single-product-variable.html">Product Variable</a></li>
                                     <li><a href="single-product-affiliate.html">Product Affiliate</a></li>
                                     <li><a href="single-product-group.html">Product Group</a></li>
@@ -321,19 +325,19 @@
             <div class="offcanvas-social mt-auto">
                 <ul>
                     <li>
-                        <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+                        <a href="https://www.facebook.com/"><img src="{% static 'images/icons/facebook.png' %}" alt=""></i></a>
                     </li>
                     <li>
-                        <a href="https://www.facebook.com/"><i class="fa fa-twitter"></i></a>
+                        <a href="https://www.x.com/"><img src="{% static 'images/twitter.png' %}" alt=""></a>
                     </li>
                     <li>
-                        <a href="https://www.google.com/ "><i class="fa fa-google"></i></a>
+                        <a href="https://www.google.com/ "><img src="{% static 'images/icons/google.com.png' %}" alt=""></a>
                     </li>
                     <li>
-                        <a href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a>
+                        <a href="https://www.youtube.com/"><img src="{% static 'images/icons/youtube.png' %}" alt="">></a>
                     </li>
                     <li>
-                        <a href="https://www.instagram.com/ "><i class="fa fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/ "><img src="{% static 'images/icons/instagram.png' %}" alt="">/i></a>
                     </li>
                 </ul>
             </div>
@@ -348,7 +352,6 @@
             <div class="row align-items-center">
                 <div class="col-lg-6">
                     <div class="newsletter-content mb-lm-30px">
-                        <i class="pe-7s-mail-open-file"></i>
                         <div class="newsletter-text">
                             <h3 class="title">Newsletter & Get Updates</h3>
                             <p>Sign up for our newsletter to get update from us</p>
@@ -396,13 +399,12 @@
                                     <div class="footer-row">
                                         <ul class="align-items-center">
                                             <li class="li"><a class="single-link" href="{% url 'about' %}">About us</a></li>
-                                            <li class="li"><a class="single-link" href="#">Delivery information</a></li>
-                                            <li class="li"><a class="single-link" href="privacy-policy.html">Privacy
-                                                    Policy</a></li>
-                                            <li class="li"><a class="single-link" href="#">Sales</a></li>
-                                            <li class="li"><a class="single-link" href="#">Terms & Conditions</a></li>
-                                            <li class="li"><a class="single-link" href="#">Shipping Policy</a></li>
-                                            <li class="li"><a class="single-link" href="#">EMI Payment</a></li>
+                                            <li class="li"><a class="single-link" href="{% url '404' %}">Delivery information</a></li>
+                                            <li class="li"><a class="single-link" href="{% url '404' %}">Privacy Policy</a></li>
+                                            <li class="li"><a class="single-link" href="{% url '404' %}">Sales</a></li>
+                                            <li class="li"><a class="single-link" href="{% url '404' %}">Terms & Conditions</a></li>
+                                            <li class="li"><a class="single-link" href="{% url '404' %}">Shipping Policy</a></li>
+                                            <li class="li"><a class="single-link" href="{% url '404' %}">EMI Payment</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -416,15 +418,13 @@
                                 <div class="footer-links">
                                     <div class="footer-row">
                                         <ul class="align-items-center">
-                                            <li class="li"><a class="single-link" href="{% url 'my-account' %}"> My account</a>
-                                            </li>
+                                            <li class="li"><a class="single-link" href="{% url 'my-account' %}"> My account</a></li>
                                             <li class="li"><a class="single-link" href="{% url 'cart' %}">My orders</a></li>
-                                            <li class="li"><a class="single-link" href="#">Returns</a></li>
-                                            <li class="li"><a class="single-link"
-                                                    href="{% url 'shop-left-sidebar' %}">Shipping</a></li>
+                                            <li class="li"><a class="single-link" href="{% url '404' %}">Returns</a></li>
+                                            <li class="li"><a class="single-link" href="{% url 'shop-left-sidebar' %}">Shipping</a></li>
                                             <li class="li"><a class="single-link" href="{% url 'wishlist' %}">Wishlist</a></li>
-                                            <li class="li"><a class="single-link" href="#">How Does It Work</a></li>
-                                            <li class="li"><a class="single-link" href="#">Merchant Sign Up</a></li>
+                                            <li class="li"><a class="single-link" href="{% url '404' %}">How Does It Work</a></li>
+                                            <li class="li"><a class="single-link" href="{% url '404' %}">Merchant Sign Up</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -439,12 +439,11 @@
                                     <div class="footer-row">
                                         <ul class="align-items-center">
                                             <li class="li"><a class="single-link" href="{% url 'home' %}">Affiliate</a></li>
-                                            <li class="li"><a class="single-link"
-                                                    href="{% url 'shop-left-sidebar' %}">Bestsellers</a></li>
-                                            <li class="li"><a class="single-link" href="#">Discount</a></li>
-                                            <li class="li"><a class="single-link" href="#">Latest products</a></li>
-                                            <li class="li"><a class="single-link" href="#">Sale</a></li>
-                                            <li class="li"><a class="single-link" href="#">All Collection</a></li>
+                                            <li class="li"><a class="single-link" href="{% url 'shop-left-sidebar' %}">Bestsellers</a></li>
+                                            <li class="li"><a class="single-link" href="{% url '404' %}">Discount</a></li>
+                                            <li class="li"><a class="single-link" href="{% url '404' %}">Latest products</a></li>
+                                            <li class="li"><a class="single-link" href="{% url '404' %}">Sale</a></li>
+                                            <li class="li"><a class="single-link" href="{% url '404' %}">All Collection</a></li>
                                             <li class="li"><a class="single-link" href="{% url 'contact' %}">Contact Us</a>
                                             </li>
                                         </ul>
@@ -462,10 +461,10 @@
                                     <!-- News letter area -->
                                     <p class="mail">If you have any question.please <br>
                                         contact us at <a href="mailto:demo@example.com">demo@example.com</a> </p>
-                                    <p class="address"><i class="pe-7s-map-marker"></i> <span>Your address goes here.
+                                    <p class="address"><img src="{% static 'images/icons/location.png' %}" alt=""> <span>Your address goes here.
                                             <br>
                                             123, Address.</span> </p>
-                                    <p class="phone m-0"><i class="pe-7s-phone"></i><span><a href="tel:0123456789">+ 0
+                                    <p class="phone m-0"><img src="{% static 'images/icons/oldphone.png' %}" alt=""><span><a href="tel:0123456789">+ 0
                                                 123
                                                 456 789</a> <br> <a href="tel:0123456789">+ 0 123 456 789</a></span></p>
 
@@ -511,7 +510,9 @@
                             <div class="form-group">
                                 <input type="text" class="form-control" placeholder="Search here...">
                             </div>
-                            <button type="submit" class="submit-btn"><i class="pe-7s-search"></i></button>
+                            <button type="submit" class="submit-btn">
+                                <img src="{% static 'images/icons/search.png' %}" alt="">
+                            </button>
                         </form>
                     </div>
                 </div>

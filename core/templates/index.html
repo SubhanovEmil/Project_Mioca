@@ -62,8 +62,8 @@
             <div class="swiper-pagination swiper-pagination-white"></div>
             <!-- Add Arrows -->
             <div class="swiper-buttons">
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next">  <img src="{% static 'images/icons/right-arrow.png' %}" alt=""></div>
+                <div class="swiper-button-prev"> <img src="{% static 'images/icons/left-arrow.png' %}" alt=""></div>
             </div>
         </div>
     </div>
@@ -124,38 +124,24 @@
                 <div class="col-12">
                     <div class="section-title text-center mb-60px">
                         <h2 class="title">Popular Categories</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod incididunt ut labore et dolore magna aliqua. </p>
                     </div>
                     <!-- Tab Start -->
                     <div class="tab-slider swiper-container slider-nav-style-1 small-nav">
                         <ul class="product-tab-nav nav swiper-wrapper ">
-                            <li class="nav-item swiper-slide"><a class="nav-link active" data-bs-toggle="tab" href="#tab-jewelry"> <img src="{% static 'images/icons/jewelry-icon.png' %}"
-                                        alt=""><span>Jewelry</span></a>
+                        {% for category in categories %}
+                            <li class="nav-item swiper-slide">
+                                <a class="nav-link active" data-bs-toggle="tab" href="#tab-jewelry"> 
+                                    <img src="{{ category.categoryimage.url }}" alt="NO IMAGE">
+                                    <span>{{ category.title }}</span>
+                                </a>
                             </li>
+                        {% endfor %}
 
-                            <li class="nav-item swiper-slide"><a class="nav-link" data-bs-toggle="tab" href="#tab-pottery"> <img src="{% static 'images/icons/pottery-icon.png' %}"
-                                        alt=""><span>Pottery</span></a>
-                            </li>
-                            <li class="nav-item swiper-slide"><a class="nav-link" data-bs-toggle="tab" href="#tab-fabric"> <img src="{% static 'images/icons/fabric-icon.png' %}"
-                                        alt=""><span>Fabric</span></a>
-                            </li>
-                            <li class="nav-item swiper-slide"><a class="nav-link" data-bs-toggle="tab" href="#tab-paintings"> <img src="{% static 'images/icons/paintings-icon.png' %}"
-                                        alt=""><span>Paintings</span></a>
-                            </li>
-                            <li class="nav-item swiper-slide"><a class="nav-link" data-bs-toggle="tab" href="#tab-sculptures"> <img src="{% static 'images/icons/sculptures-icon.png' %}"
-                                        alt=""><span>Sculptures</span></a>
-                            </li>
-                            <li class="nav-item swiper-slide"><a class="nav-link" data-bs-toggle="tab" href="#tab-wooden"> <img src="{% static 'images/icons/wooden-icon.png' %}"
-                                        alt=""><span>Wooden</span></a>
-                            </li>
-                            <li class="nav-item swiper-slide"><a class="nav-link" data-bs-toggle="tab" href="#tab-pottery"> <img src="{% static 'images/icons/pottery-icon.png' %}"
-                                        alt=""><span>Pottery</span></a>
-                            </li>
                         </ul>
                         <!-- Add Arrows -->
                         <div class="swiper-buttons">
-                            <div class="swiper-button-next"></div>
-                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next">  <img src="{% static 'images/icons/right-arrow.png' %}" alt=""></div>
+                            <div class="swiper-button-prev"> <img src="{% static 'images/icons/left-arrow.png' %}" alt=""></div>
                         </div>
                     </div>
                     <!-- Tab End -->
@@ -171,24 +157,21 @@
                         <!-- 1st tab start -->
                         <div class="tab-pane fade show active" id="tab-jewelry">
                             <div class="row">
+                            {% for product in products %}
                                 <div class="col-lg-4 col-xl-3 col-md-6 col-sm-6 col-xs-6 mb-30px">
                                     <!-- Single Prodect -->
                                     <div class="product">
                                         <div class="thumb">
-                                            <a href="{% url 'single-product' %}" class="image">
-                                                <img src="{% static 'images/product-image/1.jpg' %}" alt="Product" />
-                                                <img class="hover-image" src="{% static 'images/product-image/1.jpg' %}"
-                                                    alt="Product" />
+                                            <a href= "{% url 'single-product' product.id|default:0 %}" class="image">
+                                                <img src="{{ product.cover_image.url}}" alt="Product" />
+                                                <img class="hover-image" src="{{ product.cover_image.url}}" alt="Product" />
                                             </a>
                                             <span class="badges">
                                                 <span class="new">New</span>
                                             </span>
                                             <div class="actions">
-                                                <a href="{% url 'wishlist' %}" class="action wishlist" title="Wishlist"><i
-                                                        class="pe-7s-like"></i></a>
-                                                <a href="#" class="action quickview" data-link-action="quickview" title="Quick view" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="pe-7s-look"></i></a>
-                                                <a href="{% url 'compare' %}" class="action compare" title="Compare"><i
-                                                        class="pe-7s-refresh-2"></i></a>
+                                                <a href="{% url 'wishlist' %}" class="action wishlist" title="Wishlist"><img src="{% static 'images/icons/wishlist-star.png' %}" alt=""></a>
+                                                <a href="{% url 'compare' %}" class="action compare" title="Compare"><img src="{% static 'images/icons/scales.png' %}" alt=""></a>
                                             </div>
                                         </div>
                                         <div class="content">
@@ -198,291 +181,17 @@
                                             </span>
                                             <span class="rating-num">( 5 Review )</span>
                                             </span>
-                                            <h5 class="title"><a href="{% url 'single-product' %}">Hand-Made Garlic Mortar
-                                                </a>
+                                            <h5 class="title"><a href="{% url 'single-product' product.pk|default:0%}">{{ product.title }}</a>
                                             </h5>
                                             <span class="price">
-                                                <span class="new">$38.50</span>
+                                                <span class="new">${{ product.price }}</span>
                                             </span>
                                         </div>
                                         <button title="Add To Cart" class=" add-to-cart">Add
                                             To Cart</button>
                                     </div>
                                 </div>
-                                <div class="col-lg-4 col-xl-3 col-md-6 col-sm-6 col-xs-6 mb-30px">
-                                    <!-- Single Prodect -->
-                                    <div class="product">
-                                        <div class="thumb">
-                                            <a href="{% url 'single-product' %}" class="image">
-                                                <img src="{% static 'images/product-image/2.jpg' %}" alt="Product" />
-                                                <img class="hover-image" src="{% static 'images/product-image/2.jpg' %}"
-                                                    alt="Product" />
-                                            </a>
-                                            <span class="badges">
-                                                <span class="sale">-10%</span>
-                                            <span class="new">New</span>
-                                            </span>
-                                            <div class="actions">
-                                                <a href="{% url 'wishlist' %}" class="action wishlist" title="Wishlist"><i
-                                                        class="pe-7s-like"></i></a>
-                                                <a href="#" class="action quickview" data-link-action="quickview" title="Quick view" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="pe-7s-look"></i></a>
-                                                <a href="{% url 'compare' %}" class="action compare" title="Compare"><i
-                                                        class="pe-7s-refresh-2"></i></a>
-                                            </div>
-                                        </div>
-                                        <div class="content">
-                                            <span class="ratings">
-                                                <span class="rating-wrap">
-                                                    <span class="star" style="width: 100%"></span>
-                                            </span>
-                                            <span class="rating-num">( 5 Review )</span>
-                                            </span>
-                                            <h5 class="title"><a href="{% url 'single-product' %}">Handmade Ceramic Pottery
-                                                </a>
-                                            </h5>
-                                            <span class="price">
-                                                <span class="new">$38.50</span>
-                                            <span class="old">$45.50</span>
-                                            </span>
-                                        </div>
-                                        <button title="Add To Cart" class=" add-to-cart">Add
-                                            To Cart</button>
-                                    </div>
-                                    <!-- Single Prodect -->
-                                </div>
-                                <div class="col-lg-4 col-xl-3 col-md-6 col-sm-6 col-xs-6 mb-30px">
-                                    <!-- Single Prodect -->
-                                    <div class="product">
-                                        <div class="thumb">
-                                            <a href="{% url 'single-product' %}" class="image">
-                                                <img src="{% static 'images/product-image/3.jpg' %}" alt="Product" />
-                                                <img class="hover-image" src="{% static 'images/product-image/3.jpg' %}"
-                                                    alt="Product" />
-                                            </a>
-                                            <span class="badges">
-                                                <span class="new">Sale</span>
-                                            </span>
-                                            <div class="actions">
-                                                <a href="{% url 'wishlist' %}" class="action wishlist" title="Wishlist"><i
-                                                        class="pe-7s-like"></i></a>
-                                                <a href="#" class="action quickview" data-link-action="quickview" title="Quick view" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="pe-7s-look"></i></a>
-                                                <a href="{% url 'compare' %}" class="action compare" title="Compare"><i
-                                                        class="pe-7s-refresh-2"></i></a>
-                                            </div>
-                                        </div>
-                                        <div class="content">
-                                            <span class="ratings">
-                                                <span class="rating-wrap">
-                                                    <span class="star" style="width: 100%"></span>
-                                            </span>
-                                            <span class="rating-num">( 5 Review )</span>
-                                            </span>
-                                            <h5 class="title"><a href="{% url 'single-product' %}">Hand Painted Bowls
-                                                </a>
-                                            </h5>
-                                            <span class="price">
-                                                <span class="new">$38.50</span>
-                                            </span>
-                                        </div>
-                                        <button title="Add To Cart" class=" add-to-cart">Add
-                                            To Cart</button>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-xl-3 col-md-6 col-sm-6 col-xs-6 mb-30px">
-                                    <!-- Single Prodect -->
-                                    <div class="product">
-                                        <div class="thumb">
-                                            <a href="{% url 'single-product' %}" class="image">
-                                                <img src="{% static 'images/product-image/4.jpg' %}" alt="Product" />
-                                                <img class="hover-image" src="{% static 'images/product-image/4.jpg' %}"
-                                                    alt="Product" />
-                                            </a>
-                                            <span class="badges">
-                                                <span class="sale">-5</span>
-                                            </span>
-                                            <div class="actions">
-                                                <a href="{% url 'wishlist' %}" class="action wishlist" title="Wishlist"><i
-                                                        class="pe-7s-like"></i></a>
-                                                <a href="#" class="action quickview" data-link-action="quickview" title="Quick view" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="pe-7s-look"></i></a>
-                                                <a href="{% url 'compare' %}" class="action compare" title="Compare"><i
-                                                        class="pe-7s-refresh-2"></i></a>
-                                            </div>
-                                        </div>
-                                        <div class="content">
-                                            <span class="ratings">
-                                                <span class="rating-wrap">
-                                                    <span class="star" style="width: 100%"></span>
-                                            </span>
-                                            <span class="rating-num">( 5 Review )</span>
-                                            </span>
-                                            <h5 class="title"><a href="{% url 'single-product' %}">Antique Wooden Farm Large
-                                                </a>
-                                            </h5>
-                                            <span class="price">
-                                                <span class="new">$38.50</span>
-                                            <span class="old">$40.50</span>
-                                            </span>
-                                        </div>
-                                        <button title="Add To Cart" class=" add-to-cart">Add
-                                            To Cart</button>
-                                    </div>
-                                    <!-- Single Prodect -->
-                                </div>
-                                <div class="col-lg-4 col-xl-3 col-md-6 col-sm-6 col-xs-6 mb-md-30px mb-lm-30px">
-                                    <!-- Single Prodect -->
-                                    <div class="product">
-                                        <div class="thumb">
-                                            <a href="{% url 'single-product' %}" class="image">
-                                                <img src="{% static 'images/product-image/6.jpg' %}" alt="Product" />
-                                                <img class="hover-image" src="{% static 'images/product-image/6.jpg' %}"
-                                                    alt="Product" />
-                                            </a>
-                                            <span class="badges">
-                                            </span>
-                                            <div class="actions">
-                                                <a href="{% url 'wishlist' %}" class="action wishlist" title="Wishlist"><i
-                                                        class="pe-7s-like"></i></a>
-                                                <a href="#" class="action quickview" data-link-action="quickview" title="Quick view" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="pe-7s-look"></i></a>
-                                                <a href="{% url 'compare' %}" class="action compare" title="Compare"><i
-                                                        class="pe-7s-refresh-2"></i></a>
-                                            </div>
-                                        </div>
-                                        <div class="content">
-                                            <span class="ratings">
-                                                <span class="rating-wrap">
-                                                    <span class="star" style="width: 100%"></span>
-                                            </span>
-                                            <span class="rating-num">( 5 Review )</span>
-                                            </span>
-                                            <h5 class="title"><a href="{% url 'single-product' %}">Handmade Jute Basket
-                                                </a>
-                                            </h5>
-                                            <span class="price">
-                                                <span class="new">$38.50</span>
-                                            </span>
-                                        </div>
-                                        <button title="Add To Cart" class=" add-to-cart">Add
-                                            To Cart</button>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-xl-3 col-md-6 col-sm-6 col-xs-6  mb-md-30px mb-lm-30px">
-                                    <!-- Single Prodect -->
-                                    <div class="product">
-                                        <div class="thumb">
-                                            <a href="{% url 'single-product' %}" class="image">
-                                                <img src="{% static 'images/product-image/7.jpg' %}" alt="Product" />
-                                                <img class="hover-image" src="{% static 'images/product-image/7.jpg' %}"
-                                                    alt="Product" />
-                                            </a>
-                                            <span class="badges">
-                                                <span class="new">New</span>
-                                            </span>
-                                            <div class="actions">
-                                                <a href="{% url 'wishlist' %}" class="action wishlist" title="Wishlist"><i
-                                                        class="pe-7s-like"></i></a>
-                                                <a href="#" class="action quickview" data-link-action="quickview" title="Quick view" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="pe-7s-look"></i></a>
-                                                <a href="{% url 'compare' %}" class="action compare" title="Compare"><i
-                                                        class="pe-7s-refresh-2"></i></a>
-                                            </div>
-                                        </div>
-                                        <div class="content">
-                                            <span class="ratings">
-                                                <span class="rating-wrap">
-                                                    <span class="star" style="width: 100%"></span>
-                                            </span>
-                                            <span class="rating-num">( 5 Review )</span>
-                                            </span>
-                                            <h5 class="title"><a href="{% url 'single-product' %}">Knitting yarn & crochet hook
-                                                </a>
-                                            </h5>
-                                            <span class="price">
-                                                <span class="new">$38.50</span>
-                                            </span>
-                                        </div>
-                                        <button title="Add To Cart" class=" add-to-cart">Add
-                                            To Cart</button>
-                                    </div>
-                                    <!-- Single Prodect -->
-                                </div>
-                                <div class="col-lg-4 col-xl-3 col-md-6 col-sm-6 col-xs-6 mb-es-30px">
-                                    <!-- Single Prodect -->
-                                    <div class="product">
-                                        <div class="thumb">
-                                            <a href="{% url 'single-product' %}" class="image">
-                                                <img src="{% static 'images/product-image/8.jpg' %}" alt="Product" />
-                                                <img class="hover-image" src="{% static 'images/product-image/8.jpg' %}"
-                                                    alt="Product" />
-                                            </a>
-                                            <span class="badges">
-                                                <span class="sale">-8%</span>
-                                            <span class="new">New</span>
-                                            </span>
-                                            <div class="actions">
-                                                <a href="{% url 'wishlist' %}" class="action wishlist" title="Wishlist"><i
-                                                        class="pe-7s-like"></i></a>
-                                                <a href="#" class="action quickview" data-link-action="quickview" title="Quick view" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="pe-7s-look"></i></a>
-                                                <a href="{% url 'compare' %}" class="action compare" title="Compare"><i
-                                                        class="pe-7s-refresh-2"></i></a>
-                                            </div>
-                                        </div>
-                                        <div class="content">
-                                            <span class="ratings">
-                                                <span class="rating-wrap">
-                                                    <span class="star" style="width: 100%"></span>
-                                            </span>
-                                            <span class="rating-num">( 5 Review )</span>
-                                            </span>
-                                            <h5 class="title"><a href="{% url 'single-product' %}">David Head Portraits
-                                                </a>
-                                            </h5>
-                                            <span class="price">
-                                                <span class="new">$38.50</span>
-                                            <span class="old">$44.50</span>
-                                            </span>
-                                        </div>
-                                        <button title="Add To Cart" class=" add-to-cart">Add
-                                            To Cart</button>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-xl-3 col-md-6 col-sm-6 col-xs-6">
-                                    <!-- Single Prodect -->
-                                    <div class="product">
-                                        <div class="thumb">
-                                            <a href="{% url 'single-product' %}" class="image">
-                                                <img src="{% static 'images/product-image/9.jpg' %}" alt="Product" />
-                                                <img class="hover-image" src="{% static 'images/product-image/9.jpg' %}"
-                                                    alt="Product" />
-                                            </a>
-                                            <span class="badges">
-                                                <span class="new">Sale</span>
-                                            </span>
-                                            <div class="actions">
-                                                <a href="{% url 'wishlist' %}" class="action wishlist" title="Wishlist"><i
-                                                        class="pe-7s-like"></i></a>
-                                                <a href="#" class="action quickview" data-link-action="quickview" title="Quick view" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="pe-7s-look"></i></a>
-                                                <a href="{% url 'compare' %}" class="action compare" title="Compare"><i
-                                                        class="pe-7s-refresh-2"></i></a>
-                                            </div>
-                                        </div>
-                                        <div class="content">
-                                            <span class="ratings">
-                                                <span class="rating-wrap">
-                                                    <span class="star" style="width: 100%"></span>
-                                            </span>
-                                            <span class="rating-num">( 5 Review )</span>
-                                            </span>
-                                            <h5 class="title"><a href="{% url 'single-product' %}">solid wood cherry paddle
-                                                </a>
-                                            </h5>
-                                            <span class="price">
-                                                <span class="new">$38.50</span>
-                                            </span>
-                                        </div>
-                                        <button title="Add To Cart" class=" add-to-cart">Add
-                                            To Cart</button>
-                                    </div>
-                                    <!-- Single Prodect -->
-                                </div>
+                            {% endfor %}
                             </div>
                         </div>
                         <!-- 1st tab end -->
@@ -493,7 +202,7 @@
                                     <!-- Single Prodect -->
                                     <div class="product">
                                         <div class="thumb">
-                                            <a href="{% url 'single-product' %}" class="image">
+                                            <a href="{% url 'single-product' product.pk|default:0%}" class="image">
                                                 <img src="{% static 'images/product-image/1.jpg' %}" alt="Product" />
                                                 <img class="hover-image" src="{% static 'images/product-image/1.jpg' %}"
                                                     alt="Product" />
@@ -516,7 +225,7 @@
                                             </span>
                                             <span class="rating-num">( 5 Review )</span>
                                             </span>
-                                            <h5 class="title"><a href="{% url 'single-product' %}">Hand-Made Garlic Mortar
+                                            <h5 class="title"><a href="{% url 'single-product' product.pk|default:0%}">Hand-Made Garlic Mortar
                                                 </a>
                                             </h5>
                                             <span class="price">
@@ -531,7 +240,7 @@
                                     <!-- Single Prodect -->
                                     <div class="product">
                                         <div class="thumb">
-                                            <a href="{% url 'single-product' %}" class="image">
+                                            <a href="{% url 'single-product' product.pk|default:0%}" class="image">
                                                 <img src="{% static 'images/product-image/2.jpg' %}" alt="Product" />
                                                 <img class="hover-image" src="{% static 'images/product-image/2.jpg' %}"
                                                     alt="Product" />
@@ -555,7 +264,7 @@
                                             </span>
                                             <span class="rating-num">( 5 Review )</span>
                                             </span>
-                                            <h5 class="title"><a href="{% url 'single-product' %}">Handmade Ceramic Pottery
+                                            <h5 class="title"><a href="{% url 'single-product' product.pk|default:0%}">Handmade Ceramic Pottery
                                                 </a>
                                             </h5>
                                             <span class="price">
@@ -572,7 +281,7 @@
                                     <!-- Single Prodect -->
                                     <div class="product">
                                         <div class="thumb">
-                                            <a href="{% url 'single-product' %}" class="image">
+                                            <a href="{% url 'single-product' product.pk|default:0%}" class="image">
                                                 <img src="{% static 'images/product-image/3.jpg' %}" alt="Product" />
                                                 <img class="hover-image" src="{% static 'images/product-image/3.jpg' %}"
                                                     alt="Product" />
@@ -595,7 +304,7 @@
                                             </span>
                                             <span class="rating-num">( 5 Review )</span>
                                             </span>
-                                            <h5 class="title"><a href="{% url 'single-product' %}">Hand Painted Bowls
+                                            <h5 class="title"><a href="{% url 'single-product' product.pk|default:0%}">Hand Painted Bowls
                                                 </a>
                                             </h5>
                                             <span class="price">
@@ -610,7 +319,7 @@
                                     <!-- Single Prodect -->
                                     <div class="product">
                                         <div class="thumb">
-                                            <a href="{% url 'single-product' %}" class="image">
+                                            <a href="{% url 'single-product' product.pk|default:0%}" class="image">
                                                 <img src="{% static 'images/product-image/4.jpg' %}" alt="Product" />
                                                 <img class="hover-image" src="{% static 'images/product-image/4.jpg' %}"
                                                     alt="Product" />
@@ -633,7 +342,7 @@
                                             </span>
                                             <span class="rating-num">( 5 Review )</span>
                                             </span>
-                                            <h5 class="title"><a href="{% url 'single-product' %}">Antique Wooden Farm Large
+                                            <h5 class="title"><a href="{% url 'single-product' product.pk|default:0%}">Antique Wooden Farm Large
                                                 </a>
                                             </h5>
                                             <span class="price">
@@ -650,7 +359,7 @@
                                     <!-- Single Prodect -->
                                     <div class="product">
                                         <div class="thumb">
-                                            <a href="{% url 'single-product' %}" class="image">
+                                            <a href="{% url 'single-product' product.pk|default:0%}" class="image">
                                                 <img src="{% static 'images/product-image/6.jpg' %}" alt="Product" />
                                                 <img class="hover-image" src="{% static 'images/product-image/6.jpg' %}"
                                                     alt="Product" />
@@ -672,7 +381,7 @@
                                             </span>
                                             <span class="rating-num">( 5 Review )</span>
                                             </span>
-                                            <h5 class="title"><a href="{% url 'single-product' %}">Handmade Jute Basket
+                                            <h5 class="title"><a href="{% url 'single-product' product.pk|default:0%}">Handmade Jute Basket
                                                 </a>
                                             </h5>
                                             <span class="price">
@@ -687,7 +396,7 @@
                                     <!-- Single Prodect -->
                                     <div class="product">
                                         <div class="thumb">
-                                            <a href="{% url 'single-product' %}" class="image">
+                                            <a href="{% url 'single-product' product.pk|default:0%}" class="image">
                                                 <img src="{% static 'images/product-image/7.jpg' %}" alt="Product" />
                                                 <img class="hover-image" src="{% static 'images/product-image/7.jpg' %}"
                                                     alt="Product" />
@@ -710,7 +419,7 @@
                                             </span>
                                             <span class="rating-num">( 5 Review )</span>
                                             </span>
-                                            <h5 class="title"><a href="{% url 'single-product' %}">Knitting yarn & crochet hook
+                                            <h5 class="title"><a href="{% url 'single-product' product.pk|default:0%}">Knitting yarn & crochet hook
                                                 </a>
                                             </h5>
                                             <span class="price">
@@ -726,7 +435,7 @@
                                     <!-- Single Prodect -->
                                     <div class="product">
                                         <div class="thumb">
-                                            <a href="{% url 'single-product' %}" class="image">
+                                            <a href="{% url 'single-product' product.pk|default:0%}" class="image">
                                                 <img src="{% static 'images/product-image/8.jpg' %}" alt="Product" />
                                                 <img class="hover-image" src="{% static 'images/product-image/8.jpg' %}"
                                                     alt="Product" />
@@ -750,7 +459,7 @@
                                             </span>
                                             <span class="rating-num">( 5 Review )</span>
                                             </span>
-                                            <h5 class="title"><a href="{% url 'single-product' %}">David Head Portraits
+                                            <h5 class="title"><a href="{% url 'single-product' product.pk|default:0%}">David Head Portraits
                                                 </a>
                                             </h5>
                                             <span class="price">
@@ -766,7 +475,7 @@
                                     <!-- Single Prodect -->
                                     <div class="product">
                                         <div class="thumb">
-                                            <a href="{% url 'single-product' %}" class="image">
+                                            <a href="{% url 'single-product' product.pk|default:0%}" class="image">
                                                 <img src="{% static 'images/product-image/9.jpg' %}" alt="Product" />
                                                 <img class="hover-image" src="{% static 'images/product-image/9.jpg' %}"
                                                     alt="Product" />
@@ -789,7 +498,7 @@
                                             </span>
                                             <span class="rating-num">( 5 Review )</span>
                                             </span>
-                                            <h5 class="title"><a href="{% url 'single-product' %}">solid wood cherry paddle
+                                            <h5 class="title"><a href="{% url 'single-product' product.pk|default:0%}">solid wood cherry paddle
                                                 </a>
                                             </h5>
                                             <span class="price">
@@ -811,7 +520,7 @@
                                     <!-- Single Prodect -->
                                     <div class="product">
                                         <div class="thumb">
-                                            <a href="{% url 'single-product' %}" class="image">
+                                            <a href="{% url 'single-product' product.pk|default:0%}" class="image">
                                                 <img src="{% static 'images/product-image/1.jpg' %}" alt="Product" />
                                                 <img class="hover-image" src="{% static 'images/product-image/1.jpg' %}"
                                                     alt="Product" />
@@ -834,7 +543,7 @@
                                             </span>
                                             <span class="rating-num">( 5 Review )</span>
                                             </span>
-                                            <h5 class="title"><a href="{% url 'single-product' %}">Hand-Made Garlic Mortar
+                                            <h5 class="title"><a href="{% url 'single-product' product.pk|default:0%}">Hand-Made Garlic Mortar
                                                 </a>
                                             </h5>
                                             <span class="price">
@@ -849,7 +558,7 @@
                                     <!-- Single Prodect -->
                                     <div class="product">
                                         <div class="thumb">
-                                            <a href="{% url 'single-product' %}" class="image">
+                                            <a href="{% url 'single-product' product.pk|default:0%}" class="image">
                                                 <img src="{% static 'images/product-image/2.jpg' %}" alt="Product" />
                                                 <img class="hover-image" src="{% static 'images/product-image/2.jpg' %}"
                                                     alt="Product" />
@@ -873,7 +582,7 @@
                                             </span>
                                             <span class="rating-num">( 5 Review )</span>
                                             </span>
-                                            <h5 class="title"><a href="{% url 'single-product' %}">Handmade Ceramic Pottery
+                                            <h5 class="title"><a href="{% url 'single-product' product.pk|default:0%}">Handmade Ceramic Pottery
                                                 </a>
                                             </h5>
                                             <span class="price">
@@ -890,7 +599,7 @@
                                     <!-- Single Prodect -->
                                     <div class="product">
                                         <div class="thumb">
-                                            <a href="{% url 'single-product' %}" class="image">
+                                            <a href="{% url 'single-product' product.pk|default:0%}" class="image">
                                                 <img src="{% static 'images/product-image/3.jpg' %}" alt="Product" />
                                                 <img class="hover-image" src="{% static 'images/product-image/3.jpg' %}"
                                                     alt="Product" />
@@ -913,7 +622,7 @@
                                             </span>
                                             <span class="rating-num">( 5 Review )</span>
                                             </span>
-                                            <h5 class="title"><a href="{% url 'single-product' %}">Hand Painted Bowls
+                                            <h5 class="title"><a href="{% url 'single-product' product.pk|default:0%}">Hand Painted Bowls
                                                 </a>
                                             </h5>
                                             <span class="price">
@@ -928,7 +637,7 @@
                                     <!-- Single Prodect -->
                                     <div class="product">
                                         <div class="thumb">
-                                            <a href="{% url 'single-product' %}" class="image">
+                                            <a href="{% url 'single-product' product.pk|default:0%}" class="image">
                                                 <img src="{% static 'images/product-image/4.jpg' %}" alt="Product" />
                                                 <img class="hover-image" src="{% static 'images/product-image/4.jpg' %}"
                                                     alt="Product" />
@@ -951,7 +660,7 @@
                                             </span>
                                             <span class="rating-num">( 5 Review )</span>
                                             </span>
-                                            <h5 class="title"><a href="{% url 'single-product' %}">Antique Wooden Farm Large
+                                            <h5 class="title"><a href="{% url 'single-product' product.pk|default:0%}">Antique Wooden Farm Large
                                                 </a>
                                             </h5>
                                             <span class="price">
@@ -968,7 +677,7 @@
                                     <!-- Single Prodect -->
                                     <div class="product">
                                         <div class="thumb">
-                                            <a href="{% url 'single-product' %}" class="image">
+                                            <a href="{% url 'single-product' product.pk|default:0%}" class="image">
                                                 <img src="{% static 'images/product-image/6.jpg' %}" alt="Product" />
                                                 <img class="hover-image" src="{% static 'images/product-image/6.jpg' %}"
                                                     alt="Product" />
@@ -990,7 +699,7 @@
                                             </span>
                                             <span class="rating-num">( 5 Review )</span>
                                             </span>
-                                            <h5 class="title"><a href="{% url 'single-product' %}">Handmade Jute Basket
+                                            <h5 class="title"><a href="{% url 'single-product' product.pk|default:0%}">Handmade Jute Basket
                                                 </a>
                                             </h5>
                                             <span class="price">
@@ -1005,7 +714,7 @@
                                     <!-- Single Prodect -->
                                     <div class="product">
                                         <div class="thumb">
-                                            <a href="{% url 'single-product' %}" class="image">
+                                            <a href="{% url 'single-product' product.pk|default:0%}" class="image">
                                                 <img src="{% static 'images/product-image/7.jpg' %}" alt="Product" />
                                                 <img class="hover-image" src="{% static 'images/product-image/7.jpg' %}"
                                                     alt="Product" />
@@ -1028,7 +737,7 @@
                                             </span>
                                             <span class="rating-num">( 5 Review )</span>
                                             </span>
-                                            <h5 class="title"><a href="{% url 'single-product' %}">Knitting yarn & crochet hook
+                                            <h5 class="title"><a href="{% url 'single-product' product.pk|default:0%}">Knitting yarn & crochet hook
                                                 </a>
                                             </h5>
                                             <span class="price">
@@ -1044,7 +753,7 @@
                                     <!-- Single Prodect -->
                                     <div class="product">
                                         <div class="thumb">
-                                            <a href="{% url 'single-product' %}" class="image">
+                                            <a href="{% url 'single-product' product.pk|default:0%}" class="image">
                                                 <img src="{% static 'images/product-image/8.jpg' %}" alt="Product" />
                                                 <img class="hover-image" src="{% static 'images/product-image/8.jpg' %}"
                                                     alt="Product" />
@@ -1068,7 +777,7 @@
                                             </span>
                                             <span class="rating-num">( 5 Review )</span>
                                             </span>
-                                            <h5 class="title"><a href="{% url 'single-product' %}">David Head Portraits
+                                            <h5 class="title"><a href="{% url 'single-product' product.pk|default:0%}">David Head Portraits
                                                 </a>
                                             </h5>
                                             <span class="price">
@@ -1084,7 +793,7 @@
                                     <!-- Single Prodect -->
                                     <div class="product">
                                         <div class="thumb">
-                                            <a href="{% url 'single-product' %}" class="image">
+                                            <a href="{% url 'single-product' product.pk|default:0%}" class="image">
                                                 <img src="{% static 'images/product-image/9.jpg' %}" alt="Product" />
                                                 <img class="hover-image" src="{% static 'images/product-image/9.jpg' %}"
                                                     alt="Product" />
@@ -1107,7 +816,7 @@
                                             </span>
                                             <span class="rating-num">( 5 Review )</span>
                                             </span>
-                                            <h5 class="title"><a href="{% url 'single-product' %}">solid wood cherry paddle
+                                            <h5 class="title"><a href="{% url 'single-product' product.pk|default:0%}">solid wood cherry paddle
                                                 </a>
                                             </h5>
                                             <span class="price">
@@ -1129,7 +838,7 @@
                                     <!-- Single Prodect -->
                                     <div class="product">
                                         <div class="thumb">
-                                            <a href="{% url 'single-product' %}" class="image">
+                                            <a href="{% url 'single-product' product.pk|default:0%}" class="image">
                                                 <img src="{% static 'images/product-image/1.jpg' %}" alt="Product" />
                                                 <img class="hover-image" src="{% static 'images/product-image/1.jpg' %}"
                                                     alt="Product" />
@@ -1152,7 +861,7 @@
                                             </span>
                                             <span class="rating-num">( 5 Review )</span>
                                             </span>
-                                            <h5 class="title"><a href="{% url 'single-product' %}">Hand-Made Garlic Mortar
+                                            <h5 class="title"><a href="{% url 'single-product' product.pk|default:0%}">Hand-Made Garlic Mortar
                                                 </a>
                                             </h5>
                                             <span class="price">
@@ -1167,7 +876,7 @@
                                     <!-- Single Prodect -->
                                     <div class="product">
                                         <div class="thumb">
-                                            <a href="{% url 'single-product' %}" class="image">
+                                            <a href="{% url 'single-product' product.pk|default:0%}" class="image">
                                                 <img src="{% static 'images/product-image/2.jpg' %}" alt="Product" />
                                                 <img class="hover-image" src="{% static 'images/product-image/2.jpg' %}"
                                                     alt="Product" />
@@ -1191,7 +900,7 @@
                                             </span>
                                             <span class="rating-num">( 5 Review )</span>
                                             </span>
-                                            <h5 class="title"><a href="{% url 'single-product' %}">Handmade Ceramic Pottery
+                                            <h5 class="title"><a href="{% url 'single-product' product.pk|default:0%}">Handmade Ceramic Pottery
                                                 </a>
                                             </h5>
                                             <span class="price">
@@ -1208,7 +917,7 @@
                                     <!-- Single Prodect -->
                                     <div class="product">
                                         <div class="thumb">
-                                            <a href="{% url 'single-product' %}" class="image">
+                                            <a href="{% url 'single-product' product.pk|default:0%}" class="image">
                                                 <img src="{% static 'images/product-image/3.jpg' %}" alt="Product" />
                                                 <img class="hover-image" src="{% static 'images/product-image/3.jpg' %}"
                                                     alt="Product" />
@@ -1231,7 +940,7 @@
                                             </span>
                                             <span class="rating-num">( 5 Review )</span>
                                             </span>
-                                            <h5 class="title"><a href="{% url 'single-product' %}">Hand Painted Bowls
+                                            <h5 class="title"><a href="{% url 'single-product' product.pk|default:0%}">Hand Painted Bowls
                                                 </a>
                                             </h5>
                                             <span class="price">
@@ -1246,7 +955,7 @@
                                     <!-- Single Prodect -->
                                     <div class="product">
                                         <div class="thumb">
-                                            <a href="{% url 'single-product' %}" class="image">
+                                            <a href="{% url 'single-product' product.pk|default:0%}" class="image">
                                                 <img src="{% static 'images/product-image/4.jpg' %}" alt="Product" />
                                                 <img class="hover-image" src="{% static 'images/product-image/4.jpg' %}"
                                                     alt="Product" />
@@ -1269,7 +978,7 @@
                                             </span>
                                             <span class="rating-num">( 5 Review )</span>
                                             </span>
-                                            <h5 class="title"><a href="{% url 'single-product' %}">Antique Wooden Farm Large
+                                            <h5 class="title"><a href="{% url 'single-product' product.pk|default:0%}">Antique Wooden Farm Large
                                                 </a>
                                             </h5>
                                             <span class="price">
@@ -1286,7 +995,7 @@
                                     <!-- Single Prodect -->
                                     <div class="product">
                                         <div class="thumb">
-                                            <a href="{% url 'single-product' %}" class="image">
+                                            <a href="{% url 'single-product' product.pk|default:0%}" class="image">
                                                 <img src="{% static 'images/product-image/6.jpg' %}" alt="Product" />
                                                 <img class="hover-image" src="{% static 'images/product-image/6.jpg' %}"
                                                     alt="Product" />
@@ -1308,7 +1017,7 @@
                                             </span>
                                             <span class="rating-num">( 5 Review )</span>
                                             </span>
-                                            <h5 class="title"><a href="{% url 'single-product' %}">Handmade Jute Basket
+                                            <h5 class="title"><a href="{% url 'single-product' product.pk|default:0%}">Handmade Jute Basket
                                                 </a>
                                             </h5>
                                             <span class="price">
@@ -1323,7 +1032,7 @@
                                     <!-- Single Prodect -->
                                     <div class="product">
                                         <div class="thumb">
-                                            <a href="{% url 'single-product' %}" class="image">
+                                            <a href="{% url 'single-product' product.pk|default:0%}" class="image">
                                                 <img src="{% static 'images/product-image/7.jpg' %}" alt="Product" />
                                                 <img class="hover-image" src="{% static 'images/product-image/7.jpg' %}"
                                                     alt="Product" />
@@ -1346,7 +1055,7 @@
                                             </span>
                                             <span class="rating-num">( 5 Review )</span>
                                             </span>
-                                            <h5 class="title"><a href="{% url 'single-product' %}">Knitting yarn & crochet hook
+                                            <h5 class="title"><a href="{% url 'single-product' product.pk|default:0%}">Knitting yarn & crochet hook
                                                 </a>
                                             </h5>
                                             <span class="price">
@@ -1362,7 +1071,7 @@
                                     <!-- Single Prodect -->
                                     <div class="product">
                                         <div class="thumb">
-                                            <a href="{% url 'single-product' %}" class="image">
+                                            <a href="{% url 'single-product' product.pk|default:0%}" class="image">
                                                 <img src="{% static 'images/product-image/8.jpg' %}" alt="Product" />
                                                 <img class="hover-image" src="{% static 'images/product-image/8.jpg' %}"
                                                     alt="Product" />
@@ -1386,7 +1095,7 @@
                                             </span>
                                             <span class="rating-num">( 5 Review )</span>
                                             </span>
-                                            <h5 class="title"><a href="{% url 'single-product' %}">David Head Portraits
+                                            <h5 class="title"><a href="{% url 'single-product' product.pk|default:0%}">David Head Portraits
                                                 </a>
                                             </h5>
                                             <span class="price">
@@ -1402,7 +1111,7 @@
                                     <!-- Single Prodect -->
                                     <div class="product">
                                         <div class="thumb">
-                                            <a href="{% url 'single-product' %}" class="image">
+                                            <a href="{% url 'single-product' product.pk|default:0%}" class="image">
                                                 <img src="{% static 'images/product-image/9.jpg' %}" alt="Product" />
                                                 <img class="hover-image" src="{% static 'images/product-image/9.jpg' %}"
                                                     alt="Product" />
@@ -1425,7 +1134,7 @@
                                             </span>
                                             <span class="rating-num">( 5 Review )</span>
                                             </span>
-                                            <h5 class="title"><a href="{% url 'single-product' %}">solid wood cherry paddle
+                                            <h5 class="title"><a href="{% url 'single-product' product.pk|default:0%}">solid wood cherry paddle
                                                 </a>
                                             </h5>
                                             <span class="price">
@@ -1447,7 +1156,7 @@
                                     <!-- Single Prodect -->
                                     <div class="product">
                                         <div class="thumb">
-                                            <a href="{% url 'single-product' %}" class="image">
+                                            <a href="{% url 'single-product' product.pk|default:0%}" class="image">
                                                 <img src="{% static 'images/product-image/1.jpg' %}" alt="Product" />
                                                 <img class="hover-image" src="{% static 'images/product-image/1.jpg' %}"
                                                     alt="Product" />
@@ -1470,7 +1179,7 @@
                                             </span>
                                             <span class="rating-num">( 5 Review )</span>
                                             </span>
-                                            <h5 class="title"><a href="{% url 'single-product' %}">Hand-Made Garlic Mortar
+                                            <h5 class="title"><a href="{% url 'single-product' product.pk|default:0%}">Hand-Made Garlic Mortar
                                                 </a>
                                             </h5>
                                             <span class="price">
@@ -1485,7 +1194,7 @@
                                     <!-- Single Prodect -->
                                     <div class="product">
                                         <div class="thumb">
-                                            <a href="{% url 'single-product' %}" class="image">
+                                            <a href="{% url 'single-product' product.pk|default:0%}" class="image">
                                                 <img src="{% static 'images/product-image/2.jpg' %}" alt="Product" />
                                                 <img class="hover-image" src="{% static 'images/product-image/2.jpg' %}"
                                                     alt="Product" />
@@ -1509,7 +1218,7 @@
                                             </span>
                                             <span class="rating-num">( 5 Review )</span>
                                             </span>
-                                            <h5 class="title"><a href="{% url 'single-product' %}">Handmade Ceramic Pottery
+                                            <h5 class="title"><a href="{% url 'single-product' product.pk|default:0%}">Handmade Ceramic Pottery
                                                 </a>
                                             </h5>
                                             <span class="price">
@@ -1526,7 +1235,7 @@
                                     <!-- Single Prodect -->
                                     <div class="product">
                                         <div class="thumb">
-                                            <a href="{% url 'single-product' %}" class="image">
+                                            <a href="{% url 'single-product' product.pk|default:0%}" class="image">
                                                 <img src="{% static 'images/product-image/3.jpg' %}" alt="Product" />
                                                 <img class="hover-image" src="{% static 'images/product-image/3.jpg' %}"
                                                     alt="Product" />
@@ -1549,7 +1258,7 @@
                                             </span>
                                             <span class="rating-num">( 5 Review )</span>
                                             </span>
-                                            <h5 class="title"><a href="{% url 'single-product' %}">Hand Painted Bowls
+                                            <h5 class="title"><a href="{% url 'single-product' product.pk|default:0%}">Hand Painted Bowls
                                                 </a>
                                             </h5>
                                             <span class="price">
@@ -1564,7 +1273,7 @@
                                     <!-- Single Prodect -->
                                     <div class="product">
                                         <div class="thumb">
-                                            <a href="{% url 'single-product' %}" class="image">
+                                            <a href="{% url 'single-product' product.pk|default:0%}" class="image">
                                                 <img src="{% static 'images/product-image/4.jpg' %}" alt="Product" />
                                                 <img class="hover-image" src="{% static 'images/product-image/4.jpg' %}"
                                                     alt="Product" />
@@ -1587,7 +1296,7 @@
                                             </span>
                                             <span class="rating-num">( 5 Review )</span>
                                             </span>
-                                            <h5 class="title"><a href="{% url 'single-product' %}">Antique Wooden Farm Large
+                                            <h5 class="title"><a href="{% url 'single-product' product.pk|default:0%}">Antique Wooden Farm Large
                                                 </a>
                                             </h5>
                                             <span class="price">
@@ -1604,7 +1313,7 @@
                                     <!-- Single Prodect -->
                                     <div class="product">
                                         <div class="thumb">
-                                            <a href="{% url 'single-product' %}" class="image">
+                                            <a href="{% url 'single-product' product.pk|default:0%}" class="image">
                                                 <img src="{% static 'images/product-image/6.jpg' %}" alt="Product" />
                                                 <img class="hover-image" src="{% static 'images/product-image/6.jpg' %}"
                                                     alt="Product" />
@@ -1626,7 +1335,7 @@
                                             </span>
                                             <span class="rating-num">( 5 Review )</span>
                                             </span>
-                                            <h5 class="title"><a href="{% url 'single-product' %}">Handmade Jute Basket
+                                            <h5 class="title"><a href="{% url 'single-product' product.pk|default:0%}">Handmade Jute Basket
                                                 </a>
                                             </h5>
                                             <span class="price">
@@ -1641,7 +1350,7 @@
                                     <!-- Single Prodect -->
                                     <div class="product">
                                         <div class="thumb">
-                                            <a href="{% url 'single-product' %}" class="image">
+                                            <a href="{% url 'single-product' product.pk|default:0%}" class="image">
                                                 <img src="{% static 'images/product-image/7.jpg' %}" alt="Product" />
                                                 <img class="hover-image" src="{% static 'images/product-image/7.jpg' %}"
                                                     alt="Product" />
@@ -1664,7 +1373,7 @@
                                             </span>
                                             <span class="rating-num">( 5 Review )</span>
                                             </span>
-                                            <h5 class="title"><a href="{% url 'single-product' %}">Knitting yarn & crochet hook
+                                            <h5 class="title"><a href="{% url 'single-product' product.pk|default:0%}">Knitting yarn & crochet hook
                                                 </a>
                                             </h5>
                                             <span class="price">
@@ -1680,7 +1389,7 @@
                                     <!-- Single Prodect -->
                                     <div class="product">
                                         <div class="thumb">
-                                            <a href="{% url 'single-product' %}" class="image">
+                                            <a href="{% url 'single-product' product.pk|default:0%}" class="image">
                                                 <img src="{% static 'images/product-image/8.jpg' %}" alt="Product" />
                                                 <img class="hover-image" src="{% static 'images/product-image/8.jpg' %}"
                                                     alt="Product" />
@@ -1704,7 +1413,7 @@
                                             </span>
                                             <span class="rating-num">( 5 Review )</span>
                                             </span>
-                                            <h5 class="title"><a href="{% url 'single-product' %}">David Head Portraits
+                                            <h5 class="title"><a href="{% url 'single-product' product.pk|default:0%}">David Head Portraits
                                                 </a>
                                             </h5>
                                             <span class="price">
@@ -1720,7 +1429,7 @@
                                     <!-- Single Prodect -->
                                     <div class="product">
                                         <div class="thumb">
-                                            <a href="{% url 'single-product' %}" class="image">
+                                            <a href="{% url 'single-product' product.pk|default:0%}" class="image">
                                                 <img src="{% static 'images/product-image/9.jpg' %}" alt="Product" />
                                                 <img class="hover-image" src="{% static 'images/product-image/9.jpg' %}"
                                                     alt="Product" />
@@ -1743,7 +1452,7 @@
                                             </span>
                                             <span class="rating-num">( 5 Review )</span>
                                             </span>
-                                            <h5 class="title"><a href="{% url 'single-product' %}">solid wood cherry paddle
+                                            <h5 class="title"><a href="{% url 'single-product' product.pk|default:0%}">solid wood cherry paddle
                                                 </a>
                                             </h5>
                                             <span class="price">
@@ -1765,7 +1474,7 @@
                                     <!-- Single Prodect -->
                                     <div class="product">
                                         <div class="thumb">
-                                            <a href="{% url 'single-product' %}" class="image">
+                                            <a href="{% url 'single-product' product.pk|default:0%}" class="image">
                                                 <img src="{% static 'images/product-image/1.jpg' %}" alt="Product" />
                                                 <img class="hover-image" src="{% static 'images/product-image/1.jpg' %}"
                                                     alt="Product" />
@@ -1788,7 +1497,7 @@
                                             </span>
                                             <span class="rating-num">( 5 Review )</span>
                                             </span>
-                                            <h5 class="title"><a href="{% url 'single-product' %}">Hand-Made Garlic Mortar
+                                            <h5 class="title"><a href="{% url 'single-product' product.pk|default:0%}">Hand-Made Garlic Mortar
                                                 </a>
                                             </h5>
                                             <span class="price">
@@ -1803,7 +1512,7 @@
                                     <!-- Single Prodect -->
                                     <div class="product">
                                         <div class="thumb">
-                                            <a href="{% url 'single-product' %}" class="image">
+                                            <a href="{% url 'single-product' product.pk|default:0%}" class="image">
                                                 <img src="{% static 'images/product-image/2.jpg' %}" alt="Product" />
                                                 <img class="hover-image" src="{% static 'images/product-image/2.jpg' %}"
                                                     alt="Product" />
@@ -1827,7 +1536,7 @@
                                             </span>
                                             <span class="rating-num">( 5 Review )</span>
                                             </span>
-                                            <h5 class="title"><a href="{% url 'single-product' %}">Handmade Ceramic Pottery
+                                            <h5 class="title"><a href="{% url 'single-product' product.pk|default:0%}">Handmade Ceramic Pottery
                                                 </a>
                                             </h5>
                                             <span class="price">
@@ -1844,7 +1553,7 @@
                                     <!-- Single Prodect -->
                                     <div class="product">
                                         <div class="thumb">
-                                            <a href="{% url 'single-product' %}" class="image">
+                                            <a href="{% url 'single-product' product.pk|default:0%}" class="image">
                                                 <img src="{% static 'images/product-image/3.jpg' %}" alt="Product" />
                                                 <img class="hover-image" src="{% static 'images/product-image/3.jpg' %}"
                                                     alt="Product" />
@@ -1867,7 +1576,7 @@
                                             </span>
                                             <span class="rating-num">( 5 Review )</span>
                                             </span>
-                                            <h5 class="title"><a href="{% url 'single-product' %}">Hand Painted Bowls
+                                            <h5 class="title"><a href="{% url 'single-product' product.pk|default:0%}">Hand Painted Bowls
                                                 </a>
                                             </h5>
                                             <span class="price">
@@ -1882,7 +1591,7 @@
                                     <!-- Single Prodect -->
                                     <div class="product">
                                         <div class="thumb">
-                                            <a href="{% url 'single-product' %}" class="image">
+                                            <a href="{% url 'single-product' product.pk|default:0%}" class="image">
                                                 <img src="{% static 'images/product-image/4.jpg' %}" alt="Product" />
                                                 <img class="hover-image" src="{% static 'images/product-image/4.jpg' %}"
                                                     alt="Product" />
@@ -1905,7 +1614,7 @@
                                             </span>
                                             <span class="rating-num">( 5 Review )</span>
                                             </span>
-                                            <h5 class="title"><a href="{% url 'single-product' %}">Antique Wooden Farm Large
+                                            <h5 class="title"><a href="{% url 'single-product' product.pk|default:0%}">Antique Wooden Farm Large
                                                 </a>
                                             </h5>
                                             <span class="price">
@@ -1922,7 +1631,7 @@
                                     <!-- Single Prodect -->
                                     <div class="product">
                                         <div class="thumb">
-                                            <a href="{% url 'single-product' %}" class="image">
+                                            <a href="{% url 'single-product' product.pk|default:0%}" class="image">
                                                 <img src="{% static 'images/product-image/6.jpg' %}" alt="Product" />
                                                 <img class="hover-image" src="{% static 'images/product-image/6.jpg' %}"
                                                     alt="Product" />
@@ -1944,7 +1653,7 @@
                                             </span>
                                             <span class="rating-num">( 5 Review )</span>
                                             </span>
-                                            <h5 class="title"><a href="{% url 'single-product' %}">Handmade Jute Basket
+                                            <h5 class="title"><a href="{% url 'single-product' product.pk|default:0%}">Handmade Jute Basket
                                                 </a>
                                             </h5>
                                             <span class="price">
@@ -1959,7 +1668,7 @@
                                     <!-- Single Prodect -->
                                     <div class="product">
                                         <div class="thumb">
-                                            <a href="{% url 'single-product' %}" class="image">
+                                            <a href="{% url 'single-product' product.pk|default:0%}" class="image">
                                                 <img src="{% static 'images/product-image/7.jpg' %}" alt="Product" />
                                                 <img class="hover-image" src="{% static 'images/product-image/7.jpg' %}"
                                                     alt="Product" />
@@ -1982,7 +1691,7 @@
                                             </span>
                                             <span class="rating-num">( 5 Review )</span>
                                             </span>
-                                            <h5 class="title"><a href="{% url 'single-product' %}">Knitting yarn & crochet hook
+                                            <h5 class="title"><a href="{% url 'single-product' product.pk|default:0%}">Knitting yarn & crochet hook
                                                 </a>
                                             </h5>
                                             <span class="price">
@@ -1998,7 +1707,7 @@
                                     <!-- Single Prodect -->
                                     <div class="product">
                                         <div class="thumb">
-                                            <a href="{% url 'single-product' %}" class="image">
+                                            <a href="{% url 'single-product' product.pk|default:0%}" class="image">
                                                 <img src="{% static 'images/product-image/8.jpg' %}" alt="Product" />
                                                 <img class="hover-image" src="{% static 'images/product-image/8.jpg' %}"
                                                     alt="Product" />
@@ -2022,7 +1731,7 @@
                                             </span>
                                             <span class="rating-num">( 5 Review )</span>
                                             </span>
-                                            <h5 class="title"><a href="{% url 'single-product' %}">David Head Portraits
+                                            <h5 class="title"><a href="{% url 'single-product' product.pk|default:0%}">David Head Portraits
                                                 </a>
                                             </h5>
                                             <span class="price">
@@ -2038,7 +1747,7 @@
                                     <!-- Single Prodect -->
                                     <div class="product">
                                         <div class="thumb">
-                                            <a href="{% url 'single-product' %}" class="image">
+                                            <a href="{% url 'single-product' product.pk|default:0%}" class="image">
                                                 <img src="{% static 'images/product-image/9.jpg' %}" alt="Product" />
                                                 <img class="hover-image" src="{% static 'images/product-image/9.jpg' %}"
                                                     alt="Product" />
@@ -2061,7 +1770,7 @@
                                             </span>
                                             <span class="rating-num">( 5 Review )</span>
                                             </span>
-                                            <h5 class="title"><a href="{% url 'single-product' %}">solid wood cherry paddle
+                                            <h5 class="title"><a href="{% url 'single-product' product.pk|default:0%}">solid wood cherry paddle
                                                 </a>
                                             </h5>
                                             <span class="price">
@@ -2141,7 +1850,7 @@
                                 <span class="old"> <del>$25.00</del></span>
                             <span class="new">- $18.00</span>
                             </span>
-                            <a href="{% url 'single-product' %}" class="btn btn-lg btn-primary">Add To Cart</a>
+                            <a href="{% url 'single-product' product.id|default:30 %}" class="btn btn-lg btn-primary">Add To Cart</a>
                         </div>
                         <div class="deal-image">
                             <img class="img-fluid" src="{% static 'images/deal-img/woman.png' %}" alt="">
@@ -2198,7 +1907,7 @@
                                         <!-- Single Prodect -->
                                         <div class="product">
                                             <div class="thumb">
-                                                <a href="{% url 'single-product' %}" class="image">
+                                                <a href="{% url 'single-product' product.pk|default:0%}" class="image">
                                                     <img src="{% static 'images/product-image/9.jpg' %}" alt="Product" />
                                                     <img class="hover-image" src="{% static 'images/product-image/9.jpg' %}"
                                                         alt="Product" />
@@ -2221,7 +1930,7 @@
                                                 </span>
                                                 <span class="rating-num">( 5 Review )</span>
                                                 </span>
-                                                <h5 class="title"><a href="{% url 'single-product' %}">Hand-Made Garlic Mortar
+                                                <h5 class="title"><a href="{% url 'single-product' product.pk|default:0%}">Hand-Made Garlic Mortar
                                                     </a>
                                                 </h5>
                                                 <span class="price">
@@ -2236,7 +1945,7 @@
                                         <!-- Single Prodect -->
                                         <div class="product">
                                             <div class="thumb">
-                                                <a href="{% url 'single-product' %}" class="image">
+                                                <a href="{% url 'single-product' product.pk|default:0%}" class="image">
                                                     <img src="{% static 'images/product-image/10.jpg' %}" alt="Product" />
                                                     <img class="hover-image" src="{% static 'images/product-image/10.jpg' %}"
                                                         alt="Product" />
@@ -2260,7 +1969,7 @@
                                                 </span>
                                                 <span class="rating-num">( 5 Review )</span>
                                                 </span>
-                                                <h5 class="title"><a href="{% url 'single-product' %}">Handmade Ceramic Pottery
+                                                <h5 class="title"><a href="{% url 'single-product' product.pk|default:0%}">Handmade Ceramic Pottery
                                                     </a>
                                                 </h5>
                                                 <span class="price">
@@ -2277,7 +1986,7 @@
                                         <!-- Single Prodect -->
                                         <div class="product">
                                             <div class="thumb">
-                                                <a href="{% url 'single-product' %}" class="image">
+                                                <a href="{% url 'single-product' product.pk|default:0%}" class="image">
                                                     <img src="{% static 'images/product-image/11.jpg' %}" alt="Product" />
                                                     <img class="hover-image" src="{% static 'images/product-image/11.jpg' %}"
                                                         alt="Product" />
@@ -2300,7 +2009,7 @@
                                                 </span>
                                                 <span class="rating-num">( 5 Review )</span>
                                                 </span>
-                                                <h5 class="title"><a href="{% url 'single-product' %}">Hand Painted Bowls
+                                                <h5 class="title"><a href="{% url 'single-product' product.pk|default:0%}">Hand Painted Bowls
                                                     </a>
                                                 </h5>
                                                 <span class="price">
@@ -2315,7 +2024,7 @@
                                         <!-- Single Prodect -->
                                         <div class="product">
                                             <div class="thumb">
-                                                <a href="{% url 'single-product' %}" class="image">
+                                                <a href="{% url 'single-product' product.pk|default:0%}" class="image">
                                                     <img src="{% static 'images/product-image/12.jpg' %}" alt="Product" />
                                                     <img class="hover-image" src="{% static 'images/product-image/12.jpg' %}"
                                                         alt="Product" />
@@ -2338,7 +2047,7 @@
                                                 </span>
                                                 <span class="rating-num">( 5 Review )</span>
                                                 </span>
-                                                <h5 class="title"><a href="{% url 'single-product' %}">Antique Wooden Farm
+                                                <h5 class="title"><a href="{% url 'single-product' product.pk|default:0%}">Antique Wooden Farm
                                                         Large
                                                     </a>
                                                 </h5>
@@ -2356,7 +2065,7 @@
                                         <!-- Single Prodect -->
                                         <div class="product">
                                             <div class="thumb">
-                                                <a href="{% url 'single-product' %}" class="image">
+                                                <a href="{% url 'single-product' product.pk|default:0%}" class="image">
                                                     <img src="{% static 'images/product-image/6.jpg' %}" alt="Product" />
                                                     <img class="hover-image" src="{% static 'images/product-image/6.jpg' %}"
                                                         alt="Product" />
@@ -2378,7 +2087,7 @@
                                                 </span>
                                                 <span class="rating-num">( 5 Review )</span>
                                                 </span>
-                                                <h5 class="title"><a href="{% url 'single-product' %}">Handmade Jute Basket
+                                                <h5 class="title"><a href="{% url 'single-product' product.pk|default:0%}">Handmade Jute Basket
                                                     </a>
                                                 </h5>
                                                 <span class="price">
@@ -2393,7 +2102,7 @@
                                         <!-- Single Prodect -->
                                         <div class="product">
                                             <div class="thumb">
-                                                <a href="{% url 'single-product' %}" class="image">
+                                                <a href="{% url 'single-product' product.pk|default:0%}" class="image">
                                                     <img src="{% static 'images/product-image/7.jpg' %}" alt="Product" />
                                                     <img class="hover-image" src="{% static 'images/product-image/7.jpg' %}"
                                                         alt="Product" />
@@ -2416,7 +2125,7 @@
                                                 </span>
                                                 <span class="rating-num">( 5 Review )</span>
                                                 </span>
-                                                <h5 class="title"><a href="{% url 'single-product' %}">Knitting yarn & crochet
+                                                <h5 class="title"><a href="{% url 'single-product' product.pk|default:0%}">Knitting yarn & crochet
                                                         hook
                                                     </a>
                                                 </h5>
@@ -2432,8 +2141,8 @@
                                 </div>
                                 <!-- Add Arrows -->
                                 <div class="swiper-buttons">
-                                    <div class="swiper-button-next"></div>
-                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-button-next">  <img src="{% static 'images/icons/right-arrow.png' %}" alt=""></div>
+                                    <div class="swiper-button-prev"> <img src="{% static 'images/icons/left-arrow.png' %}" alt=""></div>
                                 </div>
                             </div>
                         </div>
@@ -2446,7 +2155,7 @@
                                         <!-- Single Prodect -->
                                         <div class="product">
                                             <div class="thumb">
-                                                <a href="{% url 'single-product' %}" class="image">
+                                                <a href="{% url 'single-product' product.pk|default:0%}" class="image">
                                                     <img src="{% static 'images/product-image/9.jpg' %}" alt="Product" />
                                                     <img class="hover-image" src="{% static 'images/product-image/9.jpg' %}"
                                                         alt="Product" />
@@ -2469,7 +2178,7 @@
                                                 </span>
                                                 <span class="rating-num">( 5 Review )</span>
                                                 </span>
-                                                <h5 class="title"><a href="{% url 'single-product' %}">Hand-Made Garlic Mortar
+                                                <h5 class="title"><a href="{% url 'single-product' product.pk|default:0%}">Hand-Made Garlic Mortar
                                                     </a>
                                                 </h5>
                                                 <span class="price">
@@ -2484,7 +2193,7 @@
                                         <!-- Single Prodect -->
                                         <div class="product">
                                             <div class="thumb">
-                                                <a href="{% url 'single-product' %}" class="image">
+                                                <a href="{% url 'single-product' product.pk|default:0%}" class="image">
                                                     <img src="{% static 'images/product-image/10.jpg' %}" alt="Product" />
                                                     <img class="hover-image" src="{% static 'images/product-image/10.jpg' %}" alt="Product" />
                                                 </a>
@@ -2507,7 +2216,7 @@
                                                 </span>
                                                 <span class="rating-num">( 5 Review )</span>
                                                 </span>
-                                                <h5 class="title"><a href="{% url 'single-product' %}">Handmade Ceramic Pottery
+                                                <h5 class="title"><a href="{% url 'single-product' product.pk|default:0%}">Handmade Ceramic Pottery
                                                     </a>
                                                 </h5>
                                                 <span class="price">
@@ -2524,7 +2233,7 @@
                                         <!-- Single Prodect -->
                                         <div class="product">
                                             <div class="thumb">
-                                                <a href="{% url 'single-product' %}" class="image">
+                                                <a href="{% url 'single-product' product.pk|default:0%}" class="image">
                                                     <img src="{% static 'images/product-image/11.jpg' %}" alt="Product" />
                                                     <img class="hover-image" src="{% static 'images/product-image/11.jpg' %}"
                                                         alt="Product" />
@@ -2547,7 +2256,7 @@
                                                 </span>
                                                 <span class="rating-num">( 5 Review )</span>
                                                 </span>
-                                                <h5 class="title"><a href="{% url 'single-product' %}">Hand Painted Bowls
+                                                <h5 class="title"><a href="{% url 'single-product' product.pk|default:0%}">Hand Painted Bowls
                                                     </a>
                                                 </h5>
                                                 <span class="price">
@@ -2562,7 +2271,7 @@
                                         <!-- Single Prodect -->
                                         <div class="product">
                                             <div class="thumb">
-                                                <a href="{% url 'single-product' %}" class="image">
+                                                <a href="{% url 'single-product' product.pk|default:0%}" class="image">
                                                     <img src="{% static 'images/product-image/12.jpg' %}" alt="Product" />
                                                     <img class="hover-image" src="{% static 'images/product-image/12.jpg' %}"
                                                         alt="Product" />
@@ -2585,7 +2294,7 @@
                                                 </span>
                                                 <span class="rating-num">( 5 Review )</span>
                                                 </span>
-                                                <h5 class="title"><a href="{% url 'single-product' %}">Antique Wooden Farm
+                                                <h5 class="title"><a href="{% url 'single-product' product.pk|default:0%}">Antique Wooden Farm
                                                         Large
                                                     </a>
                                                 </h5>
@@ -2603,7 +2312,7 @@
                                         <!-- Single Prodect -->
                                         <div class="product">
                                             <div class="thumb">
-                                                <a href="{% url 'single-product' %}" class="image">
+                                                <a href="{% url 'single-product' product.pk|default:0%}" class="image">
                                                     <img src="{% static 'images/product-image' %}/6.jpg" alt="Product" />
                                                     <img class="hover-image" src="{% static 'images/product-image/6.jpg' %}"
                                                         alt="Product" />
@@ -2625,7 +2334,7 @@
                                                 </span>
                                                 <span class="rating-num">( 5 Review )</span>
                                                 </span>
-                                                <h5 class="title"><a href="{% url 'single-product' %}">Handmade Jute Basket
+                                                <h5 class="title"><a href="{% url 'single-product' product.pk|default:0%}">Handmade Jute Basket
                                                     </a>
                                                 </h5>
                                                 <span class="price">
@@ -2640,7 +2349,7 @@
                                         <!-- Single Prodect -->
                                         <div class="product">
                                             <div class="thumb">
-                                                <a href="{% url 'single-product' %}" class="image">
+                                                <a href="{% url 'single-product' product.pk|default:0%}" class="image">
                                                     <img src="{% static 'images/product-image/7.jpg' %}" alt="Product" />
                                                     <img class="hover-image" src="{% static 'images/product-image/7.jpg' %}"
                                                         alt="Product" />
@@ -2663,7 +2372,7 @@
                                                 </span>
                                                 <span class="rating-num">( 5 Review )</span>
                                                 </span>
-                                                <h5 class="title"><a href="{% url 'single-product' %}">Knitting yarn & crochet
+                                                <h5 class="title"><a href="{% url 'single-product' product.pk|default:0%}">Knitting yarn & crochet
                                                         hook
                                                     </a>
                                                 </h5>
@@ -2679,8 +2388,8 @@
                                 </div>
                                 <!-- Add Arrows -->
                                 <div class="swiper-buttons">
-                                    <div class="swiper-button-next"></div>
-                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-button-next">  <img src="{% static 'images/icons/right-arrow.png' %}" alt=""></div>
+                                    <div class="swiper-button-prev"> <img src="{% static 'images/icons/left-arrow.png' %}" alt=""></div>
                                 </div>
                             </div>
                         </div>
@@ -2693,7 +2402,7 @@
                                         <!-- Single Prodect -->
                                         <div class="product">
                                             <div class="thumb">
-                                                <a href="{% url 'single-product' %}" class="image">
+                                                <a href="{% url 'single-product' product.pk|default:0%}" class="image">
                                                     <img src="{% static 'images/product-image/9.jpg' %}" alt="Product" />
                                                     <img class="hover-image" src="{% static 'images/product-image/9.jpg' %}"
                                                         alt="Product" />
@@ -2716,7 +2425,7 @@
                                                 </span>
                                                 <span class="rating-num">( 5 Review )</span>
                                                 </span>
-                                                <h5 class="title"><a href="{% url 'single-product' %}">Hand-Made Garlic Mortar
+                                                <h5 class="title"><a href="{% url 'single-product' product.pk|default:0%}">Hand-Made Garlic Mortar
                                                     </a>
                                                 </h5>
                                                 <span class="price">
@@ -2731,7 +2440,7 @@
                                         <!-- Single Prodect -->
                                         <div class="product">
                                             <div class="thumb">
-                                                <a href="{% url 'single-product' %}" class="image">
+                                                <a href="{% url 'single-product' product.pk|default:0%}" class="image">
                                                     <img src="{% static 'images/product-image/10.jpg' %}" alt="Product" />
                                                     <img class="hover-image" src="{% static 'images/product-image/10.jpg' %}" alt="Product" />
                                                 </a>
@@ -2754,7 +2463,7 @@
                                                 </span>
                                                 <span class="rating-num">( 5 Review )</span>
                                                 </span>
-                                                <h5 class="title"><a href="{% url 'single-product' %}">Handmade Ceramic Pottery
+                                                <h5 class="title"><a href="{% url 'single-product' product.pk|default:0%}">Handmade Ceramic Pottery
                                                     </a>
                                                 </h5>
                                                 <span class="price">
@@ -2771,7 +2480,7 @@
                                         <!-- Single Prodect -->
                                         <div class="product">
                                             <div class="thumb">
-                                                <a href="{% url 'single-product' %}" class="image">
+                                                <a href="{% url 'single-product' product.pk|default:0%}" class="image">
                                                     <img src="{% static 'images/product-image/11.jpg' %}" alt="Product" />
                                                     <img class="hover-image" src="{% static 'images/product-image/11.jpg' %}"
                                                         alt="Product" />
@@ -2794,7 +2503,7 @@
                                                 </span>
                                                 <span class="rating-num">( 5 Review )</span>
                                                 </span>
-                                                <h5 class="title"><a href="{% url 'single-product' %}">Hand Painted Bowls
+                                                <h5 class="title"><a href="{% url 'single-product' product.pk|default:0%}">Hand Painted Bowls
                                                     </a>
                                                 </h5>
                                                 <span class="price">
@@ -2809,7 +2518,7 @@
                                         <!-- Single Prodect -->
                                         <div class="product">
                                             <div class="thumb">
-                                                <a href="{% url 'single-product' %}" class="image">
+                                                <a href="{% url 'single-product' product.pk|default:0%}" class="image">
                                                     <img src="{% static 'images/product-image/12.jpg' %}" alt="Product" />
                                                     <img class="hover-image" src="{% static 'images/product-image/12.jpg' %}"
                                                         alt="Product" />
@@ -2817,13 +2526,10 @@
                                                 <span class="badges">
                                                     <span class="sale">-5%</span>
                                                 </span>
-                                                <div class="actions">
-                                                    <a href="{% url 'wishlist' %}" class="action wishlist" title="Wishlist"><i
-                                                            class="pe-7s-like"></i></a>
-                                                    <a href="#" class="action quickview" data-link-action="quickview" title="Quick view" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="pe-7s-look"></i></a>
-                                                    <a href="{% url 'compare' %}" class="action compare" title="Compare"><i
-                                                            class="pe-7s-refresh-2"></i></a>
-                                                </div>
+                                                    <div class="actions">
+                                                        <a href="{% url 'wishlist' %}" class="action wishlist" title="Wishlist"><img src="{% static 'images/icons/wishlist-star.png' %}" alt=""></a>
+                                                        <a href="{% url 'compare' %}" class="action compare" title="Compare"><img src="{% static 'images/icons/scales.png' %}" alt=""></a>
+                                                    </div>
                                             </div>
                                             <div class="content">
                                                 <span class="ratings">
@@ -2832,7 +2538,7 @@
                                                 </span>
                                                 <span class="rating-num">( 5 Review )</span>
                                                 </span>
-                                                <h5 class="title"><a href="{% url 'single-product' %}">Antique Wooden Farm
+                                                <h5 class="title"><a href="{% url 'single-product' product.pk|default:0%}">Antique Wooden Farm
                                                         Large
                                                     </a>
                                                 </h5>
@@ -2850,7 +2556,7 @@
                                         <!-- Single Prodect -->
                                         <div class="product">
                                             <div class="thumb">
-                                                <a href="{% url 'single-product' %}" class="image">
+                                                <a href="{% url 'single-product' product.pk|default:0%}" class="image">
                                                     <img src="{% static 'images/product-image/6.jpg' %}" alt="Product" />
                                                     <img class="hover-image" src="{% static 'images/product-image/6.jpg' %}"
                                                         alt="Product" />
@@ -2872,7 +2578,7 @@
                                                 </span>
                                                 <span class="rating-num">( 5 Review )</span>
                                                 </span>
-                                                <h5 class="title"><a href="{% url 'single-product' %}">Handmade Jute Basket
+                                                <h5 class="title"><a href="{% url 'single-product' product.pk|default:0%}">Handmade Jute Basket
                                                     </a>
                                                 </h5>
                                                 <span class="price">
@@ -2887,7 +2593,7 @@
                                         <!-- Single Prodect -->
                                         <div class="product">
                                             <div class="thumb">
-                                                <a href="{% url 'single-product' %}" class="image">
+                                                <a href="{% url 'single-product' product.pk|default:0%}" class="image">
                                                     <img src="{% static 'images/product-image/7.jpg' %}" alt="Product" />
                                                     <img class="hover-image" src="{% static 'images/product-image/7.jpg' %}"
                                                         alt="Product" />
@@ -2910,7 +2616,7 @@
                                                 </span>
                                                 <span class="rating-num">( 5 Review )</span>
                                                 </span>
-                                                <h5 class="title"><a href="{% url 'single-product' %}">Knitting yarn & crochet
+                                                <h5 class="title"><a href="{% url 'single-product' product.pk|default:0%}">Knitting yarn & crochet
                                                         hook
                                                     </a>
                                                 </h5>
@@ -2926,8 +2632,8 @@
                                 </div>
                                 <!-- Add Arrows -->
                                 <div class="swiper-buttons">
-                                    <div class="swiper-button-next"></div>
-                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-button-next">  <img src="{% static 'images/icons/right-arrow.png' %}" alt=""></div>
+                                    <div class="swiper-button-prev"> <img src="{% static 'images/icons/left-arrow.png' %}" alt=""></div>
                                 </div>
                             </div>
                         </div>
@@ -2940,7 +2646,7 @@
                                         <!-- Single Prodect -->
                                         <div class="product">
                                             <div class="thumb">
-                                                <a href="{% url 'single-product' %}" class="image">
+                                                <a href="{% url 'single-product' product.pk|default:0%}" class="image">
                                                     <img src="{% static 'images/product-image/9.jpg' %}" alt="Product" />
                                                     <img class="hover-image" src="{% static 'images/product-image/9.jpg' %}"
                                                         alt="Product" />
@@ -2963,7 +2669,7 @@
                                                 </span>
                                                 <span class="rating-num">( 5 Review )</span>
                                                 </span>
-                                                <h5 class="title"><a href="{% url 'single-product' %}">Hand-Made Garlic Mortar
+                                                <h5 class="title"><a href="{% url 'single-product' product.pk|default:0%}">Hand-Made Garlic Mortar
                                                     </a>
                                                 </h5>
                                                 <span class="price">
@@ -2978,7 +2684,7 @@
                                         <!-- Single Prodect -->
                                         <div class="product">
                                             <div class="thumb">
-                                                <a href="{% url 'single-product' %}" class="image">
+                                                <a href="{% url 'single-product' product.pk|default:0%}" class="image">
                                                     <img src="{% static 'images/product-image/10.jpg' %}" alt="Product" />
                                                     <img class="hover-image" src="{% static 'images/product-image/10.jpg' %}" alt="Product" />
                                                 </a>
@@ -3001,7 +2707,7 @@
                                                 </span>
                                                 <span class="rating-num">( 5 Review )</span>
                                                 </span>
-                                                <h5 class="title"><a href="{% url 'single-product' %}">Handmade Ceramic Pottery
+                                                <h5 class="title"><a href="{% url 'single-product' product.pk|default:0%}">Handmade Ceramic Pottery
                                                     </a>
                                                 </h5>
                                                 <span class="price">
@@ -3018,7 +2724,7 @@
                                         <!-- Single Prodect -->
                                         <div class="product">
                                             <div class="thumb">
-                                                <a href="{% url 'single-product' %}" class="image">
+                                                <a href="{% url 'single-product' product.pk|default:0%}" class="image">
                                                     <img src="{% static 'images/product-image/11.jpg' %}" alt="Product" />
                                                     <img class="hover-image" src="{% static 'images/product-image/11.jpg' %}"
                                                         alt="Product" />
@@ -3041,7 +2747,7 @@
                                                 </span>
                                                 <span class="rating-num">( 5 Review )</span>
                                                 </span>
-                                                <h5 class="title"><a href="{% url 'single-product' %}">Hand Painted Bowls
+                                                <h5 class="title"><a href="{% url 'single-product' product.pk|default:0%}">Hand Painted Bowls
                                                     </a>
                                                 </h5>
                                                 <span class="price">
@@ -3056,7 +2762,7 @@
                                         <!-- Single Prodect -->
                                         <div class="product">
                                             <div class="thumb">
-                                                <a href="{% url 'single-product' %}" class="image">
+                                                <a href="{% url 'single-product' product.pk|default:0%}" class="image">
                                                     <img src="{% static 'images/product-image/12.jpg' %}" alt="Product" />
                                                     <img class="hover-image" src="{% static 'images/product-image/12.jpg' %}"
                                                         alt="Product" />
@@ -3079,7 +2785,7 @@
                                                 </span>
                                                 <span class="rating-num">( 5 Review )</span>
                                                 </span>
-                                                <h5 class="title"><a href="{% url 'single-product' %}">Antique Wooden Farm
+                                                <h5 class="title"><a href="{% url 'single-product' product.pk|default:0%}">Antique Wooden Farm
                                                         Large
                                                     </a>
                                                 </h5>
@@ -3097,7 +2803,7 @@
                                         <!-- Single Prodect -->
                                         <div class="product">
                                             <div class="thumb">
-                                                <a href="{% url 'single-product' %}" class="image">
+                                                <a href="{% url 'single-product' product.pk|default:0%}" class="image">
                                                     <img src="{% static 'images/product-image/6.jpg' %}" alt="Product" />
                                                     <img class="hover-image" src="{% static 'images/product-image/6.jpg' %}"
                                                         alt="Product" />
@@ -3119,7 +2825,7 @@
                                                 </span>
                                                 <span class="rating-num">( 5 Review )</span>
                                                 </span>
-                                                <h5 class="title"><a href="{% url 'single-product' %}">Handmade Jute Basket
+                                                <h5 class="title"><a href="{% url 'single-product' product.pk|default:0%}">Handmade Jute Basket
                                                     </a>
                                                 </h5>
                                                 <span class="price">
@@ -3134,7 +2840,7 @@
                                         <!-- Single Prodect -->
                                         <div class="product">
                                             <div class="thumb">
-                                                <a href="{% url 'single-product' %}" class="image">
+                                                <a href="{% url 'single-product' product.pk|default:0%}" class="image">
                                                     <img src="{% static 'images/product-image/7.jpg' %}" alt="Product" />
                                                     <img class="hover-image" src="{% static 'images/product-image/7.jpg' %}"
                                                         alt="Product" />
@@ -3157,7 +2863,7 @@
                                                 </span>
                                                 <span class="rating-num">( 5 Review )</span>
                                                 </span>
-                                                <h5 class="title"><a href="{% url 'single-product' %}">Knitting yarn & crochet
+                                                <h5 class="title"><a href="{% url 'single-product' product.pk|default:0%}">Knitting yarn & crochet
                                                         hook
                                                     </a>
                                                 </h5>
@@ -3173,8 +2879,8 @@
                                 </div>
                                 <!-- Add Arrows -->
                                 <div class="swiper-buttons">
-                                    <div class="swiper-button-next"></div>
-                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-button-next">  <img src="{% static 'images/icons/right-arrow.png' %}" alt=""></div>
+                                    <div class="swiper-button-prev"> <img src="{% static 'images/icons/left-arrow.png' %}" alt=""></div>
                                 </div>
                             </div>
                         </div>
@@ -3237,7 +2943,12 @@
                 <div class="col-md-12">
                     <div class="section-title text-center mb-30px0px">
                         <h2 class="title">Latest Blog</h2>
-                        <p class="sub-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod incididunt ut labore et dolore magna aliqua.
+                        <p class="sub-title">
+                            Handmade pieces are created in a world that doesn’t rush. 
+                            Every mark, stitch, and curve is the result of time, intention, and human hands doing what machines still can’t replicate convincingly.
+                            Unlike mass-produced items, handmade products carry subtle variations. 
+                            Those small differences aren’t flaws. 
+                            They’re proof. Proof that the object wasn’t rushed through an assembly line or approved by an algorithm having a busy day.
                         </p>
                     </div>
                 </div>
@@ -3271,7 +2982,7 @@
                         </div>
                         <div class="blog-text">
                             <div class="blog-athor-date">
-                                <span> By,<a class="blog-author cercle-shape" href="#"> June Cha</a></span>
+                                <span> By,<a class="blog-author cercle-shape" href="#">John Doe</a></span>
                                 <span class="blog-date">25 May, 2023</span>
                             </div>
                             <h5 class="blog-heading"><a class="blog-heading-link" href="{% url 'blog-single' %}">7 Best Blogs to Follow About Handmade Goods
@@ -3290,13 +3001,12 @@
                         </div>
                         <div class="blog-text">
                             <div class="blog-athor-date">
-                                <span> By,<a class="blog-author cercle-shape" href="#"> June Cha</a></span>
+                                <span> By,<a class="blog-author cercle-shape" href="#"> Jane Doe</a></span>
                                 <span class="blog-date">25 May, 2023</span>
                             </div>
                             <h5 class="blog-heading"><a class="blog-heading-link" href="{% url 'blog-single' %}">Us Too. 6 Reasons We Just Can't Stop
-                            </a></h5>
-                            
-                                
+                            </a>
+                            </h5>
                             <a href="{% url 'blog-single' %}" class="btn btn-primary blog-btn"> Read More</a>
                         </div>
                     </div>

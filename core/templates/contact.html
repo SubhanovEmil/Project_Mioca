@@ -33,7 +33,7 @@
                                 Contact Us Now</h4>
                             <div class="single-contact">
                                 <div class="icon-box">
-                                    <i class="pe-7s-call"></i>
+                                    <img src="{% static 'images/icons/oldphone.png' %}" alt="">
                                 </div>
                                 <div class="info-box">
                                     <h5 class="title">Phone:</h5>
@@ -42,7 +42,7 @@
                             </div>
                             <div class="single-contact">
                                 <div class="icon-box">
-                                    <i class="pe-7s-mail"></i>
+                                    <img src="{% static 'images/icons/google.png' %}" alt="">
                                 </div>
                                 <div class="info-box">
                                     <h5 class="title">Email:</h5>
@@ -51,7 +51,7 @@
                             </div>
                             <div class="single-contact">
                                 <div class="icon-box">
-                                    <i class="pe-7s-map-marker"></i>
+                                    <img src="{% static 'images/icons/location.png' %}" alt="">
                                 </div>
                                 <div class="info-box">
                                     <h5 class="title">Address:</h5>
@@ -59,18 +59,12 @@
                                 </div>
                             </div>
                             <ul class="social">
-                                <li class="m-0">
-                                    <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
-                                </li>
-                                <li>
-                                    <a href="https://www.twitter.com/"><i class="fa fa-twitter"></i></a>
-                                </li>
-                                <li>
-                                    <a href="https://www.pinterest.com/"><i class="fa fa-pinterest"></i></a>
-                                </li>
-                                <li>
-                                    <a href="https://www.dribbble.com/"><i class="fa fa-dribbble"></i></a>
-                                </li>
+
+                                <li><a href="https://www.facebook.com/"><img src="{% static 'images/icons/facebook.png' %}" alt="No image"></a></li>
+                                <li><a href="https://www.twitter.com/"><img src="{% static 'images/icons/twitter.png' %}" alt="No image"></a></li>
+                                <li><a href="https://www.dribbble.com/"><img src="{% static 'images/icons/dribbble.png' %}" alt="No image"></a></li>
+                                <li><a href="https://www.pinterest.com/"><img src="{% static 'images/icons/pinterest.png' %}" alt="No image"></a></li>
+                            
                             </ul>
                         </div>
                     </div>
@@ -78,24 +72,28 @@
                         <div class="contact-form">
                             <div class="contact-title mb-30">
                                 <h2 class="title" data-aos="fade-up" data-aos-delay="200">Leave a Message</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod incididunt ut labore et dolore magna aliqua. </p>
                             </div>
-                            <form class="contact-form-style" id="contact-form"
-                                action="http://whizthemes.com/nazmul/php/mail.php" method="post">
+
+                            <form method="post">
+                                {% csrf_token %}
+                                {% include 'includes/messages.html' %}
                                 <div class="row">
                                     <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-                                        <input name="name" placeholder="Name*" type="text" />
+                                        {{form.first_name}}
+                                        {{form.first_name.error}}
                                     </div>
                                     <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-                                        <input name="email" placeholder="Email*" type="email" />
+                                        {{form.last_name}}
+                                        {{form.last_name.error}}
                                     </div>
                                     <div class="col-lg-12" data-aos="fade-up" data-aos-delay="200">
-                                        <input name="subject" placeholder="Subject*" type="text" />
+                                        {{form.email}}
+                                        {{form.email.error}}
                                     </div>
                                     <div class="col-lg-12" data-aos="fade-up" data-aos-delay="200">
-                                        <textarea name="message" placeholder="Your Message*"></textarea>
-                                        <button class="btn btn-primary mt-4" data-aos="fade-up" data-aos-delay="200"
-                                            type="submit">Send Message</button>
+                                        {{form.message}}
+                                        {{form.message.error}}
+                                        <button class="btn btn-primary mt-4" data-aos="fade-up" data-aos-delay="200" type="submit">Send Message</button>
                                     </div>
                                 </div>
                             </form>

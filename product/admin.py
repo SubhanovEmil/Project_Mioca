@@ -3,7 +3,23 @@ from .models import ProductCategory, Product, ProductImage, ProductTag, ProductR
 # Register your models here.
 
 admin.site.register(ProductCategory)
-admin.site.register(Product)
+
 admin.site.register(ProductTag)
 admin.site.register(ProductImage)
 admin.site.register(ProductReview)
+
+class ProductImageInline(admin.TabularInline):
+    model = ProductImage
+
+@admin.register(Product)
+class ProductModelAdmin(admin.ModelAdmin):
+    list_display = ['id', 'title', 'category']
+    list_display_links = ['id', 'title']
+    list_editable = ['category']
+    search_fields = ['title', 'description']
+    list_filter = ['category', 'tags']
+    inlines = [ProductImageInline]
+    list_per_page = 6
+
+
+
