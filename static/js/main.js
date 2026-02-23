@@ -437,7 +437,7 @@
         Scroll Up
     --------------------- */
     $.scrollUp({
-        scrollText: '<i class="pe-7s-angle-up"></i>',
+        scrollText: '<i></i>',
         easingType: "linear",
         scrollSpeed: 900,
         animation: "fade",

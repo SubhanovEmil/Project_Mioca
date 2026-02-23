@@ -1,4 +1,5 @@
-{% load static tags %}
+{% load static i18n tags %}
+
 <!DOCTYPE html>
 <html lang="zxx">
 
@@ -31,28 +32,28 @@
                     <div class="col align-self-center d-none d-lg-block"> 
                         <div class="main-menu">
                             <ul>
-                                <li class="dropdown"><a href="{% url 'home' %}">Home </a></li>
+                                <li class="dropdown"><a href="{% url 'home' %}">{% trans 'Home' %}</a></li>
                                 <li><a href="{% url 'about' %}">About</a></li>
-                                <li class="dropdown position-static"><a href="{% url 'about' %}">Pages</a>
+                                <li class="dropdown position-static"><a href="{% url 'about' %}">{% trans 'Pages' %}</a>
                                     <ul class="mega-menu d-block">
                                         <li class="d-flex">
                                             <ul class="d-block">
-                                                <li class="title"><a href="#">Inner Pages</a></li>
-                                                <li><a href="{% url '404' %}">404 Page</a></li>
-                                                <li><a href="{% url 'faq' %}">Faq Page</a></li>
+                                                <li class="title"><a href="#">{% trans 'Inner Pages' %}</a></li>
+                                                <li><a href="{% url '404' %}">{% trans '404 Page' %}</a></li>
+                                                <li><a href="{% url 'faq' %}">{% trans 'Faq' %}</a></li>
                                             </ul>
                                             <ul class="d-block">
-                                                <li class="title"><a href="#">Other Shop Pages</a></li>
-                                                <li><a href="{% url 'cart' %}">Cart Page</a></li>
-                                                <li><a href="{% url 'checkout' %}">Checkout Page</a></li>
-                                                <li><a href="{% url 'compare' %}">Compare Page</a></li>
-                                                <li><a href="{% url 'wishlist' %}">Wishlist Page</a></li>
+                                                <li class="title"><a href="#">{% trans 'Other Shop Pages' %}</a></li>
+                                                <li><a href="{% url 'cart' %}">{% trans 'Cart Page' %}</a></li>
+                                                <li><a href="{% url 'checkout' %}">{% trans 'Checkout Page' %}</a></li>
+                                                <li><a href="{% url 'compare' %}">{% trans 'Compare Page' %}</a></li>
+                                                <li><a href="{% url 'wishlist' %}">{% trans 'Wishlist Page' %}</a></li>
                                             </ul>
                                             <ul class="d-block">
-                                                <li class="title"><a href="#">Related Shop Pages</a></li>
-                                                <li><a href="{% url 'my-account' %}">Account Page</a></li>
-                                                <li><a href="{% url 'register' %}">Register Page</a></li>
-                                                <li><a href="{% url 'empty-cart' %}">Empty Cart Page</a></li>
+                                                <li class="title"><a href="#">{% trans 'Related Shop Pages' %}</a></li>
+                                                <li><a href="{% url 'my-account' %}">{% trans 'Account Page' %}</a></li>
+                                                <li><a href="{% url 'register' %}">{% trans 'Register Page' %}</a></li>
+                                                <li><a href="{% url 'empty-cart' %}">{% trans 'Empty Cart Page' %}</a></li>
                                             </ul>
                                             <ul class="d-flex align-items-center p-0 border-0">
                                                 <li>
@@ -64,11 +65,29 @@
                                         </li>
                                     </ul>
                                 </li>
-                                <li class="dropdown position-static"><a href="{% url 'shop-left-sidebar' %}">Shop </a>                                   
+                                <li class="dropdown position-static"><a href="{% url 'shop-left-sidebar' %}">{% trans 'Shop' %} </a>                                   
                                 </li>
-                                <li class="dropdown "><a href="{% url 'blog-single' %}">Blog</a>
-                                    
-                                    <li><a href="{% url 'contact' %}">Contact</a></li>
+                                <li class="dropdown "><a href="{% url 'blog-single' %}">{% trans 'Blog' %}</a>
+                                <li><a href="{% url 'contact' %}">{% trans 'Contact' %}</a></li>
+                                <li>
+						            <form action="{% url 'set_language' %}" method="post" style="line-height: 120px">
+							            {% csrf_token %}
+							            <select name="language" onchange="this.form.submit()" style="width: 60px;
+                                    height: 48px;
+                                    border-radius: 5px;
+                                    padding: 9px;">
+								            {% get_current_language as LANGUAGE_CODE %}
+								            {% get_available_languages as LANGUAGES %}
+								            {% get_language_info_list for LANGUAGES as languages %}
+								            {% for language in languages %}
+								            <option class="nav-link" value="{{ language.code }}"
+									            {% if language.code == LANGUAGE_CODE %} selected{% endif %}> {#8#}
+									            {{ language.code }}
+								            </option>
+								            {% endfor %}
+							            </select>
+						            </form>
+					            </li>
                             </ul>
                         </div>
                     </div>
@@ -361,16 +380,13 @@
                 <div class="col-lg-6">
                     <div class="news-letter-form">
                         <div id="mc_embed_signup" class="subscribe-form">
-                            <form id="mc-embedded-subscribe-form" class="validate" novalidate="" target="_blank"
-                                name="mc-embedded-subscribe-form" method="post"
-                                action="http://devitems.us11.list-manage.com/subscribe/post?u=6bbb9b6f5827bd842d9640c82&amp;id=05d85f18ef"
-                                >
+                            <form  method="post">
+                                {% csrf_token %}
+                                {% include 'includes/messages.html' %}
                                 <div id="mc_embed_signup_scroll" class="mc-form">
-                                    <input class="email" type="email" required=""
-                                        placeholder="Enter Your Mail Here......." name="EMAIL" value="">
+                                    {{form.email}}
+                                    {{form.email.error}}
                                     <div class="mc-news d-none" aria-hidden="true">
-                                        <input type="text" value="" tabindex="-1"
-                                            name="b_6bbb9b6f5827bd842d9640c82_05d85f18ef">
                                     </div>
                                     <div class="clear">
                                         <button id="mc-embedded-subscribe" class="button" type="submit" name="subscribe"
@@ -461,9 +477,9 @@
                                     <!-- News letter area -->
                                     <p class="mail">If you have any question.please <br>
                                         contact us at <a href="mailto:demo@example.com">demo@example.com</a> </p>
-                                    <p class="address"><img src="{% static 'images/icons/location.png' %}" alt=""> <span>Your address goes here.
+                                    <p class="address"><img src="{% static 'images/icons/location.png' %}" alt=""> <span>United States
                                             <br>
-                                            123, Address.</span> </p>
+                                            742 Evergreen Terrace Springfield, IL 62704</span> </p>
                                     <p class="phone m-0"><img src="{% static 'images/icons/oldphone.png' %}" alt=""><span><a href="tel:0123456789">+ 0
                                                 123
                                                 456 789</a> <br> <a href="tel:0123456789">+ 0 123 456 789</a></span></p>
