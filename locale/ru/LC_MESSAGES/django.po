@@ -1,0 +1,403 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-28 20:37+0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
+"(n%100>=11 && n%100<=14)? 2 : 3);\n"
+#: .\core\templates\base.html:9
+msgid "Mioca - Handmade Goods"
+msgstr "Mioca - Ручная работа"
+
+#: .\core\templates\base.html:34 .\core\templates\base.html:241
+msgid "Home"
+msgstr "Главная"
+
+#: .\core\templates\base.html:35 .\core\templates\base.html:247
+msgid "About"
+msgstr "О нас"
+
+#: .\core\templates\base.html:36 .\core\templates\base.html:249
+msgid "Pages"
+msgstr "Страницы"
+
+#: .\core\templates\base.html:40 .\core\templates\base.html:252
+msgid "Inner Pages"
+msgstr "Внутренние страницы"
+
+#: .\core\templates\base.html:41
+msgid "404 Page"
+msgstr "Страница 404"
+
+#: .\core\templates\base.html:42 .\core\templates\base.html:256
+msgid "Faq"
+msgstr "Вопросы и ответы"
+
+#: .\core\templates\base.html:45
+msgid "Other Shop Pages"
+msgstr "Другие страницы магазина"
+
+#: .\core\templates\base.html:46 .\core\templates\base.html:263
+#: .\core\templates\base.html:293
+msgid "Cart Page"
+msgstr "Корзина"
+
+#: .\core\templates\base.html:47 .\core\templates\base.html:264
+msgid "Checkout Page"
+msgstr "Оформление заказа"
+
+#: .\core\templates\base.html:48 .\core\templates\base.html:265
+#: .\core\templates\base.html:318
+msgid "Compare Page"
+msgstr "Сравнение товаров"
+
+#: .\core\templates\base.html:49 .\core\templates\base.html:266
+msgid "Wishlist Page"
+msgstr "Список желаемого"
+
+#: .\core\templates\base.html:52
+msgid "Related Shop Pages"
+msgstr "Связанные страницы магазина"
+
+#: .\core\templates\base.html:53 .\core\templates\base.html:272
+#: .\core\templates\base.html:320
+msgid "Account Page"
+msgstr "Личный кабинет"
+
+#: .\core\templates\base.html:54 .\core\templates\base.html:273
+msgid "Register Page"
+msgstr "Регистрация"
+
+#: .\core\templates\base.html:55 .\core\templates\base.html:274
+#: .\core\templates\base.html:322
+msgid "Empty Cart Page"
+msgstr "Пустая корзина"
+
+#: .\core\templates\base.html:67 .\core\templates\base.html:280
+msgid "Shop"
+msgstr "Магазин"
+
+#: .\core\templates\base.html:69 .\core\templates\base.html:327
+msgid "Blog"
+msgstr "Блог"
+
+#: .\core\templates\base.html:70
+msgid "Contact"
+msgstr "Контакты"
+
+#: .\core\templates\base.html:106
+msgid "My account"
+msgstr "Мой аккаунт"
+
+#: .\core\templates\base.html:107
+msgid "Checkout"
+msgstr "Оформить заказ"
+
+#: .\core\templates\base.html:109
+msgid "Log out"
+msgstr "Выйти"
+
+#: .\core\templates\base.html:111
+msgid "Log in"
+msgstr "Войти"
+
+#: .\core\templates\base.html:141 .\core\templates\base.html:319
+#: .\core\templates\base.html:438
+msgid "Wishlist"
+msgstr "Список желаемого"
+
+#: .\core\templates\base.html:177
+msgid "view wishlist"
+msgstr "Посмотреть список желаемого"
+
+#: .\core\templates\base.html:188
+msgid "Cart"
+msgstr "Корзина"
+
+#: .\core\templates\base.html:225
+msgid "view cart"
+msgstr "Посмотреть корзину"
+
+#: .\core\templates\base.html:226
+msgid "checkout"
+msgstr "Оформление заказа"
+
+#: .\core\templates\base.html:254
+msgid "404 Pages"
+msgstr "Страницы 404"
+
+#: .\core\templates\base.html:255 .\core\templates\base.html:416
+msgid "Privacy Policy"
+msgstr "Политика конфиденциальности"
+
+#: .\core\templates\base.html:257
+msgid "Coming Soon"
+msgstr "Скоро"
+
+#: .\core\templates\base.html:261
+msgid "Other Shop"
+msgstr "Другие товары"
+
+#: .\core\templates\base.html:270
+msgid "Related page"
+msgstr "Связанная страница"
+
+#: .\core\templates\base.html:275
+msgid "Thank You Page"
+msgstr "Страница благодарности"
+
+#: .\core\templates\base.html:283
+msgid "Shop Page"
+msgstr "Страница магазина"
+
+#: .\core\templates\base.html:294
+msgid "Checkout page"
+msgstr "Страница оформления заказа"
+
+#: .\core\templates\base.html:298
+msgid "Product Details Page"
+msgstr "Страница товара"
+
+#: .\core\templates\base.html:311
+msgid "Single Product Page"
+msgstr "Страница отдельного товара"
+
+#: .\core\templates\base.html:321
+msgid "Login Page"
+msgstr "Страница входа"
+
+#: .\core\templates\base.html:372
+msgid "News and get updates"
+msgstr "Новости и обновления"
+
+#: .\core\templates\base.html:373
+msgid "Sign up for our newsletter to get update from us"
+msgstr "Подпишитесь на нашу рассылку, чтобы получать новости"
+
+#: .\core\templates\base.html:390
+msgid "Submit"
+msgstr "Отправить"
+
+#: .\core\templates\base.html:410
+msgid "Information"
+msgstr "Информация"
+
+#: .\core\templates\base.html:414
+msgid "About Us"
+msgstr "О нас"
+
+#: .\core\templates\base.html:415
+msgid "Delivery Information"
+msgstr "Информация о доставке"
+
+#: .\core\templates\base.html:417
+msgid "Sales"
+msgstr "Акции"
+
+#: .\core\templates\base.html:418
+msgid "Terms and Conditions"
+msgstr "Условия использования"
+
+#: .\core\templates\base.html:419
+msgid "Shipping Policy"
+msgstr "Политика доставки"
+
+#: .\core\templates\base.html:420
+msgid "Payment"
+msgstr "Оплата"
+
+#: .\core\templates\base.html:430
+msgid "Account"
+msgstr "Аккаунт"
+
+#: .\core\templates\base.html:434
+msgid "My Account"
+msgstr "Мой аккаунт"
+
+#: .\core\templates\base.html:435
+msgid "My Orders"
+msgstr "Мои заказы"
+
+#: .\core\templates\base.html:436
+msgid "Returns"
+msgstr "Возвраты"
+
+#: .\core\templates\base.html:437
+msgid "Shopping"
+msgstr "Покупки"
+
+#: .\core\templates\base.html:439
+msgid "Merchant Signup"
+msgstr "Регистрация продавца"
+
+#: .\core\templates\base.html:449
+msgid "Store"
+msgstr "Магазин"
+
+#: .\core\templates\base.html:453
+msgid "Affiliate"
+msgstr "Партнерство"
+
+#: .\core\templates\base.html:454
+msgid "Bestseller"
+msgstr "Хит продаж"
+
+#: .\core\templates\base.html:455
+msgid "Discount"
+msgstr "Скидка"
+
+#: .\core\templates\base.html:456
+msgid "latest Products"
+msgstr "Последние товары"
+
+#: .\core\templates\base.html:457 .\core\templates\index.html:284
+msgid "Sale"
+msgstr "Распродажа"
+
+#: .\core\templates\base.html:458
+msgid "All Collection"
+msgstr "Вся коллекция"
+
+#: .\core\templates\base.html:459 .\core\templates\base.html:471
+msgid "Contact Us"
+msgstr "Свяжитесь с нами"
+
+#: .\core\templates\base.html:474
+msgid "If you have any question.please"
+msgstr "Если у вас есть вопросы, пожалуйста"
+
+#: .\core\templates\base.html:475
+msgid "Contact us at"
+msgstr "Свяжитесь с нами по"
+
+#: .\core\templates\base.html:520
+msgid "Search Your Products"
+msgstr "Поиск товаров"
+
+#: .\core\templates\index.html:16 .\core\templates\index.html:40
+msgid "Best Handmade"
+msgstr "Лучшее ручное творчество"
+
+#: .\core\templates\index.html:16 .\core\templates\index.html:40
+msgid "Goods"
+msgstr "Товары"
+
+#: .\core\templates\index.html:21 .\core\templates\index.html:45
+msgid "View Collection"
+msgstr "Посмотреть коллекцию"
+
+#: .\core\templates\index.html:79 .\core\templates\index.html:90
+#: .\core\templates\index.html:101 .\core\templates\index.html:1866
+#: .\core\templates\index.html:1877 .\core\templates\index.html:1886
+msgid "Best Seller"
+msgstr "Хит продаж"
+
+#: .\core\templates\index.html:80
+msgid "Flower Vase"
+msgstr "Ваза с цветами"
+
+#: .\core\templates\index.html:81 .\core\templates\index.html:103
+msgid "& Pot"
+msgstr "& Горшок"
+
+#: .\core\templates\index.html:82 .\core\templates\index.html:93
+#: .\core\templates\index.html:104 .\core\templates\index.html:1843
+#: .\core\templates\index.html:1869 .\core\templates\index.html:1880
+#: .\core\templates\index.html:1889
+msgid "Shop Now"
+msgstr "Купить сейчас"
+
+#: .\core\templates\index.html:91
+msgid "Wool Silk Dress"
+msgstr "Платье из шерсти и шелка"
+
+#: .\core\templates\index.html:92
+msgid "& Offer 2023"
+msgstr "& Предложение 2023"
+
+#: .\core\templates\index.html:102
+msgid "Pen Holder"
+msgstr "Подставка для ручек"
+
+#: .\core\templates\index.html:121
+msgid "Popular Categories"
+msgstr "Популярные категории"
+
+#: .\core\templates\index.html:187 .\core\templates\index.html:231
+#: .\core\templates\index.html:270 .\core\templates\index.html:308
+#: .\core\templates\index.html:346 .\core\templates\index.html:383
+#: .\core\templates\index.html:420
+msgid "Add to Cart"
+msgstr "В корзину"
+
+#: .\core\templates\index.html:207 .\core\templates\index.html:245
+#: .\core\templates\index.html:396
+msgid "New"
+msgstr "Новинка"
+
+#: .\core\templates\index.html:1796
+msgid "Free Shipping"
+msgstr "Бесплатная доставка"
+
+#: .\core\templates\index.html:1797
+msgid "Capped at $39 per order"
+msgstr "Максимум $39 за заказ"
+
+#: .\core\templates\index.html:1808
+msgid "Card Payments"
+msgstr "Оплата картой"
+
+#: .\core\templates\index.html:1809
+msgid "12 Month Installments"
+msgstr "Рассрочка на 12 месяцев"
+
+#: .\core\templates\index.html:1820
+msgid "Easy Returns"
+msgstr "Легкий возврат"
+
+#: .\core\templates\index.html:1821
+msgid "Shop with Confidence"
+msgstr "Покупайте с уверенностью"
+
+#: .\core\templates\index.html:1838
+msgid "handmade Pen Holder"
+msgstr "Ручная подставка для ручек"
+
+#: .\core\templates\index.html:1838
+#, python-format
+msgid "& Offer Sale -20%%"
+msgstr "& Скидка 20%%"
+
+#: .\core\templates\index.html:1867
+msgid "Handmade Pot"
+msgstr "Ручной горшок"
+
+#: .\core\templates\index.html:1868
+msgid "& Pen Holder"
+msgstr "& Подставка для ручек"
+
+#: .\core\templates\index.html:1878
+msgid "Wool Silk Pot"
+msgstr "Горшок из шерсти и шелка"
+
+#: .\core\templates\index.html:1887
+msgid "Handmae Plate"
+msgstr "Ручная тарелка"
+
+#: .\core\templates\index.html:1905
+msgid "Latest Blog"
+msgstr "Последние записи блога"

@@ -9,7 +9,10 @@ https://docs.djangoproject.com/en/6.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/6.0/ref/settings/
 """
+from datetime import timedelta
+from django.contrib.messages import constants as messages
 from pathlib import Path
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -38,16 +41,24 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'drf_yasg',
     'django.contrib.postgres',
     'core',
     'product',
     'user',
-    'order'
+    'order',
+    'rosetta',
+    'rest_framework',
+    'rest_framework_simplejwt',
+    'corsheaders',
+    'django_celery_beat',
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    "corsheaders.middleware.CorsMiddleware",
+    "django.middleware.common.CommonMiddleware",
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.middleware.locale.LocaleMiddleware',
@@ -58,7 +69,7 @@ MIDDLEWARE = [
     'config.middleware.BlockedUserMiddleware'
 ]
 
-from django.contrib.messages import constants as messages
+CORS_ALLOW_ALL_ORIGINS = True
 
 
 MESSAGE_TAGS = {
@@ -99,7 +110,7 @@ DATABASES = {
         'USER': 'user',
         'PASSWORD': '12345',
         'HOST': 'localhost',
-        'PORT': '5432', 
+        'PORT': '5432',
     }
 }
 
@@ -123,24 +134,29 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+REST_FRAMEWORK = {
+    'DEFAULT_RENDERER_CLASSES': [
+        'rest_framework.renderers.JSONRenderer',  # yalnız JSON qaytar
+        # brauzerdə HTML istəyirsənsə saxla
+        'rest_framework.renderers.BrowsableAPIRenderer',
+    ]
+}
+
 
 # Internationalization
 # https://docs.djangoproject.com/en/6.0/topics/i18n/
 
-
-import os
-
-LOCALE_PATHS = (os.path.join(BASE_DIR, 'locale'),)
-
+LOCALE_PATHS = [
+    BASE_DIR / 'locale',
+]
 
 LANGUAGES = (
-    ('en','English'),
-    ('ru','Russian'),
-    ('az','Azerbaijani')
+    ('en', 'English'),
+    ('ru', 'Russian'),
 )
 
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'en'
 
 TIME_ZONE = 'UTC'
 
@@ -152,7 +168,6 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/6.0/howto/static-files/
 
-import os
 
 STATIC_URL = 'static/'
 
@@ -164,7 +179,7 @@ MEDIA_URL = '/media/'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, "media/")
 
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'  
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
 EMAIL_USE_TLS = True
 EMAIL_HOST = "smtp.gmail.com"
@@ -172,4 +187,27 @@ EMAIL_HOST_USER = "subhanov.emil@gmail.com"
 EMAIL_HOST_PASSWORD = "oqht jopp ywxi dxhi"
 EMAIL_PORT = 587
 
-LOGIN_REDIRECT_URL = "home"  
+LOGIN_REDIRECT_URL = "home"
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        "rest_framework.authentication.SessionAuthentication",
+        "rest_framework.authentication.BasicAuthentication",
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+    )
+}
+
+SIMPLE_JWT = {
+    "ACCESS_TOKEN_LIFETIME": timedelta(minutes=20),
+    "REFRESH_TOKEN_LIFETIME": timedelta(days=1),
+    "TOKEN_OBTAIN_SERIALIZER": "user.api.serializers.UserTokenObtainPairSerializer",
+}
+
+
+
+
+
+CELERY_BROKER_URL = "redis://127.0.0.1:6379/0"
+CELERY_RESULT_BACKEND = "redis://localhost:6379"
+CELERY_WORKER_POOL = "solo"
+CELERY_BEAT_SCHEDULER = 'django_celery_beat.schedulers:DatabaseScheduler'

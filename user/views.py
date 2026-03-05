@@ -13,7 +13,8 @@ from django.utils.encoding import force_bytes
 from django.utils.http import urlsafe_base64_encode
 from django.template.loader import render_to_string
 from django.utils.encoding import force_str
-# from django.contrib.auth.views import LoginView
+
+
 
 def login(request):
     next = request.GET.get('next', reverse_lazy('home'))

@@ -162,8 +162,7 @@
                                                         </span>
                                                             <div class="actions">
                                                                 <a href="{% url 'wishlist' %}" class="action wishlist" title="Wishlist"><img src="{% static 'images/icons/wishlist-star.png' %}" alt=""></a>
-                                        
-                                                                <a href="{% url 'compare' %}" class="action compare" title="Compare"><img src="{% static 'images/icons/scales.png' %}" alt=""></a>
+                                                                <a href="{% url 'cart' %}" class="action compare update-item" data-product ="{{product.id}}" data-action="add" title="Compare"><img src="{% static 'images/icons/shopping-cart.png' %}" alt=""></a>
                                                             </div>
                                                     </div>
                                                     <div class="content">
@@ -318,5 +317,10 @@
     </div>
     <!-- Shop Page End  -->
 {% endblock %}
-    
+
+{% block js %}
+<script src="{% static 'js/cart.js' %}"></script>
+{% endblock %}
+
+
 {% include 'includes/modal.html' %}

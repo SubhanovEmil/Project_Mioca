@@ -1,0 +1,6038 @@
+[
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2025-12-24T12:06:44.018Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "John Doe",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2025-12-25T11:00:14.567Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "1",
+    "object_repr": "prod",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2025-12-25T11:00:48.027Z",
+    "user": 1,
+    "content_type": 6,
+    "object_id": "1",
+    "object_repr": "asd",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2025-12-25T11:01:07.271Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "Product object (1)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2025-12-25T11:06:39.863Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "Product object (2)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2025-12-27T09:24:03.619Z",
+    "user": 1,
+    "content_type": 6,
+    "object_id": "1",
+    "object_repr": "asd",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2025-12-27T09:24:19.228Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "1",
+    "object_repr": "prod",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2025-12-27T09:43:11.289Z",
+    "user": 1,
+    "content_type": 6,
+    "object_id": "2",
+    "object_repr": "Jewelry",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2025-12-27T09:43:23.276Z",
+    "user": 1,
+    "content_type": 6,
+    "object_id": "3",
+    "object_repr": "Fabric",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2025-12-27T09:43:36.492Z",
+    "user": 1,
+    "content_type": 6,
+    "object_id": "4",
+    "object_repr": "Pottery",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2025-12-27T09:43:54.039Z",
+    "user": 1,
+    "content_type": 6,
+    "object_id": "5",
+    "object_repr": "Paintings",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2025-12-27T09:44:13.288Z",
+    "user": 1,
+    "content_type": 6,
+    "object_id": "6",
+    "object_repr": "Sculptures",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2025-12-27T09:44:28.693Z",
+    "user": 1,
+    "content_type": 6,
+    "object_id": "7",
+    "object_repr": "Wooden",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2025-12-27T10:40:20.451Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "2",
+    "object_repr": "Handmade",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 15,
+  "fields": {
+    "action_time": "2025-12-27T10:40:33.294Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "3",
+    "object_repr": "Furniture",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 16,
+  "fields": {
+    "action_time": "2025-12-27T10:40:51.674Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "4",
+    "object_repr": "Decore",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 17,
+  "fields": {
+    "action_time": "2025-12-27T10:46:38.296Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "Product object (3)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 18,
+  "fields": {
+    "action_time": "2025-12-27T10:54:52.286Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "4",
+    "object_repr": "Handmade Ceramic Pottery",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 19,
+  "fields": {
+    "action_time": "2025-12-27T11:30:16.452Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "5",
+    "object_repr": "Hand Painted Bowls",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 20,
+  "fields": {
+    "action_time": "2025-12-27T11:31:15.113Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "6",
+    "object_repr": "Antique Wooden Farm Large",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 21,
+  "fields": {
+    "action_time": "2025-12-27T11:33:47.249Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "7",
+    "object_repr": "Round Wooden Cutting Board",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 22,
+  "fields": {
+    "action_time": "2025-12-27T11:36:23.487Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "8",
+    "object_repr": "Handmade Jute Basket",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 23,
+  "fields": {
+    "action_time": "2025-12-27T11:37:12.928Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "9",
+    "object_repr": "Knitting yarn & crochet hook",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 24,
+  "fields": {
+    "action_time": "2025-12-27T11:38:47.531Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "10",
+    "object_repr": "David Head Portraits",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 25,
+  "fields": {
+    "action_time": "2025-12-27T11:39:53.809Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "11",
+    "object_repr": "Solid Wood Cherry Paddle",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 26,
+  "fields": {
+    "action_time": "2025-12-27T11:47:31.124Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "12",
+    "object_repr": "Evil Eye Talisman",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 27,
+  "fields": {
+    "action_time": "2025-12-27T11:50:26.536Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "13",
+    "object_repr": "Little Curd Pot",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 28,
+  "fields": {
+    "action_time": "2025-12-27T11:53:04.056Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "14",
+    "object_repr": "Little Granite Grinder",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 29,
+  "fields": {
+    "action_time": "2025-12-28T11:24:30.431Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "Hand-Made Garlic Mortar",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 30,
+  "fields": {
+    "action_time": "2025-12-28T11:24:34.718Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "14",
+    "object_repr": "Little Granite Grinder",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 31,
+  "fields": {
+    "action_time": "2025-12-28T12:52:35.745Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "1",
+    "object_repr": "Hand-Made Garlic Mortar",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 32,
+  "fields": {
+    "action_time": "2025-12-28T13:02:48.297Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "Hand-Made Garlic Mortar",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Cover image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 33,
+  "fields": {
+    "action_time": "2025-12-28T13:02:58.045Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "Hand-Made Garlic Mortar",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Cover image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 34,
+  "fields": {
+    "action_time": "2025-12-28T13:05:16.902Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "14",
+    "object_repr": "Little Granite Grinder",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Cover image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 35,
+  "fields": {
+    "action_time": "2025-12-28T13:05:23.323Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "14",
+    "object_repr": "Little Granite Grinder",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Cover image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 36,
+  "fields": {
+    "action_time": "2025-12-28T13:45:45.462Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "Hand-Made Garlic Mortar",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Cover image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 37,
+  "fields": {
+    "action_time": "2025-12-28T13:45:59.283Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "14",
+    "object_repr": "Little Granite Grinder",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Cover image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 38,
+  "fields": {
+    "action_time": "2025-12-28T13:46:09.677Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "4",
+    "object_repr": "Handmade Ceramic Pottery",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Cover image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 39,
+  "fields": {
+    "action_time": "2025-12-28T13:46:19.337Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "Hand-Made Garlic Mortar",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Cover image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 40,
+  "fields": {
+    "action_time": "2025-12-28T13:46:29.906Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "4",
+    "object_repr": "Handmade Ceramic Pottery",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Cover image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 41,
+  "fields": {
+    "action_time": "2025-12-28T13:57:37.759Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "1",
+    "object_repr": "Hand-Made Garlic Mortar",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 42,
+  "fields": {
+    "action_time": "2025-12-28T13:57:52.815Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "2",
+    "object_repr": "Hand-Made Garlic Mortar",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 43,
+  "fields": {
+    "action_time": "2025-12-28T14:07:32.755Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "15",
+    "object_repr": "adsdffghjkghjghdfgsfasfdgfh",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 44,
+  "fields": {
+    "action_time": "2025-12-28T14:08:07.160Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "15",
+    "object_repr": "adsdffghjkghjghdfgsfasfdgfh",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Cover image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 45,
+  "fields": {
+    "action_time": "2025-12-29T14:44:18.184Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "2",
+    "object_repr": "Hand-Made Garlic Mortar",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 46,
+  "fields": {
+    "action_time": "2025-12-30T11:07:46.301Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "16",
+    "object_repr": "aaa",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 47,
+  "fields": {
+    "action_time": "2025-12-30T11:08:19.551Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "17",
+    "object_repr": "aaaa",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 48,
+  "fields": {
+    "action_time": "2025-12-30T11:22:13.624Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "3",
+    "object_repr": "aaa",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 49,
+  "fields": {
+    "action_time": "2025-12-30T11:22:23.657Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "3",
+    "object_repr": "aaa",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 50,
+  "fields": {
+    "action_time": "2025-12-30T11:43:42.868Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "4",
+    "object_repr": "Hand-Made Garlic Mortar",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 51,
+  "fields": {
+    "action_time": "2025-12-30T11:43:56.272Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "5",
+    "object_repr": "Little Granite Grinder",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 52,
+  "fields": {
+    "action_time": "2025-12-30T12:53:52.831Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "Hand-Made Garlic Mortar",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Cover image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 53,
+  "fields": {
+    "action_time": "2025-12-30T12:54:04.351Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "Hand-Made Garlic Mortar",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Cover image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 54,
+  "fields": {
+    "action_time": "2025-12-30T12:56:00.920Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "Hand-Made Garlic Mortar",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Cover image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 55,
+  "fields": {
+    "action_time": "2025-12-30T12:56:07.814Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "Hand-Made Garlic Mortar",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Cover image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 56,
+  "fields": {
+    "action_time": "2025-12-30T21:03:50.513Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "18",
+    "object_repr": "Hand-Made Garlic Mortar",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 57,
+  "fields": {
+    "action_time": "2025-12-30T21:04:32.185Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "19",
+    "object_repr": "Handmade Ceramic Pottery",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 58,
+  "fields": {
+    "action_time": "2025-12-30T21:05:08.261Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "20",
+    "object_repr": "Hand Painted Bowls",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 59,
+  "fields": {
+    "action_time": "2025-12-30T21:05:59.130Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "21",
+    "object_repr": "Antique Wooden Farm Large",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 60,
+  "fields": {
+    "action_time": "2025-12-30T21:07:09.438Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "18",
+    "object_repr": "Hand-Made Garlic Mortar",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Cover image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 61,
+  "fields": {
+    "action_time": "2025-12-30T21:07:15.776Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "21",
+    "object_repr": "Antique Wooden Farm Large",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Cover image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 62,
+  "fields": {
+    "action_time": "2025-12-30T21:07:23.043Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "21",
+    "object_repr": "Antique Wooden Farm Large",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Cover image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 63,
+  "fields": {
+    "action_time": "2025-12-30T21:07:29.506Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "18",
+    "object_repr": "Hand-Made Garlic Mortar",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Cover image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 64,
+  "fields": {
+    "action_time": "2025-12-30T21:07:42.260Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "19",
+    "object_repr": "Handmade Ceramic Pottery",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Cover image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 65,
+  "fields": {
+    "action_time": "2025-12-30T21:07:46.605Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "19",
+    "object_repr": "Handmade Ceramic Pottery",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Cover image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 66,
+  "fields": {
+    "action_time": "2025-12-30T21:07:52.278Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "20",
+    "object_repr": "Hand Painted Bowls",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Cover image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 67,
+  "fields": {
+    "action_time": "2025-12-30T21:07:56.628Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "20",
+    "object_repr": "Hand Painted Bowls",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Cover image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 68,
+  "fields": {
+    "action_time": "2025-12-31T10:31:30.799Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "6",
+    "object_repr": "Hand-Made Garlic Mortar",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 69,
+  "fields": {
+    "action_time": "2025-12-31T10:31:47.447Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "7",
+    "object_repr": "Antique Wooden Farm Large",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 70,
+  "fields": {
+    "action_time": "2025-12-31T10:40:54.726Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "7",
+    "object_repr": "Antique Wooden Farm Large",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 71,
+  "fields": {
+    "action_time": "2025-12-31T10:40:54.726Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "6",
+    "object_repr": "Hand-Made Garlic Mortar",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 72,
+  "fields": {
+    "action_time": "2025-12-31T10:47:29.365Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "22",
+    "object_repr": "Hand-Made Garlic Mortar",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 73,
+  "fields": {
+    "action_time": "2025-12-31T10:47:52.904Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "23",
+    "object_repr": "Handmade Ceramic Pottery",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 74,
+  "fields": {
+    "action_time": "2025-12-31T10:48:03.901Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "8",
+    "object_repr": "Handmade Ceramic Pottery",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 75,
+  "fields": {
+    "action_time": "2026-01-02T14:47:42.773Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "9",
+    "object_repr": "Hand-Made Garlic Mortar",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 76,
+  "fields": {
+    "action_time": "2026-01-03T09:49:01.889Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "1",
+    "object_repr": "Hand-Made Garlic Mortar",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 77,
+  "fields": {
+    "action_time": "2026-01-03T12:09:41.284Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "9",
+    "object_repr": "Hand-Made Garlic Mortar",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 78,
+  "fields": {
+    "action_time": "2026-01-03T12:10:18.717Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "10",
+    "object_repr": "Hand-Made Garlic Mortar",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 79,
+  "fields": {
+    "action_time": "2026-01-03T12:11:50.367Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "24",
+    "object_repr": "Paintings / Hand Painted Bowls",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 80,
+  "fields": {
+    "action_time": "2026-01-03T12:12:46.076Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "10",
+    "object_repr": "Hand-Made Garlic Mortar",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 81,
+  "fields": {
+    "action_time": "2026-01-03T12:12:46.076Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "8",
+    "object_repr": "Handmade Ceramic Pottery",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 82,
+  "fields": {
+    "action_time": "2026-01-03T12:27:33.970Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "22",
+    "object_repr": "Wooden / Hand-Made Garlic Mortar",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Cover image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 83,
+  "fields": {
+    "action_time": "2026-01-03T12:27:46.318Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "22",
+    "object_repr": "Wooden / Hand-Made Garlic Mortar",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Cover image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 84,
+  "fields": {
+    "action_time": "2026-01-03T12:28:07.142Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "22",
+    "object_repr": "Wooden / Hand-Made Garlic Mortar",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 85,
+  "fields": {
+    "action_time": "2026-01-03T12:28:34.331Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "25",
+    "object_repr": "Wooden / Hand-Made Garlic Mortar",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 86,
+  "fields": {
+    "action_time": "2026-01-03T12:29:08.838Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "26",
+    "object_repr": "Wooden / Antique Wooden Farm Large",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 87,
+  "fields": {
+    "action_time": "2026-01-05T16:01:24.368Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "26",
+    "object_repr": "Wooden / Antique Wooden Farm Large",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 88,
+  "fields": {
+    "action_time": "2026-01-05T16:01:24.368Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "25",
+    "object_repr": "Wooden / Hand-Made Garlic Mortar",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 89,
+  "fields": {
+    "action_time": "2026-01-05T16:01:24.368Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "24",
+    "object_repr": "Paintings / Hand Painted Bowls",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 90,
+  "fields": {
+    "action_time": "2026-01-05T16:01:24.368Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "23",
+    "object_repr": "Sculptures / Handmade Ceramic Pottery",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 91,
+  "fields": {
+    "action_time": "2026-01-05T16:02:53.972Z",
+    "user": 1,
+    "content_type": 6,
+    "object_id": "7",
+    "object_repr": "Wooden",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 92,
+  "fields": {
+    "action_time": "2026-01-05T16:02:53.972Z",
+    "user": 1,
+    "content_type": 6,
+    "object_id": "6",
+    "object_repr": "Sculptures",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 93,
+  "fields": {
+    "action_time": "2026-01-05T16:02:53.972Z",
+    "user": 1,
+    "content_type": 6,
+    "object_id": "5",
+    "object_repr": "Paintings",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 94,
+  "fields": {
+    "action_time": "2026-01-05T16:02:53.972Z",
+    "user": 1,
+    "content_type": 6,
+    "object_id": "4",
+    "object_repr": "Pottery",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 95,
+  "fields": {
+    "action_time": "2026-01-05T16:02:53.972Z",
+    "user": 1,
+    "content_type": 6,
+    "object_id": "3",
+    "object_repr": "Fabric",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 96,
+  "fields": {
+    "action_time": "2026-01-05T16:02:53.972Z",
+    "user": 1,
+    "content_type": 6,
+    "object_id": "2",
+    "object_repr": "Jewelry",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 97,
+  "fields": {
+    "action_time": "2026-01-05T16:03:04.712Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "4",
+    "object_repr": "Decore",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 98,
+  "fields": {
+    "action_time": "2026-01-05T16:03:04.712Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "3",
+    "object_repr": "Furniture",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 99,
+  "fields": {
+    "action_time": "2026-01-05T16:03:04.712Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "2",
+    "object_repr": "Handmade",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 100,
+  "fields": {
+    "action_time": "2026-01-05T16:25:08.858Z",
+    "user": 1,
+    "content_type": 6,
+    "object_id": "8",
+    "object_repr": "Jewelry",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 101,
+  "fields": {
+    "action_time": "2026-01-05T16:25:22.894Z",
+    "user": 1,
+    "content_type": 6,
+    "object_id": "9",
+    "object_repr": "Pottery",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 102,
+  "fields": {
+    "action_time": "2026-01-05T16:25:30.354Z",
+    "user": 1,
+    "content_type": 6,
+    "object_id": "10",
+    "object_repr": "Fabric",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 103,
+  "fields": {
+    "action_time": "2026-01-05T16:25:49.302Z",
+    "user": 1,
+    "content_type": 6,
+    "object_id": "11",
+    "object_repr": "Paintings",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 104,
+  "fields": {
+    "action_time": "2026-01-05T16:26:17.321Z",
+    "user": 1,
+    "content_type": 6,
+    "object_id": "12",
+    "object_repr": "Sculptures",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 105,
+  "fields": {
+    "action_time": "2026-01-05T16:26:30.380Z",
+    "user": 1,
+    "content_type": 6,
+    "object_id": "13",
+    "object_repr": "Wooden",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 106,
+  "fields": {
+    "action_time": "2026-01-05T16:27:12.339Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "5",
+    "object_repr": "Handmade",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 107,
+  "fields": {
+    "action_time": "2026-01-05T16:27:22.165Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "6",
+    "object_repr": "Furniture",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 108,
+  "fields": {
+    "action_time": "2026-01-05T16:27:30.176Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "7",
+    "object_repr": "Decore",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 109,
+  "fields": {
+    "action_time": "2026-01-06T09:48:11.893Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "28",
+    "object_repr": "Wooden / Hand-Made Garlic Mortar",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 110,
+  "fields": {
+    "action_time": "2026-01-06T09:50:48.981Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "29",
+    "object_repr": "Pottery / Handmade Ceramic Pottery",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 111,
+  "fields": {
+    "action_time": "2026-01-06T09:51:51.888Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "30",
+    "object_repr": "Paintings / Hand Painted Bowls",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 112,
+  "fields": {
+    "action_time": "2026-01-06T10:33:52.234Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "31",
+    "object_repr": "Wooden / Antique Wooden Farm Large",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 113,
+  "fields": {
+    "action_time": "2026-01-06T10:37:09.774Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "32",
+    "object_repr": "Wooden / Round Wooden Serving Board",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 114,
+  "fields": {
+    "action_time": "2026-01-06T10:37:53.044Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "33",
+    "object_repr": "Fabric / Handmade Jute Basket",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 115,
+  "fields": {
+    "action_time": "2026-01-06T10:39:20.633Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "34",
+    "object_repr": "Fabric / Knitting yarn & crochet hook",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 116,
+  "fields": {
+    "action_time": "2026-01-06T10:40:32.197Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "35",
+    "object_repr": "Sculptures / David Head Portraits",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 117,
+  "fields": {
+    "action_time": "2026-01-06T10:41:31.995Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "36",
+    "object_repr": "Wooden / solid wood cherry paddle",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 118,
+  "fields": {
+    "action_time": "2026-01-06T10:45:47.165Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "37",
+    "object_repr": "Jewelry / Evil Eye Amulet",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 119,
+  "fields": {
+    "action_time": "2026-01-06T10:49:51.706Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "38",
+    "object_repr": "Pottery / Handmade Clay Pot",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 120,
+  "fields": {
+    "action_time": "2026-01-06T10:52:24.697Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "39",
+    "object_repr": "Pottery / Cilio Goliath Granite Mortar",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 121,
+  "fields": {
+    "action_time": "2026-01-07T17:50:25.144Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "11",
+    "object_repr": "Hand-Made Garlic Mortar",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 122,
+  "fields": {
+    "action_time": "2026-01-07T17:50:34.584Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "12",
+    "object_repr": "Hand-Made Garlic Mortar",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 123,
+  "fields": {
+    "action_time": "2026-01-09T15:29:15.491Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "13",
+    "object_repr": "Handmade Ceramic Pottery",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 124,
+  "fields": {
+    "action_time": "2026-01-09T15:29:23.672Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "14",
+    "object_repr": "Handmade Ceramic Pottery",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 125,
+  "fields": {
+    "action_time": "2026-01-09T15:29:31.988Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "15",
+    "object_repr": "Hand Painted Bowls",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 126,
+  "fields": {
+    "action_time": "2026-01-09T15:29:38.268Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "16",
+    "object_repr": "Hand Painted Bowls",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 127,
+  "fields": {
+    "action_time": "2026-01-09T15:29:46.151Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "17",
+    "object_repr": "Antique Wooden Farm Large",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 128,
+  "fields": {
+    "action_time": "2026-01-09T15:29:52.636Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "18",
+    "object_repr": "Antique Wooden Farm Large",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 129,
+  "fields": {
+    "action_time": "2026-01-09T15:30:00.513Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "19",
+    "object_repr": "Round Wooden Serving Board",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 130,
+  "fields": {
+    "action_time": "2026-01-09T15:30:07.678Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "20",
+    "object_repr": "Round Wooden Serving Board",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 131,
+  "fields": {
+    "action_time": "2026-01-09T15:30:19.713Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "21",
+    "object_repr": "Handmade Jute Basket",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 132,
+  "fields": {
+    "action_time": "2026-01-09T15:30:31.868Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "22",
+    "object_repr": "Handmade Jute Basket",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 133,
+  "fields": {
+    "action_time": "2026-01-09T15:30:41.447Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "23",
+    "object_repr": "Knitting yarn & crochet hook",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 134,
+  "fields": {
+    "action_time": "2026-01-09T15:30:53.994Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "25",
+    "object_repr": "Knitting yarn & crochet hook",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 135,
+  "fields": {
+    "action_time": "2026-01-09T15:31:02.296Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "26",
+    "object_repr": "David Head Portraits",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 136,
+  "fields": {
+    "action_time": "2026-01-09T15:31:08.932Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "27",
+    "object_repr": "David Head Portraits",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 137,
+  "fields": {
+    "action_time": "2026-01-09T15:31:16.093Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "28",
+    "object_repr": "solid wood cherry paddle",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 138,
+  "fields": {
+    "action_time": "2026-01-09T15:31:23.066Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "29",
+    "object_repr": "solid wood cherry paddle",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 139,
+  "fields": {
+    "action_time": "2026-01-09T15:31:28.981Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "30",
+    "object_repr": "Evil Eye Amulet",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 140,
+  "fields": {
+    "action_time": "2026-01-09T15:31:35.202Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "31",
+    "object_repr": "Evil Eye Amulet",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 141,
+  "fields": {
+    "action_time": "2026-01-09T15:31:42.019Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "32",
+    "object_repr": "Handmade Clay Pot",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 142,
+  "fields": {
+    "action_time": "2026-01-09T15:31:47.492Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "33",
+    "object_repr": "Handmade Clay Pot",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 143,
+  "fields": {
+    "action_time": "2026-01-09T15:31:55.251Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "34",
+    "object_repr": "Cilio Goliath Granite Mortar",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 144,
+  "fields": {
+    "action_time": "2026-01-09T15:31:59.630Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "35",
+    "object_repr": "Cilio Goliath Granite Mortar",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 145,
+  "fields": {
+    "action_time": "2026-01-11T12:57:11.180Z",
+    "user": 1,
+    "content_type": 15,
+    "object_id": "1",
+    "object_repr": "Hand-Made Garlic Mortar",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 146,
+  "fields": {
+    "action_time": "2026-01-11T13:12:36.086Z",
+    "user": 1,
+    "content_type": 15,
+    "object_id": "1",
+    "object_repr": "Hand-Made Garlic Mortar",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 147,
+  "fields": {
+    "action_time": "2026-01-11T13:12:43.248Z",
+    "user": 1,
+    "content_type": 15,
+    "object_id": "1",
+    "object_repr": "Hand-Made Garlic Mortar",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 148,
+  "fields": {
+    "action_time": "2026-01-11T13:13:32.712Z",
+    "user": 1,
+    "content_type": 15,
+    "object_id": "1",
+    "object_repr": "Hand-Made Garlic Mortar",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 149,
+  "fields": {
+    "action_time": "2026-01-11T13:16:15.208Z",
+    "user": 1,
+    "content_type": 15,
+    "object_id": "1",
+    "object_repr": "Hand-Made Garlic Mortar",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 182,
+  "fields": {
+    "action_time": "2026-01-12T13:23:04.073Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "28",
+    "object_repr": "Wooden / Hand-Made Garlic Mortar",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Weight\", \"Length\", \"Width\", \"Height\", \"Materials\", \"Madein\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 183,
+  "fields": {
+    "action_time": "2026-01-12T13:25:12.611Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "29",
+    "object_repr": "Pottery / Handmade Ceramic Pottery",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Weight\", \"Length\", \"Width\", \"Height\", \"Materials\", \"Madein\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 184,
+  "fields": {
+    "action_time": "2026-01-12T13:26:02.417Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "30",
+    "object_repr": "Paintings / Hand Painted Bowls",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Weight\", \"Length\", \"Width\", \"Height\", \"Materials\", \"Madein\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 185,
+  "fields": {
+    "action_time": "2026-01-12T13:27:10.370Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "31",
+    "object_repr": "Wooden / Antique Wooden Farm Large",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Weight\", \"Length\", \"Width\", \"Height\", \"Materials\", \"Madein\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 186,
+  "fields": {
+    "action_time": "2026-01-12T13:29:29.044Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "32",
+    "object_repr": "Wooden / Round Wooden Serving Board",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Weight\", \"Length\", \"Width\", \"Height\", \"Materials\", \"Madein\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 187,
+  "fields": {
+    "action_time": "2026-01-12T13:30:03.146Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "33",
+    "object_repr": "Fabric / Handmade Jute Basket",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Weight\", \"Length\", \"Width\", \"Height\", \"Materials\", \"Madein\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 188,
+  "fields": {
+    "action_time": "2026-01-12T13:30:46.888Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "34",
+    "object_repr": "Fabric / Knitting yarn & crochet hook",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Weight\", \"Length\", \"Width\", \"Height\", \"Materials\", \"Madein\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 189,
+  "fields": {
+    "action_time": "2026-01-12T13:31:39.789Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "35",
+    "object_repr": "Sculptures / David Head Portraits",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Weight\", \"Length\", \"Width\", \"Height\", \"Materials\", \"Madein\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 190,
+  "fields": {
+    "action_time": "2026-01-12T13:32:47.226Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "36",
+    "object_repr": "Wooden / Solid Wood Cherry Paddle",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Title\", \"Weight\", \"Length\", \"Width\", \"Height\", \"Materials\", \"Madein\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 191,
+  "fields": {
+    "action_time": "2026-01-12T13:33:23.212Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "37",
+    "object_repr": "Jewelry / Evil Eye Amulet",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Weight\", \"Length\", \"Width\", \"Height\", \"Materials\", \"Madein\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 192,
+  "fields": {
+    "action_time": "2026-01-12T13:33:45.657Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "38",
+    "object_repr": "Pottery / Handmade Clay Pot",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Weight\", \"Length\", \"Width\", \"Height\", \"Materials\", \"Madein\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 193,
+  "fields": {
+    "action_time": "2026-01-12T13:34:35.407Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "39",
+    "object_repr": "Pottery / Cilio Goliath Granite Mortar",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Weight\", \"Length\", \"Width\", \"Height\", \"Materials\", \"Madein\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 194,
+  "fields": {
+    "action_time": "2026-01-12T13:34:51.228Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "39",
+    "object_repr": "Pottery / Cilio Goliath Granite Mortar",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Madein\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 224,
+  "fields": {
+    "action_time": "2026-01-13T10:34:26.947Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "39",
+    "object_repr": "Pottery / Cilio Goliath Granite Mortar",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Height\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 225,
+  "fields": {
+    "action_time": "2026-01-13T10:34:34.468Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "39",
+    "object_repr": "Pottery / Cilio Goliath Granite Mortar",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Height\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 273,
+  "fields": {
+    "action_time": "2026-01-31T13:11:40.679Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "42",
+    "object_repr": "jane",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 274,
+  "fields": {
+    "action_time": "2026-01-31T13:17:16.929Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "43",
+    "object_repr": "EmilSubhanov",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 275,
+  "fields": {
+    "action_time": "2026-01-31T13:53:25.766Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "44",
+    "object_repr": "emil",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 276,
+  "fields": {
+    "action_time": "2026-01-31T13:54:18.132Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "45",
+    "object_repr": "emil",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 277,
+  "fields": {
+    "action_time": "2026-01-31T13:59:00.640Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "46",
+    "object_repr": "emil",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 278,
+  "fields": {
+    "action_time": "2026-02-02T11:34:48.347Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "47",
+    "object_repr": "emil",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 279,
+  "fields": {
+    "action_time": "2026-02-03T08:54:25.180Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "48",
+    "object_repr": "emil",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 280,
+  "fields": {
+    "action_time": "2026-02-03T08:54:25.180Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "41",
+    "object_repr": "janedoe",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 281,
+  "fields": {
+    "action_time": "2026-02-03T08:54:25.181Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "39",
+    "object_repr": "johndoe",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 282,
+  "fields": {
+    "action_time": "2026-02-05T16:21:21.614Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "49",
+    "object_repr": "jamesdoe",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 283,
+  "fields": {
+    "action_time": "2026-02-06T08:27:02.072Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "50",
+    "object_repr": "jamesdoe",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 284,
+  "fields": {
+    "action_time": "2026-02-08T12:07:53.934Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "51",
+    "object_repr": "jamesdoe",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 285,
+  "fields": {
+    "action_time": "2026-02-08T12:38:11.915Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "52",
+    "object_repr": "jamesdoe",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 286,
+  "fields": {
+    "action_time": "2026-02-08T12:38:19.105Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "52",
+    "object_repr": "jamesdoe",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 287,
+  "fields": {
+    "action_time": "2026-02-08T12:42:42.641Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "admin",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Phone\", \"Email address\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 288,
+  "fields": {
+    "action_time": "2026-02-08T12:42:59.672Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "admin",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Last name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 289,
+  "fields": {
+    "action_time": "2026-02-09T12:45:36.784Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "admin",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Profile image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 290,
+  "fields": {
+    "action_time": "2026-02-09T12:48:48.599Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "admin",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Profile image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 291,
+  "fields": {
+    "action_time": "2026-02-09T12:53:32.994Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "admin",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Phone\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 292,
+  "fields": {
+    "action_time": "2026-02-09T12:53:51.635Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "admin",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Profile image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 293,
+  "fields": {
+    "action_time": "2026-02-09T13:08:21.171Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "admin",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Profile image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 294,
+  "fields": {
+    "action_time": "2026-02-09T13:22:42.527Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "admin",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Phone\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 295,
+  "fields": {
+    "action_time": "2026-02-09T13:35:50.323Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "admin",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Profile image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 296,
+  "fields": {
+    "action_time": "2026-02-10T10:26:24.891Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "admin",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\", \"Phone\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 297,
+  "fields": {
+    "action_time": "2026-02-10T10:29:15.349Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "admin",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\", \"Phone\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 298,
+  "fields": {
+    "action_time": "2026-02-10T10:31:14.141Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "admin",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\", \"Phone\", \"Email address\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 299,
+  "fields": {
+    "action_time": "2026-02-10T10:31:20.366Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "admin",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Profile image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 300,
+  "fields": {
+    "action_time": "2026-02-10T10:33:17.733Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "admin",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\", \"Phone\", \"Email address\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 301,
+  "fields": {
+    "action_time": "2026-02-10T10:38:29.687Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "admin",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\", \"Profile image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 302,
+  "fields": {
+    "action_time": "2026-02-10T10:44:07.628Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "admin",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 303,
+  "fields": {
+    "action_time": "2026-02-10T10:59:33.326Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "admin",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 304,
+  "fields": {
+    "action_time": "2026-02-11T11:23:31.179Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "53",
+    "object_repr": "johndoe",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 305,
+  "fields": {
+    "action_time": "2026-02-11T11:23:35.841Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "53",
+    "object_repr": "johndoe",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 306,
+  "fields": {
+    "action_time": "2026-02-12T06:38:29.220Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "54",
+    "object_repr": "johndoe",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 307,
+  "fields": {
+    "action_time": "2026-02-12T07:34:13.922Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "55",
+    "object_repr": "john",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 308,
+  "fields": {
+    "action_time": "2026-02-12T10:13:31.766Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "56",
+    "object_repr": "john",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 309,
+  "fields": {
+    "action_time": "2026-02-12T11:12:59.658Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "57",
+    "object_repr": "john",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 310,
+  "fields": {
+    "action_time": "2026-02-12T11:16:04.452Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "58",
+    "object_repr": "john",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\", \"Phone\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 311,
+  "fields": {
+    "action_time": "2026-02-12T11:16:50.450Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "58",
+    "object_repr": "john",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Profile image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 312,
+  "fields": {
+    "action_time": "2026-02-12T11:17:58.222Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "58",
+    "object_repr": "john",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Active\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 313,
+  "fields": {
+    "action_time": "2026-02-12T11:18:40.698Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "58",
+    "object_repr": "john",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Phone\", \"Profile image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 314,
+  "fields": {
+    "action_time": "2026-02-12T11:32:43.985Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "58",
+    "object_repr": "john",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 315,
+  "fields": {
+    "action_time": "2026-02-12T11:34:14.367Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "59",
+    "object_repr": "john",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 316,
+  "fields": {
+    "action_time": "2026-02-12T11:35:49.017Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "60",
+    "object_repr": "john",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 317,
+  "fields": {
+    "action_time": "2026-02-12T11:35:58.415Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "admin",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Active\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 323,
+  "fields": {
+    "action_time": "2026-02-20T12:23:18.357Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "28",
+    "object_repr": "Wooden / Hand-Made Garlic Mortar",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Isnew\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 324,
+  "fields": {
+    "action_time": "2026-02-20T12:23:25.584Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "32",
+    "object_repr": "Wooden / Round Wooden Serving Board",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 325,
+  "fields": {
+    "action_time": "2026-02-20T12:23:35.538Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "39",
+    "object_repr": "Pottery / Cilio Goliath Granite Mortar",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 326,
+  "fields": {
+    "action_time": "2026-02-20T12:23:42.098Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "37",
+    "object_repr": "Jewelry / Evil Eye Amulet",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 327,
+  "fields": {
+    "action_time": "2026-02-20T15:14:54.904Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "46",
+    "object_repr": "Emil Subhanov",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 328,
+  "fields": {
+    "action_time": "2026-02-20T15:14:54.904Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "45",
+    "object_repr": "Emil Subhanov",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 329,
+  "fields": {
+    "action_time": "2026-02-21T09:34:41.466Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "104",
+    "object_repr": "Daniel Weaver",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 330,
+  "fields": {
+    "action_time": "2026-02-21T09:34:41.466Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "103",
+    "object_repr": "Christopher Hicks",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 331,
+  "fields": {
+    "action_time": "2026-02-21T09:34:41.466Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "102",
+    "object_repr": "Brian Peterson",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 332,
+  "fields": {
+    "action_time": "2026-02-21T09:34:41.466Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "101",
+    "object_repr": "Alice White",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 333,
+  "fields": {
+    "action_time": "2026-02-21T09:34:41.466Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "100",
+    "object_repr": "Shawn Arias",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 334,
+  "fields": {
+    "action_time": "2026-02-21T09:34:41.466Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "99",
+    "object_repr": "Michelle Hall",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 335,
+  "fields": {
+    "action_time": "2026-02-21T09:34:41.466Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "98",
+    "object_repr": "Erik Simpson",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 336,
+  "fields": {
+    "action_time": "2026-02-21T09:34:41.467Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "97",
+    "object_repr": "Ashley George",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 337,
+  "fields": {
+    "action_time": "2026-02-21T09:34:41.467Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "96",
+    "object_repr": "Joshua Rhodes",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 338,
+  "fields": {
+    "action_time": "2026-02-21T09:34:41.467Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "95",
+    "object_repr": "Todd Miller",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 339,
+  "fields": {
+    "action_time": "2026-02-22T09:53:40.020Z",
+    "user": 1,
+    "content_type": 16,
+    "object_id": "1",
+    "object_repr": "BlockedIpAddress object (1)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 340,
+  "fields": {
+    "action_time": "2026-02-22T09:54:48.589Z",
+    "user": 1,
+    "content_type": 16,
+    "object_id": "1",
+    "object_repr": "BlockedIpAddress object (1)",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 373,
+  "fields": {
+    "action_time": "2026-02-24T10:48:57.161Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "7",
+    "object_repr": "Dekor",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Title [ru]\", \"Title [az]\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 374,
+  "fields": {
+    "action_time": "2026-02-24T10:49:15.517Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "7",
+    "object_repr": "Dekor",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Title\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 375,
+  "fields": {
+    "action_time": "2026-02-24T10:56:11.411Z",
+    "user": 1,
+    "content_type": 6,
+    "object_id": "13",
+    "object_repr": "Wooden",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Title [ru]\", \"Title [az]\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 376,
+  "fields": {
+    "action_time": "2026-02-24T10:56:48.465Z",
+    "user": 1,
+    "content_type": 6,
+    "object_id": "12",
+    "object_repr": "Sculptures",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Title [ru]\", \"Title [az]\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 377,
+  "fields": {
+    "action_time": "2026-02-24T10:57:19.907Z",
+    "user": 1,
+    "content_type": 6,
+    "object_id": "11",
+    "object_repr": "Paintings",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Title [ru]\", \"Title [az]\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 378,
+  "fields": {
+    "action_time": "2026-02-24T10:57:46.211Z",
+    "user": 1,
+    "content_type": 6,
+    "object_id": "10",
+    "object_repr": "Fabric",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Title [ru]\", \"Title [az]\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 379,
+  "fields": {
+    "action_time": "2026-02-24T10:58:11.299Z",
+    "user": 1,
+    "content_type": 6,
+    "object_id": "9",
+    "object_repr": "Pottery",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Title [ru]\", \"Title [az]\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 380,
+  "fields": {
+    "action_time": "2026-02-24T10:58:53.635Z",
+    "user": 1,
+    "content_type": 6,
+    "object_id": "8",
+    "object_repr": "Jewelry",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Title [ru]\", \"Title [az]\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 381,
+  "fields": {
+    "action_time": "2026-02-24T11:02:09.741Z",
+    "user": 1,
+    "content_type": 6,
+    "object_id": "8",
+    "object_repr": "Jewelry",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 382,
+  "fields": {
+    "action_time": "2026-02-27T12:24:49.736Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "76",
+    "object_repr": "Product object (76)",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 383,
+  "fields": {
+    "action_time": "2026-02-27T12:24:49.736Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "75",
+    "object_repr": "Product object (75)",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 384,
+  "fields": {
+    "action_time": "2026-02-27T12:25:05.675Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "112",
+    "object_repr": "Product object (112)",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 385,
+  "fields": {
+    "action_time": "2026-02-27T12:25:05.675Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "111",
+    "object_repr": "Product object (111)",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 386,
+  "fields": {
+    "action_time": "2026-02-27T12:25:05.675Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "110",
+    "object_repr": "Product object (110)",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 387,
+  "fields": {
+    "action_time": "2026-02-27T12:25:05.676Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "79",
+    "object_repr": "Product object (79)",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 388,
+  "fields": {
+    "action_time": "2026-02-27T12:25:05.676Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "78",
+    "object_repr": "Product object (78)",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 389,
+  "fields": {
+    "action_time": "2026-02-27T12:25:05.676Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "77",
+    "object_repr": "Product object (77)",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 390,
+  "fields": {
+    "action_time": "2026-02-27T12:31:34.219Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "115",
+    "object_repr": "Product object (115)",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 391,
+  "fields": {
+    "action_time": "2026-02-27T12:31:34.219Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "114",
+    "object_repr": "Product object (114)",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 392,
+  "fields": {
+    "action_time": "2026-02-27T12:31:34.219Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "113",
+    "object_repr": "Product object (113)",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 393,
+  "fields": {
+    "action_time": "2026-02-27T15:06:11.071Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "116",
+    "object_repr": "Product object (116)",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 394,
+  "fields": {
+    "action_time": "2026-02-27T15:22:10.369Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "120",
+    "object_repr": "Product object (120)",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 395,
+  "fields": {
+    "action_time": "2026-02-27T15:22:10.369Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "119",
+    "object_repr": "Product object (119)",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 396,
+  "fields": {
+    "action_time": "2026-02-27T15:22:10.369Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "118",
+    "object_repr": "Product object (118)",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 397,
+  "fields": {
+    "action_time": "2026-02-27T15:22:10.369Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "117",
+    "object_repr": "Product object (117)",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 398,
+  "fields": {
+    "action_time": "2026-02-27T15:24:30.464Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "122",
+    "object_repr": "Product object (122)",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 399,
+  "fields": {
+    "action_time": "2026-02-27T15:24:30.464Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "121",
+    "object_repr": "Product object (121)",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 400,
+  "fields": {
+    "action_time": "2026-02-27T15:34:11.196Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "125",
+    "object_repr": "Product object (125)",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 401,
+  "fields": {
+    "action_time": "2026-02-27T15:34:11.196Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "124",
+    "object_repr": "Product object (124)",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 402,
+  "fields": {
+    "action_time": "2026-02-27T15:34:11.197Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "123",
+    "object_repr": "Product object (123)",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 403,
+  "fields": {
+    "action_time": "2026-02-28T17:34:24.388Z",
+    "user": 1,
+    "content_type": 6,
+    "object_id": "13",
+    "object_repr": "Wooden",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Title\", \"Title [en]\", \"Title [ru]\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 404,
+  "fields": {
+    "action_time": "2026-02-28T17:34:44.878Z",
+    "user": 1,
+    "content_type": 6,
+    "object_id": "12",
+    "object_repr": "Sculptures",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Title\", \"Title [en]\", \"Title [ru]\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 405,
+  "fields": {
+    "action_time": "2026-02-28T17:35:03.235Z",
+    "user": 1,
+    "content_type": 6,
+    "object_id": "11",
+    "object_repr": "Paintings",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Title\", \"Title [en]\", \"Title [ru]\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 406,
+  "fields": {
+    "action_time": "2026-02-28T17:35:21.943Z",
+    "user": 1,
+    "content_type": 6,
+    "object_id": "10",
+    "object_repr": "Fabric",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Title\", \"Title [en]\", \"Title [ru]\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 407,
+  "fields": {
+    "action_time": "2026-02-28T17:36:14.529Z",
+    "user": 1,
+    "content_type": 6,
+    "object_id": "9",
+    "object_repr": "Pottery",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Title\", \"Title [en]\", \"Title [ru]\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 408,
+  "fields": {
+    "action_time": "2026-02-28T17:36:57.340Z",
+    "user": 1,
+    "content_type": 6,
+    "object_id": "8",
+    "object_repr": "Jewelry",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Title\", \"Title [en]\", \"Title [ru]\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 409,
+  "fields": {
+    "action_time": "2026-02-28T17:37:53.587Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "7",
+    "object_repr": "Handmade",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Title\", \"Title [en]\", \"Title [ru]\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 410,
+  "fields": {
+    "action_time": "2026-02-28T17:38:25.737Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "6",
+    "object_repr": "Furniture",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Title\", \"Title [en]\", \"Title [ru]\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 411,
+  "fields": {
+    "action_time": "2026-02-28T17:38:56.158Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "5",
+    "object_repr": "Decore",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Title\", \"Title [en]\", \"Title [ru]\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 412,
+  "fields": {
+    "action_time": "2026-03-01T09:07:02.925Z",
+    "user": 1,
+    "content_type": 18,
+    "object_id": "1",
+    "object_repr": "subhanov.emil@gmail.com",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 413,
+  "fields": {
+    "action_time": "2026-03-01T17:25:56.292Z",
+    "user": 1,
+    "content_type": 18,
+    "object_id": "2",
+    "object_repr": "subhanov.emil@gmail.com",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 414,
+  "fields": {
+    "action_time": "2026-03-01T17:30:29.831Z",
+    "user": 1,
+    "content_type": 18,
+    "object_id": "3",
+    "object_repr": "subhanov.emil@gmail.com",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 415,
+  "fields": {
+    "action_time": "2026-03-01T17:30:56.867Z",
+    "user": 1,
+    "content_type": 18,
+    "object_id": "4",
+    "object_repr": "subhanov.emil@gmail.com",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 416,
+  "fields": {
+    "action_time": "2026-03-01T17:32:09.912Z",
+    "user": 1,
+    "content_type": 18,
+    "object_id": "5",
+    "object_repr": "subhanov.emil@gmail.com",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 417,
+  "fields": {
+    "action_time": "2026-03-02T17:25:26.536Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "115",
+    "object_repr": "Admin",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 418,
+  "fields": {
+    "action_time": "2026-03-03T11:34:19.715Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "38",
+    "object_repr": "Cilio Goliath Granite Mortar",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 419,
+  "fields": {
+    "action_time": "2026-03-03T11:34:19.715Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "37",
+    "object_repr": "Cilio Goliath Granite Mortar",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 420,
+  "fields": {
+    "action_time": "2026-03-04T12:11:03.887Z",
+    "user": 1,
+    "content_type": 18,
+    "object_id": "6",
+    "object_repr": "subhanov.emil@gmail.com",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 421,
+  "fields": {
+    "action_time": "2026-03-04T12:28:30.835Z",
+    "user": 1,
+    "content_type": 19,
+    "object_id": "1",
+    "object_repr": "30 16 * * * (m/h/dM/MY/d) Asia/Baku",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 422,
+  "fields": {
+    "action_time": "2026-03-04T12:29:17.258Z",
+    "user": 1,
+    "content_type": 21,
+    "object_id": "1",
+    "object_repr": "Subscribe: 30 16 * * * (m/h/dM/MY/d) Asia/Baku",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 423,
+  "fields": {
+    "action_time": "2026-03-04T12:32:13.261Z",
+    "user": 1,
+    "content_type": 19,
+    "object_id": "1",
+    "object_repr": "34 16 * * * (m/h/dM/MY/d) Asia/Baku",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Minute(s)\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 424,
+  "fields": {
+    "action_time": "2026-03-04T12:32:21.362Z",
+    "user": 1,
+    "content_type": 21,
+    "object_id": "1",
+    "object_repr": "Subscribe: 34 16 * * * (m/h/dM/MY/d) Asia/Baku",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Task (registered)\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 425,
+  "fields": {
+    "action_time": "2026-03-04T13:08:53.956Z",
+    "user": 1,
+    "content_type": 21,
+    "object_id": "1",
+    "object_repr": "Subscribe: 34 16 * * * (m/h/dM/MY/d) Asia/Baku",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 426,
+  "fields": {
+    "action_time": "2026-03-04T13:09:57.414Z",
+    "user": 1,
+    "content_type": 19,
+    "object_id": "2",
+    "object_repr": "12 17 * * * (m/h/dM/MY/d) Asia/Baku",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 427,
+  "fields": {
+    "action_time": "2026-03-04T13:10:00.420Z",
+    "user": 1,
+    "content_type": 21,
+    "object_id": "2",
+    "object_repr": "Subscribe: 12 17 * * * (m/h/dM/MY/d) Asia/Baku",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 428,
+  "fields": {
+    "action_time": "2026-03-04T13:39:39.273Z",
+    "user": 1,
+    "content_type": 19,
+    "object_id": "2",
+    "object_repr": "42 17 * * * (m/h/dM/MY/d) Asia/Baku",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Minute(s)\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 429,
+  "fields": {
+    "action_time": "2026-03-04T13:39:41.665Z",
+    "user": 1,
+    "content_type": 21,
+    "object_id": "2",
+    "object_repr": "Subscribe: 42 17 * * * (m/h/dM/MY/d) Asia/Baku",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Task (registered)\", \"Task (custom)\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 430,
+  "fields": {
+    "action_time": "2026-03-04T13:45:04.672Z",
+    "user": 1,
+    "content_type": 18,
+    "object_id": "6",
+    "object_repr": "subhanov.emil@gmail.com",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 431,
+  "fields": {
+    "action_time": "2026-03-04T13:45:09.975Z",
+    "user": 1,
+    "content_type": 18,
+    "object_id": "7",
+    "object_repr": "subhanov.emil@gmail.com",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 432,
+  "fields": {
+    "action_time": "2026-03-04T13:45:13.769Z",
+    "user": 1,
+    "content_type": 18,
+    "object_id": "7",
+    "object_repr": "subhanov.emil@gmail.com",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 433,
+  "fields": {
+    "action_time": "2026-03-04T13:47:47.758Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "116",
+    "object_repr": "johnny",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 434,
+  "fields": {
+    "action_time": "2026-03-04T16:30:23.157Z",
+    "user": 1,
+    "content_type": 17,
+    "object_id": "1",
+    "object_repr": "How the 10 Worst Handmade Product Fails of All Time Could Have Been Prevented",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 435,
+  "fields": {
+    "action_time": "2026-03-04T16:30:54.751Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "119",
+    "object_repr": "Saida",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 436,
+  "fields": {
+    "action_time": "2026-03-04T16:31:02.282Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "118",
+    "object_repr": "Elmddin",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 437,
+  "fields": {
+    "action_time": "2026-03-04T16:31:52.370Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "117",
+    "object_repr": "Alex",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\"]}}]"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 1,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 1,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 1,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": 1,
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 2,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 2,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 2,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": 2,
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 3,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 3,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 3,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view group",
+    "content_type": 3,
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 4,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 4,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 4,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": 4,
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 5,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 5,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 5,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view session",
+    "content_type": 5,
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add product category",
+    "content_type": 6,
+    "codename": "add_productcategory"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change product category",
+    "content_type": 6,
+    "codename": "change_productcategory"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete product category",
+    "content_type": 6,
+    "codename": "delete_productcategory"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view product category",
+    "content_type": 6,
+    "codename": "view_productcategory"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add product",
+    "content_type": 7,
+    "codename": "add_product"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change product",
+    "content_type": 7,
+    "codename": "change_product"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete product",
+    "content_type": 7,
+    "codename": "delete_product"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view product",
+    "content_type": 7,
+    "codename": "view_product"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 29,
+  "fields": {
+    "name": "Can add user",
+    "content_type": 8,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 30,
+  "fields": {
+    "name": "Can change user",
+    "content_type": 8,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 31,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": 8,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 32,
+  "fields": {
+    "name": "Can view user",
+    "content_type": 8,
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 33,
+  "fields": {
+    "name": "Can add contact",
+    "content_type": 9,
+    "codename": "add_contact"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 34,
+  "fields": {
+    "name": "Can change contact",
+    "content_type": 9,
+    "codename": "change_contact"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 35,
+  "fields": {
+    "name": "Can delete contact",
+    "content_type": 9,
+    "codename": "delete_contact"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 36,
+  "fields": {
+    "name": "Can view contact",
+    "content_type": 9,
+    "codename": "view_contact"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 37,
+  "fields": {
+    "name": "Can add product tag",
+    "content_type": 11,
+    "codename": "add_producttag"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 38,
+  "fields": {
+    "name": "Can change product tag",
+    "content_type": 11,
+    "codename": "change_producttag"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 39,
+  "fields": {
+    "name": "Can delete product tag",
+    "content_type": 11,
+    "codename": "delete_producttag"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 40,
+  "fields": {
+    "name": "Can view product tag",
+    "content_type": 11,
+    "codename": "view_producttag"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 41,
+  "fields": {
+    "name": "Can add product image",
+    "content_type": 10,
+    "codename": "add_productimage"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 42,
+  "fields": {
+    "name": "Can change product image",
+    "content_type": 10,
+    "codename": "change_productimage"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 43,
+  "fields": {
+    "name": "Can delete product image",
+    "content_type": 10,
+    "codename": "delete_productimage"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 44,
+  "fields": {
+    "name": "Can view product image",
+    "content_type": 10,
+    "codename": "view_productimage"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 45,
+  "fields": {
+    "name": "Can add product review",
+    "content_type": 12,
+    "codename": "add_productreview"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 46,
+  "fields": {
+    "name": "Can change product review",
+    "content_type": 12,
+    "codename": "change_productreview"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 47,
+  "fields": {
+    "name": "Can delete product review",
+    "content_type": 12,
+    "codename": "delete_productreview"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 48,
+  "fields": {
+    "name": "Can view product review",
+    "content_type": 12,
+    "codename": "view_productreview"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 49,
+  "fields": {
+    "name": "Can add basket",
+    "content_type": 13,
+    "codename": "add_basket"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 50,
+  "fields": {
+    "name": "Can change basket",
+    "content_type": 13,
+    "codename": "change_basket"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 51,
+  "fields": {
+    "name": "Can delete basket",
+    "content_type": 13,
+    "codename": "delete_basket"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 52,
+  "fields": {
+    "name": "Can view basket",
+    "content_type": 13,
+    "codename": "view_basket"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 53,
+  "fields": {
+    "name": "Can add basket item",
+    "content_type": 14,
+    "codename": "add_basketitem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 54,
+  "fields": {
+    "name": "Can change basket item",
+    "content_type": 14,
+    "codename": "change_basketitem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 55,
+  "fields": {
+    "name": "Can delete basket item",
+    "content_type": 14,
+    "codename": "delete_basketitem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 56,
+  "fields": {
+    "name": "Can view basket item",
+    "content_type": 14,
+    "codename": "view_basketitem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 57,
+  "fields": {
+    "name": "Can add product information",
+    "content_type": 15,
+    "codename": "add_productinformation"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 58,
+  "fields": {
+    "name": "Can change product information",
+    "content_type": 15,
+    "codename": "change_productinformation"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 59,
+  "fields": {
+    "name": "Can delete product information",
+    "content_type": 15,
+    "codename": "delete_productinformation"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 60,
+  "fields": {
+    "name": "Can view product information",
+    "content_type": 15,
+    "codename": "view_productinformation"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 61,
+  "fields": {
+    "name": "Can add blocked ip address",
+    "content_type": 16,
+    "codename": "add_blockedipaddress"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 62,
+  "fields": {
+    "name": "Can change blocked ip address",
+    "content_type": 16,
+    "codename": "change_blockedipaddress"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 63,
+  "fields": {
+    "name": "Can delete blocked ip address",
+    "content_type": 16,
+    "codename": "delete_blockedipaddress"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 64,
+  "fields": {
+    "name": "Can view blocked ip address",
+    "content_type": 16,
+    "codename": "view_blockedipaddress"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 65,
+  "fields": {
+    "name": "Can add blog",
+    "content_type": 17,
+    "codename": "add_blog"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 66,
+  "fields": {
+    "name": "Can change blog",
+    "content_type": 17,
+    "codename": "change_blog"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 67,
+  "fields": {
+    "name": "Can delete blog",
+    "content_type": 17,
+    "codename": "delete_blog"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 68,
+  "fields": {
+    "name": "Can view blog",
+    "content_type": 17,
+    "codename": "view_blog"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 69,
+  "fields": {
+    "name": "Can add subscribe",
+    "content_type": 18,
+    "codename": "add_subscribe"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 70,
+  "fields": {
+    "name": "Can change subscribe",
+    "content_type": 18,
+    "codename": "change_subscribe"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 71,
+  "fields": {
+    "name": "Can delete subscribe",
+    "content_type": 18,
+    "codename": "delete_subscribe"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 72,
+  "fields": {
+    "name": "Can view subscribe",
+    "content_type": 18,
+    "codename": "view_subscribe"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 73,
+  "fields": {
+    "name": "Can add crontab",
+    "content_type": 19,
+    "codename": "add_crontabschedule"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 74,
+  "fields": {
+    "name": "Can change crontab",
+    "content_type": 19,
+    "codename": "change_crontabschedule"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 75,
+  "fields": {
+    "name": "Can delete crontab",
+    "content_type": 19,
+    "codename": "delete_crontabschedule"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 76,
+  "fields": {
+    "name": "Can view crontab",
+    "content_type": 19,
+    "codename": "view_crontabschedule"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 77,
+  "fields": {
+    "name": "Can add interval",
+    "content_type": 20,
+    "codename": "add_intervalschedule"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 78,
+  "fields": {
+    "name": "Can change interval",
+    "content_type": 20,
+    "codename": "change_intervalschedule"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 79,
+  "fields": {
+    "name": "Can delete interval",
+    "content_type": 20,
+    "codename": "delete_intervalschedule"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 80,
+  "fields": {
+    "name": "Can view interval",
+    "content_type": 20,
+    "codename": "view_intervalschedule"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 81,
+  "fields": {
+    "name": "Can add periodic task",
+    "content_type": 21,
+    "codename": "add_periodictask"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 82,
+  "fields": {
+    "name": "Can change periodic task",
+    "content_type": 21,
+    "codename": "change_periodictask"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 83,
+  "fields": {
+    "name": "Can delete periodic task",
+    "content_type": 21,
+    "codename": "delete_periodictask"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 84,
+  "fields": {
+    "name": "Can view periodic task",
+    "content_type": 21,
+    "codename": "view_periodictask"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 85,
+  "fields": {
+    "name": "Can add periodic task track",
+    "content_type": 22,
+    "codename": "add_periodictasks"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 86,
+  "fields": {
+    "name": "Can change periodic task track",
+    "content_type": 22,
+    "codename": "change_periodictasks"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 87,
+  "fields": {
+    "name": "Can delete periodic task track",
+    "content_type": 22,
+    "codename": "delete_periodictasks"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 88,
+  "fields": {
+    "name": "Can view periodic task track",
+    "content_type": 22,
+    "codename": "view_periodictasks"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 89,
+  "fields": {
+    "name": "Can add solar event",
+    "content_type": 23,
+    "codename": "add_solarschedule"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 90,
+  "fields": {
+    "name": "Can change solar event",
+    "content_type": 23,
+    "codename": "change_solarschedule"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 91,
+  "fields": {
+    "name": "Can delete solar event",
+    "content_type": 23,
+    "codename": "delete_solarschedule"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 92,
+  "fields": {
+    "name": "Can view solar event",
+    "content_type": 23,
+    "codename": "view_solarschedule"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 93,
+  "fields": {
+    "name": "Can add clocked",
+    "content_type": 24,
+    "codename": "add_clockedschedule"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 94,
+  "fields": {
+    "name": "Can change clocked",
+    "content_type": 24,
+    "codename": "change_clockedschedule"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 95,
+  "fields": {
+    "name": "Can delete clocked",
+    "content_type": 24,
+    "codename": "delete_clockedschedule"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 96,
+  "fields": {
+    "name": "Can view clocked",
+    "content_type": 24,
+    "codename": "view_clockedschedule"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 1,
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 2,
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 3,
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 4,
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 5,
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 6,
+  "fields": {
+    "app_label": "product",
+    "model": "productcategory"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 7,
+  "fields": {
+    "app_label": "product",
+    "model": "product"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 8,
+  "fields": {
+    "app_label": "user",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 9,
+  "fields": {
+    "app_label": "core",
+    "model": "contact"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 10,
+  "fields": {
+    "app_label": "product",
+    "model": "productimage"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 11,
+  "fields": {
+    "app_label": "product",
+    "model": "producttag"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 12,
+  "fields": {
+    "app_label": "product",
+    "model": "productreview"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 13,
+  "fields": {
+    "app_label": "order",
+    "model": "basket"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 14,
+  "fields": {
+    "app_label": "order",
+    "model": "basketitem"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 15,
+  "fields": {
+    "app_label": "product",
+    "model": "productinformation"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 16,
+  "fields": {
+    "app_label": "user",
+    "model": "blockedipaddress"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 17,
+  "fields": {
+    "app_label": "core",
+    "model": "blog"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 18,
+  "fields": {
+    "app_label": "core",
+    "model": "subscribe"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 19,
+  "fields": {
+    "app_label": "django_celery_beat",
+    "model": "crontabschedule"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 20,
+  "fields": {
+    "app_label": "django_celery_beat",
+    "model": "intervalschedule"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 21,
+  "fields": {
+    "app_label": "django_celery_beat",
+    "model": "periodictask"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 22,
+  "fields": {
+    "app_label": "django_celery_beat",
+    "model": "periodictasks"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 23,
+  "fields": {
+    "app_label": "django_celery_beat",
+    "model": "solarschedule"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 24,
+  "fields": {
+    "app_label": "django_celery_beat",
+    "model": "clockedschedule"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "0g9uarzurcb7jqopjju6jl19i596gn6u",
+  "fields": {
+    "session_data": "e30:1vqTiH:0wwxzI9ZsoHcA5XbJyW7N1Oeb46dvmfcav_rrLWYKEM",
+    "expire_date": "2026-02-26T10:14:21.864Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "14hk0qfzy6iv3efc1rdi0yag50b17pke",
+  "fields": {
+    "session_data": "e30:1vqV2Q:FbY8h2VhB5-2wD-fVdxP5sE-XcBoiS0eN3G3Sf_C2cM",
+    "expire_date": "2026-02-26T11:39:14.057Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "1wztklqgk7xpeoirvpfgxxw7m91wg23v",
+  "fields": {
+    "session_data": "e30:1vqUh5:s-jnKaKyrJdWO3G977gK3Q1DxB8jRL9UQ85chcQdwkc",
+    "expire_date": "2026-02-26T11:17:11.464Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "2t33wk9zleqpoeda8h1t6bz7hrazlw9b",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2hA6QAGX7j0DmRlAqoYmpV0Z765NutDtf-_9l4i4rTVuPS9xSuIsBnH63Qj5kdsO0h3bbZY8t3WZSO6KPGiX1znl5-Vw_w4q9vqtCwyOlSWlE4yoPBFBCi5kHrloNIEUaQseDRU2roBTBQktgHeWNYj3B-8vOBs:1voHAy:8iAy6ZetTYa3JHj6I08uBv14S-ER7MaOMYyz_lEuKaE",
+    "expire_date": "2026-02-20T08:26:52.601Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "3sduuqyujiwayhrzj6x4rkcjejhg6bm9",
+  "fields": {
+    "session_data": "e30:1vqRLI:v97FOCqBn2J6vaKbjIDGZQpiLa7ZCF2pZEG3c0cyIRA",
+    "expire_date": "2026-02-26T07:42:28.761Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "49assn00xhfsrt2nei3vptfvz0g45ctx",
+  "fields": {
+    "session_data": "e30:1vqRMY:UBfYC6Lu6sY49qcl9TGStkgHdimJrCreRpE4AsdSVeQ",
+    "expire_date": "2026-02-26T07:43:46.859Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "5leu13qj570f63yr7mwyumxjscewxrql",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2hAZylBcuu8ZyACDVA0kpV0Z765NutDtf-_9l_C0rcVvnRc_J3ERIE6_W6D44LqDdKd6azK2ui5zkLsiD9rl1BI_r4f7d1Col2-djY6QR4fIkVmNSQ8aKYSImMGARTgbp1VI4IhQD-CC4yEpq6Oz1mTx_gDjnDeK:1vfg9O:GBG38EGrWGG6GlUQttncWGvyc2hMigYYevlKi1BfU9o",
+    "expire_date": "2026-01-27T15:17:42.893Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "9ok53jcctelysudkrl8fwl2bs2lsb1vu",
+  "fields": {
+    "session_data": "e30:1vqTgy:Bws2LSNw8bp_qaWbOz5Sxrq26bdyx9_f_7a_y4JSt98",
+    "expire_date": "2026-02-26T10:13:00.324Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "9q3bwps531d3ewalv80eku7od8rvxnkj",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2hA6QAGX7j0DmRlAqoYmpV0Z765NutDtf-_9l4i4rTVuPS9xSuIsBnH63Qj5kdsO0h3bbZY8t3WZSO6KPGiX1znl5-Vw_w4q9vqtCwyOlSWlE4yoPBFBCi5kHrloNIEUaQseDRU2roBTBQktgHeWNYj3B-8vOBs:1vl4PF:XKD6KQiBmxGqCZcz2GN299FAOkJ_MeT69sOF9bEajcw",
+    "expire_date": "2026-02-11T12:12:21.593Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "a8d41jqlfwziqehmrhugxx48ovoxqez1",
+  "fields": {
+    "session_data": ".eJxVjEsOwiAUAO_C2hCg5aNL9z0DeR-QqoGktCvj3U1NF7qdmcxLRNjWEreeljizuAhrxOkXItAj1d3wHeqtSWp1XWaUeyIP2-XUOD2vR_s3KNDL9zuQ5ZzPeiCjgg4ODcJoCcCNnAEU82DZKfDGW-ZA2WdKAbVHbz2I9wccYDjv:1vp3zn:4bnNkcxiciQH4Hyix7vX_LGCvgiO9ia6b67GBi7RNos",
+    "expire_date": "2026-02-22T12:34:35.555Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "a92kguzxvbl2nrmfyfgtl3y5ddddm21o",
+  "fields": {
+    "session_data": "e30:1vqTnG:nLi8ZxZS3wfcTtzCJcRJoghlf8yI76Lf9KIJ8r9ZxB4",
+    "expire_date": "2026-02-26T10:19:30.052Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "axxnuzena9s4ngkk2766pwwu74rq1e37",
+  "fields": {
+    "session_data": "e30:1vqRZD:j1zsl7yJ2rOoKxXVVlDlxYnly4hI2XmuvaudQKaziZ0",
+    "expire_date": "2026-02-26T07:56:51.268Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "b9be3p8dk96odebkpwd54te5n95sd92j",
+  "fields": {
+    "session_data": "e30:1vqRE9:X2gVkgAntyr6Q4dShkhoXOPPcn9CMf-tdOjO9NwflCU",
+    "expire_date": "2026-02-26T07:35:05.904Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "bm3i6pynha498vsbs13tm354foaoboze",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAUBf-FtSGFlpdL934DuQ-QqoGktCvjv2uTLnR7Zua8RIRtLXHraYkzi7MwSpx-RwR6pLoTvkO9NUmtrsuMclfkQbu8Nk7Py-H-HRTo5VuPDtToc56UYe1dIGCrgTQiDYQUbFJGWx8o45AcKqDEYQpodM4MfhTvDyANOSc:1voHCW:kAEUtK1KEVcoVhLrNjyCA1q6pK4MmDzncg91Hwjwz_I",
+    "expire_date": "2026-02-20T08:28:28.427Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "bvpu2emkj161oniufir4rl29crld0qao",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAUBf-FtSEgj1KX7vsN5D5AqgaS0q6M_65NutDtmZnzEhG2tcStpyXOLC5Ci9PvhkCPVHfAd6i3JqnVdZlR7oo8aJdT4_S8Hu7fQYFevrVndFp7DtpiDhZMhsFn5yioELRXiZUdDVg8s6PRErHPA-acEthgDIn3B-NUOGs:1vxnJN:80aKYzgkBNZbO8VlbqnIaNlf6jCwp2ZhmoTOxWmXrgM",
+    "expire_date": "2026-03-18T14:34:53.508Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "f73ff80exuppir173lg35r0zvzk5yz9f",
+  "fields": {
+    "session_data": "e30:1vtOkg:mkLjlt8g8F5y0XQWbj1Zqlx_ahKNEhpqGk9Ks1NY8LQ",
+    "expire_date": "2026-03-06T11:32:54.886Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "gtv9jinc9enfhc1xrbebby8uih10snmh",
+  "fields": {
+    "session_data": "e30:1vqTpg:CsIh-DfJS34jkGjnzVnZGScHdjgCYPoSCSF1JOUosUY",
+    "expire_date": "2026-02-26T10:22:00.875Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "h0ma2mwmt6aamgebtd40z94o3o34vhiu",
+  "fields": {
+    "session_data": "e30:1vqUgE:M7uKUS7SlYBzESym_GZWVYxathbL8XA-D6Ug6BFHFNU",
+    "expire_date": "2026-02-26T11:16:18.268Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "hiissxkdwrkcq7tv22decys4jk6vro4o",
+  "fields": {
+    "session_data": "e30:1vqUfJ:F7GmV0ANl37KtBqq_Vu7VV7WdCeiTT0ydVQTmRalmwE",
+    "expire_date": "2026-02-26T11:15:21.503Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "hqruyfxn4a4rqzeyk8njn6agjolftd7c",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2hA6QAGX7j0DmRlAqoYmpV0Z765NutDtf-_9l4i4rTVuPS9xSuIsBnH63Qj5kdsO0h3bbZY8t3WZSO6KPGiX1znl5-Vw_w4q9vqtCwyOlSWlE4yoPBFBCi5kHrloNIEUaQseDRU2roBTBQktgHeWNYj3B-8vOBs:1vo2Ve:1vIrnQ9vkk0DT0vv9nnwZ19Sw4ceOrasETEQXlOnUkg",
+    "expire_date": "2026-02-19T16:47:14.880Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "ly00ir40ltt52zehmvg8qncp482nmy5a",
+  "fields": {
+    "session_data": "e30:1vqROg:DTa84_kWRLQbeiETaq1eEV4N4-jOEDDY0xdebqJxfzg",
+    "expire_date": "2026-02-26T07:45:58.003Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "n15vx110ign42evnqhxmd4mvz3vvo68m",
+  "fields": {
+    "session_data": "e30:1vp3zB:tEnO8pbed6VbIroNuMWe5GmZ_NhhVNwp0NceaA2lLkU",
+    "expire_date": "2026-02-22T12:33:57.940Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "naq71tlawm57nbczzv08cbjq7d5b3cxd",
+  "fields": {
+    "session_data": "e30:1vqUc9:8XbCrBNI4xpwv66OAeYgPGNAvUCgD1HsoqBfOiPXV_g",
+    "expire_date": "2026-02-26T11:12:05.218Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "pl84sf3qkllfv6kpfbvebjobgmexgdht",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2hA6QAGX7j0DmRlAqoYmpV0Z765NutDtf-_9l4i4rTVuPS9xSuIsBnH63Qj5kdsO0h3bbZY8t3WZSO6KPGiX1znl5-Vw_w4q9vqtCwyOlSWlE4yoPBFBCi5kHrloNIEUaQseDRU2roBTBQktgHeWNYj3B-8vOBs:1vplBR:g-hd-rOl2PKvA_b3dAla0CySZ9kfdDrWrKPgmmRdLNk",
+    "expire_date": "2026-02-24T10:41:29.424Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "prh63u1wscyg2ijtiixx35h875v9o1tb",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2hAZylBcuu8ZyACDVA0kpV0Z765NutDtf-_9l_C0rcVvnRc_J3ERIE6_W6D44LqDdKd6azK2ui5zkLsiD9rl1BI_r4f7d1Col2-djY6QR4fIkVmNSQ8aKYSImMGARTgbp1VI4IhQD-CC4yEpq6Oz1mTx_gDjnDeK:1vo2a1:LnfcBp_CvTpmno4WOifmQEkeLtzXX9B5x4j7AQ89lLg",
+    "expire_date": "2026-02-19T16:51:45.341Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "q394m91m363sp21ry16ey45ij6o2jv1g",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2hA6QAGX7j0DmRlAqoYmpV0Z765NutDtf-_9l4i4rTVuPS9xSuIsBnH63Qj5kdsO0h3bbZY8t3WZSO6KPGiX1znl5-Vw_w4q9vqtCwyOlSWlE4yoPBFBCi5kHrloNIEUaQseDRU2roBTBQktgHeWNYj3B-8vOBs:1vaXf9:dUYEwfZFxDmwYdwuQV7aOkL37lF71FjYzqEoWkcIABc",
+    "expire_date": "2026-01-13T11:13:15.280Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "qatus1ntaah6mz1vpxnk5gufukwbg9oy",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAUBf-FtSGFlpdL934DuQ-QqoGktCvjv2uTLnR7Zua8RIRtLXHraYkzi7MwSpx-RwR6pLoTvkO9NUmtrsuMclfkQbu8Nk7Py-H-HRTo5VuPDtToc56UYe1dIGCrgTQiDYQUbFJGWx8o45AcKqDEYQpodM4MfhTvDyANOSc:1voIjw:jl2yqy5dmHxmi4Hvumuz4pI8oqGAyfsfLcuLRwQBN5g",
+    "expire_date": "2026-02-20T10:07:04.837Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "r0yh8jd4gub6o6hs1itl76roaet6gp9e",
+  "fields": {
+    "session_data": "e30:1vx6pk:cmKpmTxB6KpXaji_CaRRc_MQOv74N2yRQ5Qq9sjVTbg",
+    "expire_date": "2026-03-16T17:13:28.726Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "rqrbfvjx4pr65df77xkxmnlrl7c7v8jc",
+  "fields": {
+    "session_data": "e30:1vtOkh:807eLXemR3y6VAvmK3lfObC0zK482iHPe723UCZwoNs",
+    "expire_date": "2026-03-06T11:32:55.332Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "s15g3k1c54tenypiy2jt3egfx5hids91",
+  "fields": {
+    "session_data": "e30:1vtOkg:mkLjlt8g8F5y0XQWbj1Zqlx_ahKNEhpqGk9Ks1NY8LQ",
+    "expire_date": "2026-03-06T11:32:54.528Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "s5bjwed5iwkn5eroaf28kouigmgdmrh9",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2hA6QAGX7j0DmRlAqoYmpV0Z765NutDtf-_9l4i4rTVuPS9xSuIsBnH63Qj5kdsO0h3bbZY8t3WZSO6KPGiX1znl5-Vw_w4q9vqtCwyOlSWlE4yoPBFBCi5kHrloNIEUaQseDRU2roBTBQktgHeWNYj3B-8vOBs:1vaXTP:ZbqzlDuusObhIp83gZwIdOIYmDrTwOq_X_40knT8LBE",
+    "expire_date": "2026-01-13T11:01:07.972Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "u9h7v5j74x3ln7lroih0eyf9q06f91dd",
+  "fields": {
+    "session_data": "e30:1vx6t5:Rq6OloOkQIw27ovEoCk1p1V7vd89H_FPe5OCniFd2GE",
+    "expire_date": "2026-03-16T17:16:55.593Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "urt7fnr7ooxzyqgujm1cogovpskhg813",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2hA6QAGX7j0DmRlAqoYmpV0Z765NutDtf-_9l4i4rTVuPS9xSuIsBnH63Qj5kdsO0h3bbZY8t3WZSO6KPGiX1znl5-Vw_w4q9vqtCwyOlSWlE4yoPBFBCi5kHrloNIEUaQseDRU2roBTBQktgHeWNYj3B-8vOBs:1voH8g:y2J7dgG4gXRbgA3KUUzEV8l5YMCSuxIdg457iNabU2M",
+    "expire_date": "2026-02-20T08:24:30.826Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "vzh1q1s72yiufiygsj3gr9blm6bnv5iw",
+  "fields": {
+    "session_data": "e30:1vqRMU:AX9XG3HYOt8jNDxailvbkOW_vZdjk7Ggzy7j09fCXhk",
+    "expire_date": "2026-02-26T07:43:42.219Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "w7hw22fsknlghwq80ux5x144bs166cur",
+  "fields": {
+    "session_data": "e30:1vtOkh:807eLXemR3y6VAvmK3lfObC0zK482iHPe723UCZwoNs",
+    "expire_date": "2026-03-06T11:32:55.188Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "z13bdj23iy8vbe7xocm43b22zonf6ow2",
+  "fields": {
+    "session_data": "e30:1vtOkd:oHnPal9VoxHSxog-bHSxfHRxd2RhTezul0NyuGE61ac",
+    "expire_date": "2026-03-06T11:32:51.829Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "zuitge25rrazlwjtlx5jjum6avpkce2o",
+  "fields": {
+    "session_data": "e30:1vp3yu:1pwqm61SOt6h2AT39OnivKYBVgvYv0Zd3miJgvzTNtk",
+    "expire_date": "2026-02-22T12:33:40.431Z"
+  }
+},
+{
+  "model": "core.subscribe",
+  "pk": 8,
+  "fields": {
+    "created_at": "2026-03-04T13:45:20.196Z",
+    "updated_at": "2026-03-04T13:45:20.196Z",
+    "email": "subhanov.emil@gmail.com"
+  }
+},
+{
+  "model": "core.contact",
+  "pk": 44,
+  "fields": {
+    "created_at": "2026-02-14T12:35:24.754Z",
+    "updated_at": "2026-02-14T12:35:24.754Z",
+    "first_name": "John",
+    "last_name": "Doe",
+    "email": "subhanov.emil@gmail.com",
+    "message": "asdf"
+  }
+},
+{
+  "model": "core.contact",
+  "pk": 47,
+  "fields": {
+    "created_at": "2026-03-01T17:44:22.161Z",
+    "updated_at": "2026-03-01T17:44:22.161Z",
+    "first_name": "Emil",
+    "last_name": "Subhanov",
+    "email": "subhanov.emil@gmail.com",
+    "message": "EXAMPLE"
+  }
+},
+{
+  "model": "product.producttag",
+  "pk": 5,
+  "fields": {
+    "created_at": "2026-01-05T16:27:12.333Z",
+    "updated_at": "2026-01-05T16:27:12.333Z",
+    "title": "Decore",
+    "title_en": "Decore",
+    "title_ru": ""
+  }
+},
+{
+  "model": "product.producttag",
+  "pk": 6,
+  "fields": {
+    "created_at": "2026-01-05T16:27:22.162Z",
+    "updated_at": "2026-01-05T16:27:22.162Z",
+    "title": "Furniture",
+    "title_en": "Furniture",
+    "title_ru": ""
+  }
+},
+{
+  "model": "product.producttag",
+  "pk": 7,
+  "fields": {
+    "created_at": "2026-01-05T16:27:30.172Z",
+    "updated_at": "2026-01-05T16:27:30.172Z",
+    "title": "Handmade",
+    "title_en": "Handmade",
+    "title_ru": " "
+  }
+},
+{
+  "model": "product.productcategory",
+  "pk": 8,
+  "fields": {
+    "created_at": "2026-01-05T16:25:08.850Z",
+    "updated_at": "2026-01-05T16:25:08.850Z",
+    "title": "Jewelry",
+    "title_en": "Jewelry",
+    "title_ru": "",
+    "categoryimage": "category_images/jewelry-icon.png"
+  }
+},
+{
+  "model": "product.productcategory",
+  "pk": 9,
+  "fields": {
+    "created_at": "2026-01-05T16:25:22.890Z",
+    "updated_at": "2026-01-05T16:25:22.890Z",
+    "title": "Pottery",
+    "title_en": "Pottery",
+    "title_ru": "",
+    "categoryimage": "category_images/pottery-icon.png"
+  }
+},
+{
+  "model": "product.productcategory",
+  "pk": 10,
+  "fields": {
+    "created_at": "2026-01-05T16:25:30.351Z",
+    "updated_at": "2026-01-05T16:25:30.351Z",
+    "title": "Fabric",
+    "title_en": "Fabric",
+    "title_ru": "",
+    "categoryimage": "category_images/fabric-icon.png"
+  }
+},
+{
+  "model": "product.productcategory",
+  "pk": 11,
+  "fields": {
+    "created_at": "2026-01-05T16:25:49.299Z",
+    "updated_at": "2026-01-05T16:25:49.299Z",
+    "title": "Paintings",
+    "title_en": "Paintings",
+    "title_ru": "",
+    "categoryimage": "category_images/paintings-icon.png"
+  }
+},
+{
+  "model": "product.productcategory",
+  "pk": 12,
+  "fields": {
+    "created_at": "2026-01-05T16:26:17.318Z",
+    "updated_at": "2026-01-05T16:26:17.318Z",
+    "title": "Sculptures",
+    "title_en": "Sculptures",
+    "title_ru": "",
+    "categoryimage": "category_images/sculptures-icon.png"
+  }
+},
+{
+  "model": "product.productcategory",
+  "pk": 13,
+  "fields": {
+    "created_at": "2026-01-05T16:26:30.377Z",
+    "updated_at": "2026-01-05T16:26:30.377Z",
+    "title": "Wooden",
+    "title_en": "Wooden",
+    "title_ru": "",
+    "categoryimage": "category_images/wooden-icon.png"
+  }
+},
+{
+  "model": "product.product",
+  "pk": 28,
+  "fields": {
+    "created_at": "2026-01-06T09:48:11.566Z",
+    "updated_at": "2026-01-06T09:48:11.566Z",
+    "category": 13,
+    "title": "Hand-Made Garlic Mortar",
+    "price": "28.00",
+    "description": "Authentic olive wood mortar and pestle, hand-carved by artisans. Crushes garlic, herbs, and spices perfectly. Rustic, durable, eco-friendly. Compact size, easy to clean.",
+    "cover_image": "product_cover_images/1.jpg",
+    "weight": "55",
+    "length": "60",
+    "width": "60",
+    "height": "90",
+    "materials": "Wood",
+    "madein": "Azerbaijan",
+    "isnew": false,
+    "is_available": false,
+    "slug": "hand-made-garlic-mortar-28",
+    "tags": [
+      5,
+      6,
+      7
+    ]
+  }
+},
+{
+  "model": "product.product",
+  "pk": 29,
+  "fields": {
+    "created_at": "2026-01-06T09:50:48.941Z",
+    "updated_at": "2026-01-06T09:50:48.941Z",
+    "category": 9,
+    "title": "Handmade Ceramic Pottery",
+    "price": "38.00",
+    "description": "Handcrafted ceramic pottery made with care, showcasing unique forms, natural textures, and a timeless design that brings warmth and character to any space.",
+    "cover_image": "product_cover_images/2.jpg",
+    "weight": "210",
+    "length": "50",
+    "width": "50",
+    "height": "60",
+    "materials": "Ceramic",
+    "madein": "USA",
+    "isnew": false,
+    "is_available": true,
+    "slug": "handmade-ceramic-pottery-29",
+    "tags": [
+      5,
+      6,
+      7
+    ]
+  }
+},
+{
+  "model": "product.product",
+  "pk": 30,
+  "fields": {
+    "created_at": "2026-01-06T09:51:51.859Z",
+    "updated_at": "2026-01-06T09:51:51.859Z",
+    "category": 11,
+    "title": "Hand Painted Bowls",
+    "price": "23.00",
+    "description": "Hand-painted ceramic bowls crafted with care, featuring unique patterns and vibrant details that make each piece one of a kind.",
+    "cover_image": "product_cover_images/3.jpg",
+    "weight": "70",
+    "length": "50",
+    "width": "50",
+    "height": "60",
+    "materials": "Wood",
+    "madein": "Africa",
+    "isnew": false,
+    "is_available": true,
+    "slug": "hand-painted-bowls-30",
+    "tags": [
+      5,
+      6,
+      7
+    ]
+  }
+},
+{
+  "model": "product.product",
+  "pk": 31,
+  "fields": {
+    "created_at": "2026-01-06T10:33:52.192Z",
+    "updated_at": "2026-01-06T10:33:52.192Z",
+    "category": 13,
+    "title": "Antique Wooden Farm Large",
+    "price": "43.00",
+    "description": "Large antique wooden farm piece crafted from aged wood, showcasing a rustic finish and timeless character shaped by years of use.",
+    "cover_image": "product_cover_images/4.jpg",
+    "weight": "203",
+    "length": "70",
+    "width": "70",
+    "height": "67",
+    "materials": "Wood",
+    "madein": "Canada",
+    "isnew": true,
+    "is_available": true,
+    "slug": "antique-wooden-farm-large-31",
+    "tags": [
+      5,
+      6,
+      7
+    ]
+  }
+},
+{
+  "model": "product.product",
+  "pk": 32,
+  "fields": {
+    "created_at": "2026-01-06T10:37:09.725Z",
+    "updated_at": "2026-01-06T10:37:09.725Z",
+    "category": 13,
+    "title": "Round Wooden Serving Board",
+    "price": "19.00",
+    "description": "Round wooden serving board crafted from natural wood, featuring a smooth surface and a practical handle for easy serving or hanging. Perfect for bread, cheese, and everyday kitchen use.",
+    "cover_image": "product_cover_images/5.jpg",
+    "weight": "109",
+    "length": "48",
+    "width": "43",
+    "height": "10",
+    "materials": "Wood",
+    "madein": "USA",
+    "isnew": false,
+    "is_available": true,
+    "slug": "round-wooden-serving-board-32",
+    "tags": [
+      5,
+      6,
+      7
+    ]
+  }
+},
+{
+  "model": "product.product",
+  "pk": 33,
+  "fields": {
+    "created_at": "2026-01-06T10:37:53.008Z",
+    "updated_at": "2026-01-06T10:37:53.008Z",
+    "category": 10,
+    "title": "Handmade Jute Basket",
+    "price": "45.00",
+    "description": "Handmade jute basket woven from natural fibers, offering a sturdy, eco-friendly design with a warm, rustic look.",
+    "cover_image": "product_cover_images/6.jpg",
+    "weight": "24",
+    "length": "30",
+    "width": "30",
+    "height": "48",
+    "materials": "Fabric",
+    "madein": "India",
+    "isnew": false,
+    "is_available": true,
+    "slug": "handmade-jute-basket-33",
+    "tags": [
+      5,
+      6,
+      7
+    ]
+  }
+},
+{
+  "model": "product.product",
+  "pk": 34,
+  "fields": {
+    "created_at": "2026-01-06T10:39:20.604Z",
+    "updated_at": "2026-01-06T10:39:20.604Z",
+    "category": 10,
+    "title": "Knitting yarn & crochet hook",
+    "price": "18.00",
+    "description": "Soft knitting yarn paired with a crochet hook, ideal for handmade projects, creative designs, and everyday crafting.",
+    "cover_image": "product_cover_images/7.jpg",
+    "weight": "19",
+    "length": "33",
+    "width": "33",
+    "height": "47",
+    "materials": "Fabric",
+    "madein": "France",
+    "isnew": true,
+    "is_available": true,
+    "slug": "knitting-yarn-crochet-hook-34",
+    "tags": [
+      5,
+      6,
+      7
+    ]
+  }
+},
+{
+  "model": "product.product",
+  "pk": 35,
+  "fields": {
+    "created_at": "2026-01-06T10:40:32.173Z",
+    "updated_at": "2026-01-06T10:40:32.173Z",
+    "category": 12,
+    "title": "David Head Portraits",
+    "price": "64.00",
+    "description": "David head portrait inspired by classical sculpture, capturing refined details and timeless artistic elegance.",
+    "cover_image": "product_cover_images/8.jpg",
+    "weight": "457",
+    "length": "65",
+    "width": "65",
+    "height": "78",
+    "materials": "Ceramic",
+    "madein": "Greece",
+    "isnew": false,
+    "is_available": true,
+    "slug": "david-head-portraits-35",
+    "tags": [
+      5,
+      6,
+      7
+    ]
+  }
+},
+{
+  "model": "product.product",
+  "pk": 36,
+  "fields": {
+    "created_at": "2026-01-06T10:41:31.962Z",
+    "updated_at": "2026-01-06T10:41:31.962Z",
+    "category": 13,
+    "title": "Solid Wood Cherry Paddle",
+    "price": "54.00",
+    "description": "Solid cherry wood paddle crafted from durable hardwood, featuring a smooth finish and natural grain for a timeless, rustic look.",
+    "cover_image": "product_cover_images/9.jpg",
+    "weight": "36",
+    "length": "45",
+    "width": "23",
+    "height": "11",
+    "materials": "Wood",
+    "madein": "Italy",
+    "isnew": true,
+    "is_available": true,
+    "slug": "solid-wood-cherry-paddle-36",
+    "tags": [
+      5,
+      6,
+      7
+    ]
+  }
+},
+{
+  "model": "product.product",
+  "pk": 37,
+  "fields": {
+    "created_at": "2026-01-06T10:45:47.133Z",
+    "updated_at": "2026-01-06T10:45:47.133Z",
+    "category": 8,
+    "title": "Evil Eye Amulet",
+    "price": "34.00",
+    "description": "Traditional, handmade glass charm believed to protect against the \"evil eye\" or negative energy.",
+    "cover_image": "product_cover_images/10.jpg",
+    "weight": "34",
+    "length": "26",
+    "width": "25",
+    "height": "20",
+    "materials": "Glass",
+    "madein": "Turkey",
+    "isnew": false,
+    "is_available": true,
+    "slug": "evil-eye-amulet-37",
+    "tags": [
+      5,
+      6,
+      7
+    ]
+  }
+},
+{
+  "model": "product.product",
+  "pk": 38,
+  "fields": {
+    "created_at": "2026-01-06T10:49:51.667Z",
+    "updated_at": "2026-01-06T10:49:51.667Z",
+    "category": 9,
+    "title": "Handmade Clay Pot",
+    "price": "44.00",
+    "description": "Handmade terracotta clay pot with a warm, earthy finish. Durable, breathable, and perfect for herbs, flowers, or succulentsadds natural charm to any space.",
+    "cover_image": "product_cover_images/11.jpg",
+    "weight": "88",
+    "length": "68",
+    "width": "68",
+    "height": "77",
+    "materials": "Clay",
+    "madein": "India",
+    "isnew": false,
+    "is_available": true,
+    "slug": "handmade-clay-pot-38",
+    "tags": [
+      5,
+      6,
+      7
+    ]
+  }
+},
+{
+  "model": "product.product",
+  "pk": 39,
+  "fields": {
+    "created_at": "2026-01-06T10:52:24.667Z",
+    "updated_at": "2026-01-06T10:52:24.667Z",
+    "category": 9,
+    "title": "Cilio Goliath Granite Mortar",
+    "price": "29.00",
+    "description": "Cilio Goliath granite mortarsturdy, heavy-duty granite mortar and pestle designed for effortless grinding and crushing. Durable, non-porous, and perfect for herbs, spices, and pastes.",
+    "cover_image": "product_cover_images/12.jpg",
+    "weight": "167",
+    "length": "77",
+    "width": "77",
+    "height": "89",
+    "materials": "Granite",
+    "madein": "USSR",
+    "isnew": true,
+    "is_available": true,
+    "slug": "cilio-goliath-granite-mortar-39",
+    "tags": [
+      5,
+      6,
+      7
+    ]
+  }
+},
+{
+  "model": "product.productimage",
+  "pk": 11,
+  "fields": {
+    "created_at": "2026-01-07T17:50:25.115Z",
+    "updated_at": "2026-01-07T17:50:25.115Z",
+    "image": "product_images/12.jpg",
+    "product": 28
+  }
+},
+{
+  "model": "product.productimage",
+  "pk": 12,
+  "fields": {
+    "created_at": "2026-01-07T17:50:34.580Z",
+    "updated_at": "2026-01-07T17:50:34.580Z",
+    "image": "product_images/13.jpg",
+    "product": 28
+  }
+},
+{
+  "model": "product.productimage",
+  "pk": 13,
+  "fields": {
+    "created_at": "2026-01-09T15:29:15.438Z",
+    "updated_at": "2026-01-09T15:29:15.438Z",
+    "image": "product_images/22.jpg",
+    "product": 29
+  }
+},
+{
+  "model": "product.productimage",
+  "pk": 14,
+  "fields": {
+    "created_at": "2026-01-09T15:29:23.665Z",
+    "updated_at": "2026-01-09T15:29:23.665Z",
+    "image": "product_images/23.jpg",
+    "product": 29
+  }
+},
+{
+  "model": "product.productimage",
+  "pk": 15,
+  "fields": {
+    "created_at": "2026-01-09T15:29:31.976Z",
+    "updated_at": "2026-01-09T15:29:31.976Z",
+    "image": "product_images/32.jpg",
+    "product": 30
+  }
+},
+{
+  "model": "product.productimage",
+  "pk": 16,
+  "fields": {
+    "created_at": "2026-01-09T15:29:38.256Z",
+    "updated_at": "2026-01-09T15:29:38.256Z",
+    "image": "product_images/33.jpg",
+    "product": 30
+  }
+},
+{
+  "model": "product.productimage",
+  "pk": 17,
+  "fields": {
+    "created_at": "2026-01-09T15:29:46.144Z",
+    "updated_at": "2026-01-09T15:29:46.144Z",
+    "image": "product_images/42.jpg",
+    "product": 31
+  }
+},
+{
+  "model": "product.productimage",
+  "pk": 18,
+  "fields": {
+    "created_at": "2026-01-09T15:29:52.629Z",
+    "updated_at": "2026-01-09T15:29:52.629Z",
+    "image": "product_images/43.jpg",
+    "product": 31
+  }
+},
+{
+  "model": "product.productimage",
+  "pk": 19,
+  "fields": {
+    "created_at": "2026-01-09T15:30:00.509Z",
+    "updated_at": "2026-01-09T15:30:00.509Z",
+    "image": "product_images/52jpg.jpg",
+    "product": 32
+  }
+},
+{
+  "model": "product.productimage",
+  "pk": 20,
+  "fields": {
+    "created_at": "2026-01-09T15:30:07.672Z",
+    "updated_at": "2026-01-09T15:30:07.672Z",
+    "image": "product_images/53.jpg",
+    "product": 32
+  }
+},
+{
+  "model": "product.productimage",
+  "pk": 21,
+  "fields": {
+    "created_at": "2026-01-09T15:30:19.708Z",
+    "updated_at": "2026-01-09T15:30:19.708Z",
+    "image": "product_images/62.jpg",
+    "product": 33
+  }
+},
+{
+  "model": "product.productimage",
+  "pk": 22,
+  "fields": {
+    "created_at": "2026-01-09T15:30:31.860Z",
+    "updated_at": "2026-01-09T15:30:31.860Z",
+    "image": "product_images/63.jpg",
+    "product": 33
+  }
+},
+{
+  "model": "product.productimage",
+  "pk": 23,
+  "fields": {
+    "created_at": "2026-01-09T15:30:41.437Z",
+    "updated_at": "2026-01-09T15:30:41.437Z",
+    "image": "product_images/72.jpg",
+    "product": 34
+  }
+},
+{
+  "model": "product.productimage",
+  "pk": 25,
+  "fields": {
+    "created_at": "2026-01-09T15:30:53.989Z",
+    "updated_at": "2026-01-09T15:30:53.989Z",
+    "image": "product_images/73jpg_YCEztju.jpg",
+    "product": 34
+  }
+},
+{
+  "model": "product.productimage",
+  "pk": 26,
+  "fields": {
+    "created_at": "2026-01-09T15:31:02.291Z",
+    "updated_at": "2026-01-09T15:31:02.291Z",
+    "image": "product_images/82.jpg",
+    "product": 35
+  }
+},
+{
+  "model": "product.productimage",
+  "pk": 27,
+  "fields": {
+    "created_at": "2026-01-09T15:31:08.924Z",
+    "updated_at": "2026-01-09T15:31:08.924Z",
+    "image": "product_images/83.jpg",
+    "product": 35
+  }
+},
+{
+  "model": "product.productimage",
+  "pk": 28,
+  "fields": {
+    "created_at": "2026-01-09T15:31:16.085Z",
+    "updated_at": "2026-01-09T15:31:16.085Z",
+    "image": "product_images/92.jpg",
+    "product": 36
+  }
+},
+{
+  "model": "product.productimage",
+  "pk": 29,
+  "fields": {
+    "created_at": "2026-01-09T15:31:23.060Z",
+    "updated_at": "2026-01-09T15:31:23.060Z",
+    "image": "product_images/93.jpg",
+    "product": 36
+  }
+},
+{
+  "model": "product.productimage",
+  "pk": 30,
+  "fields": {
+    "created_at": "2026-01-09T15:31:28.969Z",
+    "updated_at": "2026-01-09T15:31:28.969Z",
+    "image": "product_images/102.jpg",
+    "product": 37
+  }
+},
+{
+  "model": "product.productimage",
+  "pk": 31,
+  "fields": {
+    "created_at": "2026-01-09T15:31:35.192Z",
+    "updated_at": "2026-01-09T15:31:35.192Z",
+    "image": "product_images/103.jpg",
+    "product": 37
+  }
+},
+{
+  "model": "product.productimage",
+  "pk": 32,
+  "fields": {
+    "created_at": "2026-01-09T15:31:42.012Z",
+    "updated_at": "2026-01-09T15:31:42.012Z",
+    "image": "product_images/112.jpg",
+    "product": 38
+  }
+},
+{
+  "model": "product.productimage",
+  "pk": 33,
+  "fields": {
+    "created_at": "2026-01-09T15:31:47.485Z",
+    "updated_at": "2026-01-09T15:31:47.485Z",
+    "image": "product_images/113.jpg",
+    "product": 38
+  }
+},
+{
+  "model": "product.productimage",
+  "pk": 34,
+  "fields": {
+    "created_at": "2026-01-09T15:31:55.243Z",
+    "updated_at": "2026-01-09T15:31:55.243Z",
+    "image": "product_images/122.jpg",
+    "product": 39
+  }
+},
+{
+  "model": "product.productimage",
+  "pk": 35,
+  "fields": {
+    "created_at": "2026-01-09T15:31:59.623Z",
+    "updated_at": "2026-01-09T15:31:59.623Z",
+    "image": "product_images/123.jpg",
+    "product": 39
+  }
+},
+{
+  "model": "product.productreview",
+  "pk": 39,
+  "fields": {
+    "created_at": "2026-03-03T11:33:47.044Z",
+    "updated_at": "2026-03-03T11:33:47.044Z",
+    "product": 39,
+    "user": 1,
+    "message": "Product review example"
+  }
+},
+{
+  "model": "user.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$KGCpediBWjXrQN47fFzgNA$Z8fmgBTI/4xFj/VJapXiXSrOvyCYhKJ0yFeEVdQ40r0=",
+    "last_login": "2026-03-04T14:34:53.503Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "Emil",
+    "last_name": "Subhanov",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2025-12-23T11:17:21Z",
+    "name": "",
+    "phone": "0777181719",
+    "email": "subhanov.emil@gmail.com",
+    "profile_image": "profile_images/profile_photo_vZ5QVUa.jpg",
+    "ips": "[\"127.0.0.1\"]",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "user.user",
+  "pk": 117,
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$eHlGpQGHbkPcI3GvGVKpqn$+ANED+8pm+bnvQNoRhCLJTu4ySgmTx7mFp9kg0uoRjU=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "Alex",
+    "first_name": "Alex",
+    "last_name": "Mercer",
+    "is_staff": false,
+    "is_active": false,
+    "date_joined": "2026-03-04T13:48:31Z",
+    "name": "",
+    "phone": null,
+    "email": "alexdoe@example.com",
+    "profile_image": "",
+    "ips": "[]",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "order.basket",
+  "pk": 1,
+  "fields": {
+    "created_at": "2026-03-03T09:50:47.837Z",
+    "updated_at": "2026-03-03T09:50:47.838Z",
+    "user": 1,
+    "is_active": true
+  }
+},
+{
+  "model": "order.basketitem",
+  "pk": 12,
+  "fields": {
+    "created_at": "2026-03-03T11:09:14.673Z",
+    "updated_at": "2026-03-03T11:09:14.673Z",
+    "basket": 1,
+    "product": 39,
+    "quantity": 4
+  }
+},
+{
+  "model": "order.basketitem",
+  "pk": 13,
+  "fields": {
+    "created_at": "2026-03-03T11:27:47.018Z",
+    "updated_at": "2026-03-03T11:27:47.018Z",
+    "basket": 1,
+    "product": 29,
+    "quantity": 1
+  }
+},
+{
+  "model": "django_celery_beat.crontabschedule",
+  "pk": 1,
+  "fields": {
+    "minute": "34",
+    "hour": "16",
+    "day_of_month": "*",
+    "month_of_year": "*",
+    "day_of_week": "*",
+    "timezone": "Asia/Baku"
+  }
+},
+{
+  "model": "django_celery_beat.crontabschedule",
+  "pk": 2,
+  "fields": {
+    "minute": "42",
+    "hour": "17",
+    "day_of_month": "*",
+    "month_of_year": "*",
+    "day_of_week": "*",
+    "timezone": "Asia/Baku"
+  }
+},
+{
+  "model": "django_celery_beat.crontabschedule",
+  "pk": 3,
+  "fields": {
+    "minute": "0",
+    "hour": "4",
+    "day_of_month": "*",
+    "month_of_year": "*",
+    "day_of_week": "*",
+    "timezone": "UTC"
+  }
+},
+{
+  "model": "django_celery_beat.periodictasks",
+  "pk": 1,
+  "fields": {
+    "last_update": "2026-03-04T13:40:28.168Z"
+  }
+},
+{
+  "model": "django_celery_beat.periodictask",
+  "pk": 2,
+  "fields": {
+    "name": "Subscribe",
+    "task": "user.tasks.email_to_subscribers",
+    "interval": null,
+    "crontab": 2,
+    "solar": null,
+    "clocked": null,
+    "args": "[]",
+    "kwargs": "{}",
+    "queue": null,
+    "exchange": null,
+    "routing_key": null,
+    "headers": "{}",
+    "priority": null,
+    "expires": null,
+    "expire_seconds": null,
+    "one_off": false,
+    "start_time": null,
+    "enabled": true,
+    "last_run_at": "2026-03-04T13:42:00.032Z",
+    "total_run_count": 1,
+    "date_changed": "2026-03-04T13:43:35.933Z",
+    "description": "asdfghj"
+  }
+},
+{
+  "model": "django_celery_beat.periodictask",
+  "pk": 3,
+  "fields": {
+    "name": "celery.backend_cleanup",
+    "task": "celery.backend_cleanup",
+    "interval": null,
+    "crontab": 3,
+    "solar": null,
+    "clocked": null,
+    "args": "[]",
+    "kwargs": "{}",
+    "queue": null,
+    "exchange": null,
+    "routing_key": null,
+    "headers": "{}",
+    "priority": null,
+    "expires": null,
+    "expire_seconds": 43200,
+    "one_off": false,
+    "start_time": null,
+    "enabled": true,
+    "last_run_at": null,
+    "total_run_count": 0,
+    "date_changed": "2026-03-04T13:40:28.166Z",
+    "description": ""
+  }
+}
+]

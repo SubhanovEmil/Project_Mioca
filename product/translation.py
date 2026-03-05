@@ -1,7 +1,12 @@
 from modeltranslation.translator import translator, TranslationOptions
-from .models import News
+from product.models import ProductTag, ProductCategory
 
-class NewsTranslationOptions(TranslationOptions):
-    fields = ('title', 'text')
+class ProductTagTranslationOptions(TranslationOptions):
+    fields = ('title',)
 
-translator.register(News, NewsTranslationOptions)
+translator.register(ProductTag, ProductTagTranslationOptions)
+
+class ProductCategoryTranslationOptions(TranslationOptions):
+    fields = ('title',)
+
+translator.register(ProductCategory, ProductCategoryTranslationOptions)

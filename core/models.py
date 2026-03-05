@@ -1,7 +1,7 @@
 from django.db import models
-
 # Create your models here.
 
+    
 class AbstractModel(models.Model):
     created_at = models.DateTimeField(auto_now_add = True)
     updated_at = models.DateTimeField(auto_now_add = True)
@@ -9,6 +9,12 @@ class AbstractModel(models.Model):
     class Meta:
         abstract = True
         
+class Subscribe(AbstractModel):
+    email = models.EmailField(unique=True)
+
+    def __str__(self):
+        return self.email
+
 class Contact(AbstractModel):
 
     first_name = models.CharField('First name', max_length = 100)
@@ -18,3 +24,5 @@ class Contact(AbstractModel):
 
     def __str__(self):
         return f"{self.first_name} {self.last_name}"
+    
+    

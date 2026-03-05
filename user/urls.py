@@ -2,11 +2,11 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.urls import path, re_path
 
-from user.views import login, logout, register, myaccount, wishlist, activate
+from user.views import login, logout, register, myaccount, wishlist, activate    
 
 urlpatterns = [
-    path('login/', login, name = 'login'),
-    path('logout/', logout, name = 'logout'),
+    path('login/', login , name = 'login'),
+    path('logout/', logout , name = 'logout'),
     path('my-account/', myaccount, name = 'my-account'),
     path('wishlist/', wishlist, name = 'wishlist'), 
     path('register/', register, name = 'register'),

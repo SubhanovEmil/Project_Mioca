@@ -4,14 +4,16 @@ from django.views.generic import ListView, DetailView
 from django.views.generic.edit import FormMixin
 from product.forms import ReviewForm
 from django.urls import reverse_lazy
+
 # Create your views here.
+
 
 
 class ShopListView(ListView):
     template_name = 'shop-left-sidebar.html'
     model = Product
     context_object_name = 'products'
-    paginate_by = 3
+    paginate_by = 6
 
 def compare(request):
     return render(request, 'compare.html')

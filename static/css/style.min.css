@@ -5207,8 +5207,6 @@ only screen and (max-width:767px) {
     color: #fff
 }
 
-
-
 .login-register-wrapper .login-register-tab-list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -5236,7 +5234,7 @@ only screen and (max-width:767px) {
     width: 1px
 }
 
-.login-register-wrapper .login-register-tab-list a h4 {
+.login-register-wrapper .login-register-tab-list a:hover h4 {
     color: #eaaa85 !important
 }
 
@@ -9426,8 +9424,13 @@ only screen and (max-width:479px) {
     position: relative
 }
 
+.slider-nav-style-1 .swiper-button-next:after {
+    content: ""
+}
 
-
+.slider-nav-style-1 .swiper-button-prev:after {
+    content: ""
+}
 
 .slider-nav-style-1 .swiper-button-next:after,
 .slider-nav-style-1 .swiper-button-prev:after {
@@ -10049,9 +10052,13 @@ only screen and (max-width:767px) {
     transition: all .3s ease 0s
 }
 
+.testimonial-wrapper .swiper-button-prev:after {
+    content: ""
+}
 
-
-
+.testimonial-wrapper .swiper-button-next:after {
+    content: ""
+}
 
 .testimonial-wrapper .swiper-button-prev {
     left: 25%

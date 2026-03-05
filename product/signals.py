@@ -5,7 +5,7 @@ from django.utils.text import slugify
 
 
 @receiver(post_save, sender=Product)
-def prduct_slug(sender, instance, created, **kwargs):
-    if created:
-        instance.slug = slugify(instance.title) + "-" + (instance.id)
-        instance.save()
+def product_slug(sender, instance, created, **kwargs):
+    if created and not instance.slug:
+        instance.slug = slugify(instance.title) + "-" + str(instance.id)
+        instance.save(update_fields=['slug'])

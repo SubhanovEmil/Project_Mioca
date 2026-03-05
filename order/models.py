@@ -10,15 +10,27 @@ class Basket(AbstractModel):
     user = models.ForeignKey(User, related_name='baskets', on_delete=models.CASCADE)
     is_active = models.BooleanField(default=True)
 
+    def price(self):
+        total = 0
+        for item in self.items.all():
+            total += item.price()
+        return total
+
     def __str__(self):
-        return f'{self.user.username} / {self.user.is_active}'
+        return f'{self.user.username} / {self.is_active}'
+    
+    
     
 class BasketItem(AbstractModel):
 
     basket = models.ForeignKey(Basket, related_name='items', on_delete=models.CASCADE)
     product = models.ForeignKey(Product, related_name='items', on_delete=models.CASCADE)
-
     quantity = models.IntegerField(default=1)
+
+
+    
+    def price(self):
+        return self.product.price * self.quantity
 
     def __str__(self):
         return super().__str__()    

@@ -4,7 +4,7 @@ from core.forms import ContactForm
 from django.urls import reverse_lazy
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
-from  django.views.generic import CreateView
+from django.views.generic import CreateView
 from django.utils.translation import gettext_lazy as _
 # Create your views here.
 

@@ -2,234 +2,233 @@
 {% load static %}
 
 {% block content %}
-    <!-- breadcrumb-area start -->
-    <div class="breadcrumb-area">
-        <div class="container">
-            <div class="row align-items-center justify-content-center">
-                <div class="col-12 text-center">
-                    <h2 class="breadcrumb-title">Blog Details</h2>
-                    <!-- breadcrumb-list start -->
-                    <ul class="breadcrumb-list">
-                        <li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
-                        <li class="breadcrumb-item active">Blog Details</li>
-                    </ul>
-                    <!-- breadcrumb-list end -->
+<!-- breadcrumb-area start -->
+<div class="breadcrumb-area">
+    <div class="container">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-12 text-center">
+                <h2 class="breadcrumb-title">Blog Details</h2>
+                <!-- breadcrumb-list start -->
+                <ul class="breadcrumb-list">
+                    <li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
+                    <li class="breadcrumb-item active">Blog Details</li>
+                </ul>
+                <!-- breadcrumb-list end -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- breadcrumb-area end -->
+
+<!-- Blog Area Start -->
+<div class="blog-grid pb-100px pt-100px main-blog-page single-blog-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-12 offset-lg-2">
+                <div class="blog-posts">
+                    <div class="single-blog-post blog-grid-post">
+                        <div class="blog-image single-blog" data-aos="fade-up" data-aos-delay="200">
+                            <img class="img-fluid h-auto" src="{% static 'images/blog-image/blog-image.jpg' %}"
+                                alt="blog" />
+                        </div>
+                        <div class="blog-post-content-inner mt-30px" data-aos="fade-up" data-aos-delay="400">
+                            <div class="blog-athor-date">
+                                <span>By,<a class="blog-author cercle-shape" href="#">June Cha</a>
+                                </span>
+                                <span class="blog-date" href="#">25 May, 2023</span>
+                            </div>
+                            <h4 class="blog-title">How the 10 Worst Handmade Product Fails of All Time Could Have Been Prevented</h4>
+                            <p data-aos="fade-up">
+                                Handmade products carry a special kind of magic. They whisper of human touch, late-night
+                                creativity, and the noble struggle against hot glue that absolutely refused to
+                                cooperate. But sometimes… the magic escapes. Spectacularly.
+
+                                From collapsing candle holders to sweaters that could legally qualify as medieval armor,
+                                the handmade world has seen its share of beautiful disasters. The good news? Most of
+                                these legendary flops were completely preventable.
+                                <br>
+                                Let’s autopsy the chaos.
+                                <br>
+                                1. The “Melt-on-Arrival” Candle
+                                <br>
+                                What went wrong:
+                                A lovingly crafted candle arrived looking like it had survived reentry from orbit.
+                                <br>
+                                The preventable mistake:
+                                Ignoring temperature during shipping.
+                                <br>
+                                How to prevent it:
+                                Test your packaging in heat. If your candle can’t survive a warm delivery truck, it’s
+                                not ready for the world. Use insulated packaging or season-aware shipping.
+                                <br>    
+                                2. The Mug With Commitment Issues
+                                <br>
+                                What went wrong:
+                                The handle detached after exactly one cup of coffee. A brief but dramatic relationship.
+                                <br>
+                                The preventable mistake:
+                                Poor ceramic bonding or insufficient firing.
+                                <br>
+                                How to prevent it:
+                                Stress-test functional items. If it holds tea only in theory, it’s still a prototype.
+                                <br>
+                                3. The Sweater That Shrunk Into Philosophy
+                                <br>
+                                What went wrong:
+                                A medium sweater became doll clothing after first wash.
+                                <br>
+                                The preventable mistake:
+                                No pre-washing or fiber testing.
+                                <br>
+                                How to prevent it:
+                                Always wash-test textiles exactly how customers will. Yarn has trust issues. Verify
+                                everything.
+                                <br>
+                                4. The Jewelry That Turned Green… and Took Skin With It
+                                <br>
+                                What went wrong:
+                                Beautiful necklace. Unfortunate chemical aftermath.
+                                <br>
+                                The preventable mistake:
+                                Using low-quality metal without disclosure.
+                                <br>
+                                How to prevent it:
+                                Know your materials. If it oxidizes faster than a sliced apple, either upgrade it or
+                                clearly label it.
+                                <br>
+                                5. The Crooked Personalization Catastrophe
+                                <br>
+                                What went wrong:
+                                Customer ordered “Maria.” Received something that looked like “Mafia.”
+                                <br>
+                                The preventable mistake:
+                                No layout preview or alignment check.
+                                <br>
+                                How to prevent it:
+                                <br>
+                                Always mock up custom text
+                                <br>
+                                Use guides and grids
+                                <br>
+                                Zoom in like your reputation depends on it
+                                <br>
+                                Because it does
+                                <br>
+                                6. The Paint That Chose Freedom
+                                <br>
+                                What went wrong:
+                                Hand-painted item began shedding color like autumn leaves.
+                                <br>
+                                The preventable mistake:
+                                No sealant. No curing time. Just vibes.
+                                <br>
+                                How to prevent it:
+                                If you paint it, seal it. If you seal it, cure it. Then test it like a suspicious
+                                scientist.
+                                <br>
+                                7. The “One Size Fits… Optimists”
+                                <br>
+                                What went wrong:
+                                Product labeled one-size-fits-all fit approximately one specific elbow.
+                                <br>
+                                The preventable mistake:
+                                Guessing instead of measuring.
+                                <br>
+                                How to prevent it:
+                                Provide real dimensions. Handmade buyers forgive many things. Fantasy sizing is not one
+                                of them.
+                                <br>
+                                8. The Packaging That Lost the War
+                                <br>
+                                What went wrong:
+                                Product was perfect. Packaging was… emotionally fragile.
+                                <br>
+                                The preventable mistake:
+                                Underestimating shipping brutality.
+                                <br>
+                                How to prevent it:
+                                Assume your package will be:
+                                <br>
+                                dropped
+                                <br>
+                                stacked
+                                <br>
+                                emotionally disrespected
+                                <br>
+                                Pack accordingly.
+                                <br>
+                                9. The Glue-Gun Overconfidence Incident
+                                <br>
+                                What went wrong:
+                                Hot glue was treated like structural engineering.
+                                <br>
+                                The preventable mistake:
+                                Using the wrong adhesive for the job.
+                                <br>
+                                How to prevent it:
+                                Match glue to material. Hot glue is a helper, not a miracle worker.
+                                <br>
+                                10. The “I’ll Fix It Later” Launch
+                                <br>
+                                What went wrong:
+                                Product shipped while still in its “character-building” phase.
+                                <br>
+                                The preventable mistake:
+                                Rushing to sell before proper testing.
+                                <br>
+                                How to prevent it:
+                                Before launch, ask:
+                                <br>
+                                Has it been stress-tested?
+                                <br>
+                                Wash-tested?
+                                <br>
+                                Drop-tested?
+                                <br>
+                                Used by an actual human who isn’t emotionally invested?
+                                <br>
+                                If not, it’s still rehearsal.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- single blog post -->
+                </div>
+                <div class="blog-comment-form">
+                    <h2 class="comment-heading" data-aos="fade-up" data-aos-delay="200">Leave a Comment</h2>
+                    <div class="form-inner">
+                        <div class="row">
+                            <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                                <div class="single-form mb-lm-15px">
+                                    <input type="text" placeholder="Name *" />
+                                </div>
+                            </div>
+                            <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
+                                <div class="single-form mb-lm-15px">
+                                    <input type="email" placeholder="Email *" />
+                                </div>
+                            </div>
+                            <div class="col-md-12" data-aos="fade-up" data-aos-delay="500">
+                                <div class="single-form mb-lm-15px">
+                                    <input type="email" placeholder="Subject (Optinal)" />
+                                </div>
+                            </div>
+                            <div class="col-md-12" data-aos="fade-up" data-aos-delay="200">
+                                <div class="single-form m-0">
+                                    <textarea placeholder="Message"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-12" data-aos="fade-up" data-aos-delay="200">
+                                <button class="btn btn-primary btn-hover-dark border-0 mt-30px" type="submit">Post A
+                                    Comment</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- breadcrumb-area end -->
-
-    <!-- Blog Area Start -->
-    <div class="blog-grid pb-100px pt-100px main-blog-page single-blog-page">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-md-12 offset-lg-2">
-                    <div class="blog-posts">
-                        <div class="single-blog-post blog-grid-post">
-                            <div class="blog-image single-blog" data-aos="fade-up" data-aos-delay="200">
-                                <img class="img-fluid h-auto" src="{% static 'images/blog-image/blog-image.jpg' %}"
-                                    alt="blog" />
-                            </div>
-                            <div class="blog-post-content-inner mt-30px" data-aos="fade-up" data-aos-delay="400">
-                                <div class="blog-athor-date">
-                                    <span> By,<a class="blog-author cercle-shape" href="#"> June Cha</a></span>
-                                    <span class="blog-date" href="#">25 May, 2023</span>
-                                </div>
-                                <h4 class="blog-title">How the 10 Worst Handmade Product Fails of All Time Could Have Been Prevented</h4>
-                                <p data-aos="fade-up">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magl aliqua. Ut enim ad minim veniam, quis nostrud
-                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequa Duis aute irure
-                                    dolor in reprehe in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                                    mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit
-                                    voluptatem accus doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
-                                    inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-                                </p>
-                                <h4 class="title">Lorem ipsum dolor sit amet consectetur. </h4>
-                                <p data-aos="fade-up" data-aos-delay="200">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magl aliqua. Ut enim ad minim veniam, quis nostrud
-                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequa Duis aute irure
-                                    dolor in reprehe in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                                    mollit anim id est laborum.
-                                </p>
-                            </div>
-                            <div class="single-post-content">
-                                <div class="quate-speech-area">
-
-                                    <p class="quate-speech" data-aos="fade-up" data-aos-delay="200">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                        incididunt ut labore
-                                    </p>
-                                    <img src="{% static 'images/blog-image/specker.jpg' %}" alt="" class="speecker-img">
-                                </div>
-                                <p data-aos="fade-up" data-aos-delay="200">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magl aliqua. Ut enim ad minim veniam, quis nostrud
-                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequa Duis aute irure
-                                    dolor in reprehe in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                                    mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit
-                                    voluptatem accus doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
-                                    inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-                                </p>
-                                <h3 class="title">Lorem ipsum dolor sit amet consectetur. </h3>
-                                <ul>
-                                    <li>1. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                        tempor incididunt ut labore etdur ur dolore magl aliqua. Ut enim ad minim
-                                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                        consequa Duis aute irure dolor in reprehe in voluptate velit</li>
-                                    <li>2. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                        tempor incididunt ut labore etrfuryi dolore magl aliqua. Ut enim ad minim
-                                        veniam, quis nostrud</li>
-                                    <li>3. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                        tempor incididut ut labore et kifuy</li>
-                                </ul>
-                                <p class="mt-30px">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                                    eiusmod tempor incididunt ut labore et dolore magl aliqua. Ut enim ad minim veniam,
-                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequa
-                                    Duis aute irure dolor in reprehe in voluptate velit esse cillum dolore eu fugiat
-                                    nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                                    officia deserunt mollit anim id est laborum.</p>
-                            </div>
-                        </div>
-                        <!-- single blog post -->
-                    </div>
-                    <div class="blog-single-tags-share d-md-flex justify-content-between">
-                        <div class="blog-single-tags d-flex" data-aos="fade-up" data-aos-delay="200">
-                            <span class="title"><i class="fa fa-tags" aria-hidden="true"></i></span>
-                            <ul class="tag-list">
-                                <li><a href="#">Fashion,</a></li>
-                                <li><a href="#">eCommerce,</a></li>
-                                <li class="m-0"><a href="#">Dress</a></li>
-                            </ul>
-                        </div>
-                        <div class="blog-single-share mb-xs-15px d-flex" data-aos="fade-up" data-aos-delay="200">
-                            <ul class="team-social d-flex">
-                                <li><a href="https://www.facebook.com/"><img src="{% static 'images/icons/facebook.png' %}" alt="No image"></a></li>
-                                <li><a href="https://www.twitter.com/"><img src="{% static 'images/icons/twitter.png' %}" alt="No image"></a></li>
-                                <li><a href="https://www.dribbble.com/"><img src="{% static 'images/icons/dribbble.png' %}" alt="No image"></a></li>
-                                <li><a href="https://www.pinterest.com/"><img src="{% static 'images/icons/pinterest.png' %}" alt="No image"></a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="comment-area">
-                        <h2 class="comment-heading" data-aos="fade-up" data-aos-delay="200">Comments (03)</h2>
-                        <div class="review-wrapper">
-                            <div class="single-review" data-aos="fade-up" data-aos-delay="200">
-                                <div class="review-img">
-                                    <img src="{% static 'images/comment-image/1.png' %}" alt="" />
-                                </div>
-                                <div class="review-content">
-                                    <div class="review-top-wrap">
-                                        <div class="review-left">
-                                            <div class="review-name">
-                                                <h4 class="title">Aaron Nunez </h4>
-                                                <span class="date">21 July 2023</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="review-bottom">
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisi elit, sed do eiusmod tempor
-                                            incidid ut labore etl dolore magna aliqua. Ut enim ad minim veniam, quis
-                                            nostrud exercitati ullam laboris nisi ut aliquiex ea commodo consequat.
-                                        </p>
-                                        <div class="review-left">
-                                            <a href="#"><i class="fa fa-reply-all"></i> Reply</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="single-review child-review" data-aos="fade-up" data-aos-delay="200">
-                                <div class="review-img">
-                                    <img src="{% static 'images/comment-image/2.png' %}" alt="" />
-                                </div>
-                                <div class="review-content">
-                                    <div class="review-top-wrap">
-                                        <div class="review-left">
-                                            <div class="review-name">
-                                                <h4 class="title">Fox Mccloud </h4>
-                                                <span class="date">21 July 2023</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="review-bottom">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisi elit, sed do eiusmoddl tempor
-                                            incidid ut labore etl dolore magna aliqua. Ut enim ad minimlkill veniam,
-                                            quis nostrud exercitati ullam .</p>
-                                        <div class="review-left">
-                                            <a href="#"> <i class="fa fa-reply-all"></i> Reply</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="single-review" data-aos="fade-up" data-aos-delay="200">
-                                <div class="review-img">
-                                    <img src="{% static 'images/comment-image/1.png' %}" alt="" />
-                                </div>
-                                <div class="review-content">
-                                    <div class="review-top-wrap">
-                                        <div class="review-left">
-                                            <div class="review-name">
-                                                <h4 class="title">Korbyn Colon </h4>
-                                                <span class="date">21 July 2023</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="review-bottom">
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisi elit, sed do eiusmod tempor
-                                            incidid ut labore etl dolore magna aliqua. Ut enim ad minim veniam, quis
-                                            nostrud exercitati ullam laboris nisi ut aliquiex ea commodo consequat.
-                                        </p>
-                                        <div class="review-left">
-                                            <a href="#"> <i class="fa fa-reply-all"></i> Reply</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="blog-comment-form">
-                        <h2 class="comment-heading" data-aos="fade-up" data-aos-delay="200">Leave a Comment</h2>
-                        <div class="form-inner">
-                            <div class="row">
-                                <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
-                                    <div class="single-form mb-lm-15px">
-                                        <input type="text" placeholder="Name *" />
-                                    </div>
-                                </div>
-                                <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
-                                    <div class="single-form mb-lm-15px">
-                                        <input type="email" placeholder="Email *" />
-                                    </div>
-                                </div>
-                                <div class="col-md-12" data-aos="fade-up" data-aos-delay="500">
-                                    <div class="single-form mb-lm-15px">
-                                        <input type="email" placeholder="Subject (Optinal)" />
-                                    </div>
-                                </div>
-                                <div class="col-md-12" data-aos="fade-up" data-aos-delay="200">
-                                    <div class="single-form m-0">
-                                        <textarea placeholder="Message"></textarea>
-                                    </div>
-                                </div>
-                                <div class="col-md-12" data-aos="fade-up" data-aos-delay="200">
-                                    <button class="btn btn-primary btn-hover-dark border-0 mt-30px" type="submit">Post A Comment</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Blag Area End -->
+</div>
+<!-- Blag Area End -->
 {% endblock %}
 
 {% include 'includes/modal.html' %}
